@@ -353,5 +353,5 @@ function stringValue(value) {
 }
 
 function stableJson(value) {
-  return `${JSON.stringify(value, null, 2)}\\n`;
+  return `${JSON.stringify(value, null, 2)}\n`;
 }
