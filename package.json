@@ -1,0 +1,12 @@
+{
+  "name": "lotto-data-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-official-hk-mark-six.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

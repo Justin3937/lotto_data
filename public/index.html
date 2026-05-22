@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lotto Data Public Mirror</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fb;
+      color: #19202a;
+    }
+    body {
+      margin: 0;
+      background: #f5f7fb;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #d9e0ea;
+      padding: 20px clamp(16px, 4vw, 44px);
+    }
+    h1 {
+      font-size: 22px;
+      margin: 0 0 6px;
+      letter-spacing: 0;
+    }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 20px clamp(16px, 4vw, 44px) 44px;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .metric, .panel {
+      background: #ffffff;
+      border: 1px solid #d9e0ea;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .label {
+      color: #667085;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .value {
+      font-size: 21px;
+      font-weight: 650;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    select, input {
+      min-height: 40px;
+      border: 1px solid #c5cfdd;
+      border-radius: 6px;
+      padding: 0 10px;
+      font: inherit;
+      background: #ffffff;
+      color: #19202a;
+    }
+    input {
+      min-width: 220px;
+      flex: 1;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: #ffffff;
+      border: 1px solid #d9e0ea;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e7ecf3;
+      text-align: left;
+      white-space: nowrap;
+    }
+    th {
+      background: #edf2f8;
+      color: #344054;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .numbers {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .ball {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #f0f4f8;
+      border: 1px solid #cbd5e1;
+      font-weight: 650;
+    }
+    .special {
+      background: #fff4d6;
+      border-color: #f4bc2f;
+    }
+    .muted {
+      color: #667085;
+    }
+    .error {
+      color: #b42318;
+    }
+    @media (max-width: 760px) {
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lotto Data Public Mirror</h1>
+    <div class="muted">Official-source static JSON mirror for review and backup.</div>
+  </header>
+  <main>
+    <section class="summary" id="summary"></section>
+    <section class="panel">
+      <div class="controls">
+        <select id="yearSelect" aria-label="Year"></select>
+        <input id="filterInput" type="search" placeholder="Filter by draw id, date, or number">
+      </div>
+      <div id="message" class="muted">Loading...</div>
+      <table id="drawTable" hidden>
+        <thead>
+          <tr>
+            <th>Draw</th>
+            <th>Date</th>
+            <th>Numbers</th>
+            <th>Special</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script>
+    const summaryEl = document.getElementById('summary');
+    const yearSelect = document.getElementById('yearSelect');
+    const filterInput = document.getElementById('filterInput');
+    const messageEl = document.getElementById('message');
+    const tableEl = document.getElementById('drawTable');
+    const tbody = tableEl.querySelector('tbody');
+    let currentDraws = [];
+
+    function metric(label, value) {
+      return '<div class="metric"><div class="label">' + label + '</div><div class="value">' + value + '</div></div>';
+    }
+
+    function ball(value, className = '') {
+      return '<span class="ball ' + className + '">' + String(value).padStart(2, '0') + '</span>';
+    }
+
+    function renderSummary(index) {
+      summaryEl.innerHTML = [
+        metric('Total draws', index.totalDrawCount || 0),
+        metric('Latest draw', index.latestDrawId || '-'),
+        metric('Latest date', index.latestDrawDate || '-'),
+        metric('Generated', index.generatedAt ? new Date(index.generatedAt).toLocaleString() : '-'),
+      ].join('');
+    }
+
+    async function loadIndex() {
+      const response = await fetch('data/markets/hk/mark-six/draws-index.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error('Failed to load draws-index.json: HTTP ' + response.status);
+      return response.json();
+    }
+
+    async function loadYear(path) {
+      const response = await fetch('data/' + path, { cache: 'no-store' });
+      if (!response.ok) throw new Error('Failed to load ' + path + ': HTTP ' + response.status);
+      return response.json();
+    }
+
+    function renderDraws() {
+      const filter = filterInput.value.trim().toLowerCase();
+      const rows = currentDraws.filter((draw) => {
+        if (!filter) return true;
+        return [draw.drawId, draw.drawDate, ...(draw.numbers || []), draw.specialNumber]
+          .join(' ')
+          .toLowerCase()
+          .includes(filter);
+      });
+
+      tbody.innerHTML = rows.map((draw) => {
+        return '<tr>' +
+          '<td>' + draw.drawId + '</td>' +
+          '<td>' + draw.drawDate + '</td>' +
+          '<td><div class="numbers">' + (draw.numbers || []).map((n) => ball(n)).join('') + '</div></td>' +
+          '<td>' + ball(draw.specialNumber, 'special') + '</td>' +
+        '</tr>';
+      }).join('');
+      messageEl.textContent = rows.length + ' rows';
+      tableEl.hidden = false;
+    }
+
+    async function selectYear(index) {
+      const selected = index.years.find((item) => item.year === yearSelect.value);
+      if (!selected) return;
+      messageEl.textContent = 'Loading ' + selected.year + '...';
+      tableEl.hidden = true;
+      const data = await loadYear(selected.path);
+      currentDraws = data.draws || [];
+      renderDraws();
+    }
+
+    async function init() {
+      try {
+        const index = await loadIndex();
+        renderSummary(index);
+        const years = index.years || [];
+        yearSelect.innerHTML = years.slice().reverse().map((item) => {
+          return '<option value="' + item.year + '">' + item.year + ' (' + item.drawCount + ')</option>';
+        }).join('');
+        if (years.length === 0) {
+          messageEl.textContent = 'No data.';
+          return;
+        }
+        await selectYear(index);
+        yearSelect.addEventListener('change', () => selectYear(index).catch(showError));
+        filterInput.addEventListener('input', renderDraws);
+      } catch (error) {
+        showError(error);
+      }
+    }
+
+    function showError(error) {
+      messageEl.className = 'error';
+      messageEl.textContent = error && error.message ? error.message : String(error);
+    }
+
+    init();
+  </script>
+</body>
+</html>
