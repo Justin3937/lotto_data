@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-22T16:40:35.189Z",
+  "generatedAt": "2026-05-23T15:38:40.033Z",
   "marketId": "HK",
   "gameId": "mark_six",
-  "totalDrawCount": 54,
-  "latestDrawId": "202654N",
-  "latestDrawDate": "2026-05-21",
+  "totalDrawCount": 55,
+  "latestDrawId": "202655N",
+  "latestDrawDate": "2026-05-23",
   "years": [
     {
       "year": "2026",
-      "drawCount": 54,
+      "drawCount": 55,
       "firstDrawDate": "2026-01-03",
-      "latestDrawDate": "2026-05-21",
+      "latestDrawDate": "2026-05-23",
       "path": "markets/hk/mark-six/draws-2026.json"
     }
   ],
