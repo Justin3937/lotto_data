@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T16:37:46.783Z",
+  "generatedAt": "2026-05-26T12:19:42.479Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "totalDrawCount": 55,
@@ -15,5 +15,19 @@
       "path": "markets/hk/mark-six/draws-2026.json"
     }
   ],
-  "verificationStatus": "official"
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 55,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 55
+    },
+    "merged": {
+      "totalDrawCount": 55
+    }
+  }
 }

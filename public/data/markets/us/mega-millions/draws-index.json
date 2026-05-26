@@ -1,19 +1,201 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "generatedAt": "2026-05-26T12:19:42.479Z",
   "marketId": "US",
   "gameId": "mega_millions",
-  "totalDrawCount": 4,
+  "totalDrawCount": 2504,
   "latestDrawId": "2026-05-22",
   "latestDrawDate": "2026-05-22",
   "years": [
     {
+      "year": "2002",
+      "drawCount": 66,
+      "firstDrawDate": "2002-05-17",
+      "latestDrawDate": "2002-12-31",
+      "path": "markets/us/mega-millions/draws-2002.json"
+    },
+    {
+      "year": "2003",
+      "drawCount": 104,
+      "firstDrawDate": "2003-01-03",
+      "latestDrawDate": "2003-12-30",
+      "path": "markets/us/mega-millions/draws-2003.json"
+    },
+    {
+      "year": "2004",
+      "drawCount": 105,
+      "firstDrawDate": "2004-01-02",
+      "latestDrawDate": "2004-12-31",
+      "path": "markets/us/mega-millions/draws-2004.json"
+    },
+    {
+      "year": "2005",
+      "drawCount": 104,
+      "firstDrawDate": "2005-01-04",
+      "latestDrawDate": "2005-12-30",
+      "path": "markets/us/mega-millions/draws-2005.json"
+    },
+    {
+      "year": "2006",
+      "drawCount": 104,
+      "firstDrawDate": "2006-01-03",
+      "latestDrawDate": "2006-12-29",
+      "path": "markets/us/mega-millions/draws-2006.json"
+    },
+    {
+      "year": "2007",
+      "drawCount": 103,
+      "firstDrawDate": "2007-01-02",
+      "latestDrawDate": "2007-12-28",
+      "path": "markets/us/mega-millions/draws-2007.json"
+    },
+    {
+      "year": "2008",
+      "drawCount": 105,
+      "firstDrawDate": "2008-01-01",
+      "latestDrawDate": "2008-12-30",
+      "path": "markets/us/mega-millions/draws-2008.json"
+    },
+    {
+      "year": "2009",
+      "drawCount": 103,
+      "firstDrawDate": "2009-01-02",
+      "latestDrawDate": "2009-12-29",
+      "path": "markets/us/mega-millions/draws-2009.json"
+    },
+    {
+      "year": "2010",
+      "drawCount": 105,
+      "firstDrawDate": "2010-01-01",
+      "latestDrawDate": "2010-12-31",
+      "path": "markets/us/mega-millions/draws-2010.json"
+    },
+    {
+      "year": "2011",
+      "drawCount": 104,
+      "firstDrawDate": "2011-01-04",
+      "latestDrawDate": "2011-12-30",
+      "path": "markets/us/mega-millions/draws-2011.json"
+    },
+    {
+      "year": "2012",
+      "drawCount": 104,
+      "firstDrawDate": "2012-01-03",
+      "latestDrawDate": "2012-12-28",
+      "path": "markets/us/mega-millions/draws-2012.json"
+    },
+    {
+      "year": "2013",
+      "drawCount": 104,
+      "firstDrawDate": "2013-01-01",
+      "latestDrawDate": "2013-12-31",
+      "path": "markets/us/mega-millions/draws-2013.json"
+    },
+    {
+      "year": "2014",
+      "drawCount": 104,
+      "firstDrawDate": "2014-01-03",
+      "latestDrawDate": "2014-12-30",
+      "path": "markets/us/mega-millions/draws-2014.json"
+    },
+    {
+      "year": "2015",
+      "drawCount": 104,
+      "firstDrawDate": "2015-01-02",
+      "latestDrawDate": "2015-12-29",
+      "path": "markets/us/mega-millions/draws-2015.json"
+    },
+    {
+      "year": "2016",
+      "drawCount": 105,
+      "firstDrawDate": "2016-01-01",
+      "latestDrawDate": "2016-12-30",
+      "path": "markets/us/mega-millions/draws-2016.json"
+    },
+    {
+      "year": "2017",
+      "drawCount": 104,
+      "firstDrawDate": "2017-01-03",
+      "latestDrawDate": "2017-12-29",
+      "path": "markets/us/mega-millions/draws-2017.json"
+    },
+    {
+      "year": "2018",
+      "drawCount": 104,
+      "firstDrawDate": "2018-01-02",
+      "latestDrawDate": "2018-12-28",
+      "path": "markets/us/mega-millions/draws-2018.json"
+    },
+    {
+      "year": "2019",
+      "drawCount": 105,
+      "firstDrawDate": "2019-01-01",
+      "latestDrawDate": "2019-12-31",
+      "path": "markets/us/mega-millions/draws-2019.json"
+    },
+    {
+      "year": "2020",
+      "drawCount": 104,
+      "firstDrawDate": "2020-01-03",
+      "latestDrawDate": "2020-12-29",
+      "path": "markets/us/mega-millions/draws-2020.json"
+    },
+    {
+      "year": "2021",
+      "drawCount": 105,
+      "firstDrawDate": "2021-01-01",
+      "latestDrawDate": "2021-12-31",
+      "path": "markets/us/mega-millions/draws-2021.json"
+    },
+    {
+      "year": "2022",
+      "drawCount": 104,
+      "firstDrawDate": "2022-01-04",
+      "latestDrawDate": "2022-12-30",
+      "path": "markets/us/mega-millions/draws-2022.json"
+    },
+    {
+      "year": "2023",
+      "drawCount": 104,
+      "firstDrawDate": "2023-01-03",
+      "latestDrawDate": "2023-12-29",
+      "path": "markets/us/mega-millions/draws-2023.json"
+    },
+    {
+      "year": "2024",
+      "drawCount": 105,
+      "firstDrawDate": "2024-01-02",
+      "latestDrawDate": "2024-12-31",
+      "path": "markets/us/mega-millions/draws-2024.json"
+    },
+    {
+      "year": "2025",
+      "drawCount": 104,
+      "firstDrawDate": "2025-01-03",
+      "latestDrawDate": "2025-12-30",
+      "path": "markets/us/mega-millions/draws-2025.json"
+    },
+    {
       "year": "2026",
-      "drawCount": 4,
-      "firstDrawDate": "2026-03-17",
+      "drawCount": 41,
+      "firstDrawDate": "2026-01-02",
       "latestDrawDate": "2026-05-22",
       "path": "markets/us/mega-millions/draws-2026.json"
     }
   ],
-  "verificationStatus": "official_seed"
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 2504,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 2504
+    },
+    "merged": {
+      "totalDrawCount": 2504
+    }
+  }
 }

@@ -1,18 +1,130 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "generatedAt": "2026-05-26T12:19:42.479Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "year": "2001",
   "drawCount": 7,
   "draws": [
-    {"drawId": "14", "drawDate": "2001-01-04", "numbers": [2, 8, 11, 35, 37, 38], "specialNumber": 43, "status": "official_seed", "verificationStatus": "official_seed"},
-    {"drawId": "15", "drawDate": "2001-01-11", "numbers": [4, 6, 11, 20, 21, 28], "specialNumber": 36, "status": "official_seed", "verificationStatus": "official_seed"},
-    {"drawId": "16", "drawDate": "2001-01-18", "numbers": [5, 12, 13, 29, 34, 35], "specialNumber": 30, "status": "official_seed", "verificationStatus": "official_seed"},
-    {"drawId": "17", "drawDate": "2001-01-25", "numbers": [14, 20, 25, 34, 35, 36], "specialNumber": 11, "status": "official_seed", "verificationStatus": "official_seed"},
-    {"drawId": "18", "drawDate": "2001-02-01", "numbers": [6, 16, 18, 27, 36, 41], "specialNumber": 33, "status": "official_seed", "verificationStatus": "official_seed"},
-    {"drawId": "19", "drawDate": "2001-02-08", "numbers": [4, 8, 12, 30, 33, 43], "specialNumber": 14, "status": "official_seed", "verificationStatus": "official_seed"},
-    {"drawId": "20", "drawDate": "2001-02-15", "numbers": [7, 29, 33, 35, 37, 39], "specialNumber": 19, "status": "official_seed", "verificationStatus": "official_seed"}
+    {
+      "drawId": "14",
+      "drawDate": "2001-01-04",
+      "numbers": [
+        2,
+        8,
+        11,
+        35,
+        37,
+        38
+      ],
+      "specialNumber": 43,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "15",
+      "drawDate": "2001-01-11",
+      "numbers": [
+        4,
+        6,
+        11,
+        20,
+        21,
+        28
+      ],
+      "specialNumber": 36,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "16",
+      "drawDate": "2001-01-18",
+      "numbers": [
+        5,
+        12,
+        13,
+        29,
+        34,
+        35
+      ],
+      "specialNumber": 30,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "17",
+      "drawDate": "2001-01-25",
+      "numbers": [
+        14,
+        20,
+        25,
+        34,
+        35,
+        36
+      ],
+      "specialNumber": 11,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "18",
+      "drawDate": "2001-02-01",
+      "numbers": [
+        6,
+        16,
+        18,
+        27,
+        36,
+        41
+      ],
+      "specialNumber": 33,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "19",
+      "drawDate": "2001-02-08",
+      "numbers": [
+        4,
+        8,
+        12,
+        30,
+        33,
+        43
+      ],
+      "specialNumber": 14,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "20",
+      "drawDate": "2001-02-15",
+      "numbers": [
+        7,
+        29,
+        33,
+        35,
+        37,
+        39
+      ],
+      "specialNumber": 19,
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    }
   ],
-  "verificationStatus": "official_seed"
+  "verificationStatus": "official_seed",
+  "sourceSummary": {
+    "official": {
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/backnumber/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 20
+    },
+    "merged": {
+      "totalDrawCount": 20
+    }
+  }
 }

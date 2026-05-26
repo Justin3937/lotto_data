@@ -1,19 +1,145 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "generatedAt": "2026-05-26T12:19:42.479Z",
   "marketId": "US",
   "gameId": "powerball",
-  "totalDrawCount": 10,
-  "latestDrawId": "2026-05-09",
-  "latestDrawDate": "2026-05-09",
+  "totalDrawCount": 1945,
+  "latestDrawId": "2026-05-25",
+  "latestDrawDate": "2026-05-25",
   "years": [
     {
+      "year": "2010",
+      "drawCount": 95,
+      "firstDrawDate": "2010-02-03",
+      "latestDrawDate": "2010-12-29",
+      "path": "markets/us/powerball/draws-2010.json"
+    },
+    {
+      "year": "2011",
+      "drawCount": 105,
+      "firstDrawDate": "2011-01-01",
+      "latestDrawDate": "2011-12-31",
+      "path": "markets/us/powerball/draws-2011.json"
+    },
+    {
+      "year": "2012",
+      "drawCount": 104,
+      "firstDrawDate": "2012-01-04",
+      "latestDrawDate": "2012-12-29",
+      "path": "markets/us/powerball/draws-2012.json"
+    },
+    {
+      "year": "2013",
+      "drawCount": 104,
+      "firstDrawDate": "2013-01-02",
+      "latestDrawDate": "2013-12-28",
+      "path": "markets/us/powerball/draws-2013.json"
+    },
+    {
+      "year": "2014",
+      "drawCount": 104,
+      "firstDrawDate": "2014-01-01",
+      "latestDrawDate": "2014-12-31",
+      "path": "markets/us/powerball/draws-2014.json"
+    },
+    {
+      "year": "2015",
+      "drawCount": 104,
+      "firstDrawDate": "2015-01-03",
+      "latestDrawDate": "2015-12-30",
+      "path": "markets/us/powerball/draws-2015.json"
+    },
+    {
+      "year": "2016",
+      "drawCount": 105,
+      "firstDrawDate": "2016-01-02",
+      "latestDrawDate": "2016-12-31",
+      "path": "markets/us/powerball/draws-2016.json"
+    },
+    {
+      "year": "2017",
+      "drawCount": 103,
+      "firstDrawDate": "2017-01-04",
+      "latestDrawDate": "2017-12-30",
+      "path": "markets/us/powerball/draws-2017.json"
+    },
+    {
+      "year": "2018",
+      "drawCount": 104,
+      "firstDrawDate": "2018-01-03",
+      "latestDrawDate": "2018-12-29",
+      "path": "markets/us/powerball/draws-2018.json"
+    },
+    {
+      "year": "2019",
+      "drawCount": 104,
+      "firstDrawDate": "2019-01-02",
+      "latestDrawDate": "2019-12-28",
+      "path": "markets/us/powerball/draws-2019.json"
+    },
+    {
+      "year": "2020",
+      "drawCount": 105,
+      "firstDrawDate": "2020-01-01",
+      "latestDrawDate": "2020-12-30",
+      "path": "markets/us/powerball/draws-2020.json"
+    },
+    {
+      "year": "2021",
+      "drawCount": 122,
+      "firstDrawDate": "2021-01-02",
+      "latestDrawDate": "2021-12-29",
+      "path": "markets/us/powerball/draws-2021.json"
+    },
+    {
+      "year": "2022",
+      "drawCount": 154,
+      "firstDrawDate": "2022-01-01",
+      "latestDrawDate": "2022-12-31",
+      "path": "markets/us/powerball/draws-2022.json"
+    },
+    {
+      "year": "2023",
+      "drawCount": 156,
+      "firstDrawDate": "2023-01-02",
+      "latestDrawDate": "2023-12-30",
+      "path": "markets/us/powerball/draws-2023.json"
+    },
+    {
+      "year": "2024",
+      "drawCount": 157,
+      "firstDrawDate": "2024-01-01",
+      "latestDrawDate": "2024-12-30",
+      "path": "markets/us/powerball/draws-2024.json"
+    },
+    {
+      "year": "2025",
+      "drawCount": 157,
+      "firstDrawDate": "2025-01-01",
+      "latestDrawDate": "2025-12-31",
+      "path": "markets/us/powerball/draws-2025.json"
+    },
+    {
       "year": "2026",
-      "drawCount": 10,
-      "firstDrawDate": "2026-04-18",
-      "latestDrawDate": "2026-05-09",
+      "drawCount": 62,
+      "firstDrawDate": "2026-01-03",
+      "latestDrawDate": "2026-05-25",
       "path": "markets/us/powerball/draws-2026.json"
     }
   ],
-  "verificationStatus": "official_seed"
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 1945,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 1945
+    },
+    "merged": {
+      "totalDrawCount": 1945
+    }
+  }
 }
