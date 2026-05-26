@@ -248,6 +248,40 @@ function buildFiles({ checkedAt, draws, latestDraw }) {
               },
             ],
           },
+          {
+            marketId: 'JP',
+            games: [
+              {
+                gameId: 'mini_loto',
+                latestDrawId: '34',
+                latestPath: 'markets/jp/mini-loto/latest.json',
+                drawsIndexPath: 'markets/jp/mini-loto/draws-index.json',
+              },
+              {
+                gameId: 'loto6_jp',
+                latestDrawId: '20',
+                latestPath: 'markets/jp/loto6/latest.json',
+                drawsIndexPath: 'markets/jp/loto6/draws-index.json',
+              },
+            ],
+          },
+          {
+            marketId: 'US',
+            games: [
+              {
+                gameId: 'powerball',
+                latestDrawId: '2026-05-09',
+                latestPath: 'markets/us/powerball/latest.json',
+                drawsIndexPath: 'markets/us/powerball/draws-index.json',
+              },
+              {
+                gameId: 'mega_millions',
+                latestDrawId: '2026-05-22',
+                latestPath: 'markets/us/mega-millions/latest.json',
+                drawsIndexPath: 'markets/us/mega-millions/draws-index.json',
+              },
+            ],
+          },
         ],
       }),
     },
