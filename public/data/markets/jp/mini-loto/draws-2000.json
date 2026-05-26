@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "marketId": "JP",
+  "gameId": "mini_loto",
+  "year": "2000",
+  "drawCount": 8,
+  "draws": [
+    {"drawId": "27", "drawDate": "2000-01-04", "numbers": [10, 16, 20, 21, 31], "specialNumber": 14, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "28", "drawDate": "2000-01-11", "numbers": [2, 9, 15, 22, 29], "specialNumber": 11, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "29", "drawDate": "2000-01-18", "numbers": [9, 12, 17, 26, 31], "specialNumber": 15, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "30", "drawDate": "2000-01-25", "numbers": [10, 15, 17, 18, 30], "specialNumber": 16, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "31", "drawDate": "2000-02-01", "numbers": [14, 20, 21, 24, 28], "specialNumber": 17, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "32", "drawDate": "2000-02-08", "numbers": [2, 11, 13, 16, 24], "specialNumber": 20, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "33", "drawDate": "2000-02-15", "numbers": [2, 3, 8, 9, 30], "specialNumber": 23, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "34", "drawDate": "2000-02-22", "numbers": [4, 9, 18, 28, 29], "specialNumber": 12, "status": "official_seed", "verificationStatus": "official_seed"}
+  ],
+  "verificationStatus": "official_seed"
+}

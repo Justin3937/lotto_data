@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "marketId": "US",
+  "gameId": "mega_millions",
+  "year": "2026",
+  "drawCount": 4,
+  "draws": [
+    {"drawId": "2026-03-17", "drawDate": "2026-03-17", "numbers": [4, 11, 18, 38, 50], "specialNumber": 24, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "2026-05-12", "drawDate": "2026-05-12", "numbers": [17, 32, 35, 40, 47], "specialNumber": 17, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "2026-05-19", "drawDate": "2026-05-19", "numbers": [10, 26, 34, 56, 64], "specialNumber": 6, "status": "official_seed", "verificationStatus": "official_seed"},
+    {"drawId": "2026-05-22", "drawDate": "2026-05-22", "numbers": [3, 22, 34, 54, 61], "specialNumber": 8, "status": "official_seed", "verificationStatus": "official_seed"}
+  ],
+  "verificationStatus": "official_seed"
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "marketId": "JP",
+  "gameId": "mini_loto",
+  "totalDrawCount": 14,
+  "latestDrawId": "34",
+  "latestDrawDate": "2000-02-22",
+  "years": [
+    {
+      "year": "1999",
+      "drawCount": 6,
+      "firstDrawDate": "1999-11-23",
+      "latestDrawDate": "1999-12-28",
+      "path": "markets/jp/mini-loto/draws-1999.json"
+    },
+    {
+      "year": "2000",
+      "drawCount": 8,
+      "firstDrawDate": "2000-01-04",
+      "latestDrawDate": "2000-02-22",
+      "path": "markets/jp/mini-loto/draws-2000.json"
+    }
+  ],
+  "verificationStatus": "official_seed"
+}

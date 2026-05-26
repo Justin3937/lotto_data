@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-26T10:50:00.000Z",
+  "marketId": "JP",
+  "gameId": "loto6_jp",
+  "totalDrawCount": 20,
+  "latestDrawId": "20",
+  "latestDrawDate": "2001-02-15",
+  "years": [
+    {
+      "year": "2000",
+      "drawCount": 13,
+      "firstDrawDate": "2000-10-05",
+      "latestDrawDate": "2000-12-28",
+      "path": "markets/jp/loto6/draws-2000.json"
+    },
+    {
+      "year": "2001",
+      "drawCount": 7,
+      "firstDrawDate": "2001-01-04",
+      "latestDrawDate": "2001-02-15",
+      "path": "markets/jp/loto6/draws-2001.json"
+    }
+  ],
+  "verificationStatus": "official_seed"
+}
