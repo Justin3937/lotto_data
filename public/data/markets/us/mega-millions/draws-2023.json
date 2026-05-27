@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-27T08:35:24.927Z",
+  "generatedAt": "2026-05-27T09:03:28.596Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2023",
@@ -1471,8 +1471,8 @@
       "error": null
     },
     "seed": {
-      "ok": false,
-      "drawCount": 0
+      "ok": true,
+      "drawCount": 2505
     },
     "merged": {
       "totalDrawCount": 2505
