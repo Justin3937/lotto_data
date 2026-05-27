@@ -1,0 +1,1570 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-27T08:35:24.927Z",
+  "marketId": "JP",
+  "gameId": "loto6_jp",
+  "year": "2013",
+  "drawCount": 103,
+  "draws": [
+    {
+      "drawId": "724",
+      "drawDate": "2013-01-07",
+      "numbers": [
+        4,
+        9,
+        32,
+        37,
+        38,
+        39
+      ],
+      "specialNumber": 31,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "725",
+      "drawDate": "2013-01-10",
+      "numbers": [
+        5,
+        6,
+        7,
+        20,
+        31,
+        41
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "726",
+      "drawDate": "2013-01-14",
+      "numbers": [
+        13,
+        21,
+        30,
+        31,
+        37,
+        40
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "727",
+      "drawDate": "2013-01-17",
+      "numbers": [
+        3,
+        24,
+        26,
+        27,
+        39,
+        41
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "728",
+      "drawDate": "2013-01-21",
+      "numbers": [
+        10,
+        15,
+        22,
+        23,
+        38,
+        42
+      ],
+      "specialNumber": 12,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "729",
+      "drawDate": "2013-01-24",
+      "numbers": [
+        2,
+        10,
+        16,
+        18,
+        27,
+        42
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "730",
+      "drawDate": "2013-01-28",
+      "numbers": [
+        10,
+        15,
+        21,
+        22,
+        33,
+        35
+      ],
+      "specialNumber": 1,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "731",
+      "drawDate": "2013-01-31",
+      "numbers": [
+        6,
+        7,
+        23,
+        25,
+        38,
+        42
+      ],
+      "specialNumber": 21,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "732",
+      "drawDate": "2013-02-04",
+      "numbers": [
+        20,
+        33,
+        35,
+        36,
+        37,
+        38
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "733",
+      "drawDate": "2013-02-07",
+      "numbers": [
+        5,
+        13,
+        14,
+        26,
+        37,
+        38
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "734",
+      "drawDate": "2013-02-11",
+      "numbers": [
+        10,
+        19,
+        22,
+        27,
+        29,
+        39
+      ],
+      "specialNumber": 21,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "735",
+      "drawDate": "2013-02-14",
+      "numbers": [
+        5,
+        12,
+        19,
+        22,
+        32,
+        39
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "736",
+      "drawDate": "2013-02-18",
+      "numbers": [
+        2,
+        14,
+        17,
+        19,
+        38,
+        43
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "737",
+      "drawDate": "2013-02-21",
+      "numbers": [
+        6,
+        10,
+        21,
+        24,
+        27,
+        39
+      ],
+      "specialNumber": 11,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "738",
+      "drawDate": "2013-02-25",
+      "numbers": [
+        14,
+        21,
+        22,
+        32,
+        33,
+        41
+      ],
+      "specialNumber": 9,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "739",
+      "drawDate": "2013-02-28",
+      "numbers": [
+        11,
+        13,
+        18,
+        20,
+        28,
+        38
+      ],
+      "specialNumber": 31,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "740",
+      "drawDate": "2013-03-04",
+      "numbers": [
+        8,
+        9,
+        15,
+        26,
+        37,
+        40
+      ],
+      "specialNumber": 18,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "741",
+      "drawDate": "2013-03-07",
+      "numbers": [
+        8,
+        11,
+        15,
+        29,
+        36,
+        43
+      ],
+      "specialNumber": 18,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "742",
+      "drawDate": "2013-03-11",
+      "numbers": [
+        2,
+        12,
+        13,
+        14,
+        22,
+        35
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "743",
+      "drawDate": "2013-03-14",
+      "numbers": [
+        3,
+        4,
+        8,
+        10,
+        14,
+        37
+      ],
+      "specialNumber": 32,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "744",
+      "drawDate": "2013-03-18",
+      "numbers": [
+        2,
+        5,
+        12,
+        14,
+        30,
+        42
+      ],
+      "specialNumber": 3,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "745",
+      "drawDate": "2013-03-21",
+      "numbers": [
+        8,
+        12,
+        16,
+        23,
+        33,
+        34
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "746",
+      "drawDate": "2013-03-25",
+      "numbers": [
+        6,
+        9,
+        10,
+        29,
+        31,
+        35
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "747",
+      "drawDate": "2013-03-28",
+      "numbers": [
+        8,
+        19,
+        20,
+        23,
+        24,
+        35
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "748",
+      "drawDate": "2013-04-01",
+      "numbers": [
+        2,
+        14,
+        16,
+        27,
+        28,
+        30
+      ],
+      "specialNumber": 21,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "749",
+      "drawDate": "2013-04-04",
+      "numbers": [
+        7,
+        8,
+        11,
+        13,
+        23,
+        40
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "750",
+      "drawDate": "2013-04-08",
+      "numbers": [
+        4,
+        6,
+        13,
+        16,
+        18,
+        39
+      ],
+      "specialNumber": 34,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "751",
+      "drawDate": "2013-04-11",
+      "numbers": [
+        13,
+        16,
+        21,
+        25,
+        31,
+        38
+      ],
+      "specialNumber": 43,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "752",
+      "drawDate": "2013-04-15",
+      "numbers": [
+        3,
+        5,
+        13,
+        18,
+        22,
+        37
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "753",
+      "drawDate": "2013-04-18",
+      "numbers": [
+        2,
+        4,
+        11,
+        15,
+        20,
+        38
+      ],
+      "specialNumber": 18,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "754",
+      "drawDate": "2013-04-22",
+      "numbers": [
+        16,
+        27,
+        33,
+        35,
+        39,
+        41
+      ],
+      "specialNumber": 42,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "755",
+      "drawDate": "2013-04-25",
+      "numbers": [
+        10,
+        16,
+        20,
+        25,
+        29,
+        39
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "756",
+      "drawDate": "2013-04-29",
+      "numbers": [
+        8,
+        10,
+        24,
+        26,
+        27,
+        28
+      ],
+      "specialNumber": 32,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "757",
+      "drawDate": "2013-05-02",
+      "numbers": [
+        4,
+        10,
+        14,
+        19,
+        35,
+        38
+      ],
+      "specialNumber": 17,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "758",
+      "drawDate": "2013-05-06",
+      "numbers": [
+        11,
+        19,
+        20,
+        25,
+        38,
+        40
+      ],
+      "specialNumber": 33,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "759",
+      "drawDate": "2013-05-09",
+      "numbers": [
+        14,
+        22,
+        25,
+        28,
+        37,
+        41
+      ],
+      "specialNumber": 31,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "760",
+      "drawDate": "2013-05-13",
+      "numbers": [
+        3,
+        4,
+        6,
+        15,
+        32,
+        40
+      ],
+      "specialNumber": 34,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "761",
+      "drawDate": "2013-05-16",
+      "numbers": [
+        8,
+        10,
+        11,
+        12,
+        20,
+        40
+      ],
+      "specialNumber": 42,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "762",
+      "drawDate": "2013-05-20",
+      "numbers": [
+        6,
+        8,
+        9,
+        20,
+        24,
+        27
+      ],
+      "specialNumber": 40,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "763",
+      "drawDate": "2013-05-23",
+      "numbers": [
+        6,
+        8,
+        10,
+        21,
+        39,
+        42
+      ],
+      "specialNumber": 36,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "764",
+      "drawDate": "2013-05-27",
+      "numbers": [
+        6,
+        7,
+        24,
+        34,
+        42,
+        43
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "765",
+      "drawDate": "2013-05-30",
+      "numbers": [
+        4,
+        14,
+        17,
+        22,
+        26,
+        41
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "766",
+      "drawDate": "2013-06-03",
+      "numbers": [
+        6,
+        10,
+        12,
+        32,
+        37,
+        39
+      ],
+      "specialNumber": 33,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "767",
+      "drawDate": "2013-06-06",
+      "numbers": [
+        2,
+        6,
+        11,
+        27,
+        29,
+        37
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "768",
+      "drawDate": "2013-06-10",
+      "numbers": [
+        1,
+        8,
+        19,
+        25,
+        32,
+        38
+      ],
+      "specialNumber": 39,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "769",
+      "drawDate": "2013-06-13",
+      "numbers": [
+        1,
+        2,
+        4,
+        16,
+        17,
+        38
+      ],
+      "specialNumber": 8,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "770",
+      "drawDate": "2013-06-17",
+      "numbers": [
+        17,
+        19,
+        21,
+        22,
+        36,
+        37
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "771",
+      "drawDate": "2013-06-20",
+      "numbers": [
+        15,
+        21,
+        31,
+        32,
+        33,
+        34
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "772",
+      "drawDate": "2013-06-24",
+      "numbers": [
+        7,
+        11,
+        16,
+        19,
+        20,
+        23
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "773",
+      "drawDate": "2013-06-27",
+      "numbers": [
+        4,
+        7,
+        10,
+        11,
+        12,
+        32
+      ],
+      "specialNumber": 9,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "774",
+      "drawDate": "2013-07-01",
+      "numbers": [
+        2,
+        4,
+        9,
+        13,
+        16,
+        33
+      ],
+      "specialNumber": 15,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "775",
+      "drawDate": "2013-07-04",
+      "numbers": [
+        1,
+        2,
+        21,
+        22,
+        37,
+        38
+      ],
+      "specialNumber": 17,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "776",
+      "drawDate": "2013-07-08",
+      "numbers": [
+        2,
+        8,
+        14,
+        23,
+        28,
+        42
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "777",
+      "drawDate": "2013-07-11",
+      "numbers": [
+        15,
+        16,
+        23,
+        29,
+        37,
+        39
+      ],
+      "specialNumber": 42,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "778",
+      "drawDate": "2013-07-15",
+      "numbers": [
+        5,
+        11,
+        17,
+        24,
+        35,
+        41
+      ],
+      "specialNumber": 3,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "779",
+      "drawDate": "2013-07-18",
+      "numbers": [
+        10,
+        13,
+        27,
+        34,
+        36,
+        39
+      ],
+      "specialNumber": 7,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "780",
+      "drawDate": "2013-07-22",
+      "numbers": [
+        6,
+        7,
+        12,
+        26,
+        39,
+        43
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "781",
+      "drawDate": "2013-07-25",
+      "numbers": [
+        5,
+        6,
+        15,
+        23,
+        40,
+        43
+      ],
+      "specialNumber": 39,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "782",
+      "drawDate": "2013-07-29",
+      "numbers": [
+        19,
+        21,
+        23,
+        24,
+        27,
+        43
+      ],
+      "specialNumber": 10,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "783",
+      "drawDate": "2013-08-01",
+      "numbers": [
+        9,
+        14,
+        22,
+        24,
+        25,
+        32
+      ],
+      "specialNumber": 13,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "784",
+      "drawDate": "2013-08-05",
+      "numbers": [
+        1,
+        9,
+        23,
+        29,
+        37,
+        41
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "785",
+      "drawDate": "2013-08-08",
+      "numbers": [
+        1,
+        9,
+        18,
+        20,
+        24,
+        29
+      ],
+      "specialNumber": 15,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "786",
+      "drawDate": "2013-08-12",
+      "numbers": [
+        10,
+        11,
+        17,
+        31,
+        35,
+        39
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "787",
+      "drawDate": "2013-08-15",
+      "numbers": [
+        4,
+        5,
+        13,
+        21,
+        33,
+        34
+      ],
+      "specialNumber": 15,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "788",
+      "drawDate": "2013-08-19",
+      "numbers": [
+        2,
+        8,
+        13,
+        27,
+        31,
+        32
+      ],
+      "specialNumber": 16,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "789",
+      "drawDate": "2013-08-22",
+      "numbers": [
+        12,
+        17,
+        29,
+        32,
+        38,
+        40
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "790",
+      "drawDate": "2013-08-26",
+      "numbers": [
+        9,
+        13,
+        19,
+        27,
+        34,
+        38
+      ],
+      "specialNumber": 8,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "791",
+      "drawDate": "2013-08-29",
+      "numbers": [
+        1,
+        10,
+        22,
+        24,
+        34,
+        37
+      ],
+      "specialNumber": 20,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "792",
+      "drawDate": "2013-09-02",
+      "numbers": [
+        1,
+        7,
+        14,
+        25,
+        37,
+        43
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "793",
+      "drawDate": "2013-09-05",
+      "numbers": [
+        10,
+        13,
+        14,
+        19,
+        26,
+        43
+      ],
+      "specialNumber": 12,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "794",
+      "drawDate": "2013-09-09",
+      "numbers": [
+        15,
+        22,
+        25,
+        29,
+        34,
+        42
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "795",
+      "drawDate": "2013-09-12",
+      "numbers": [
+        13,
+        19,
+        24,
+        28,
+        33,
+        38
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "796",
+      "drawDate": "2013-09-16",
+      "numbers": [
+        1,
+        7,
+        11,
+        14,
+        22,
+        34
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "797",
+      "drawDate": "2013-09-19",
+      "numbers": [
+        1,
+        4,
+        13,
+        18,
+        23,
+        39
+      ],
+      "specialNumber": 35,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "798",
+      "drawDate": "2013-09-23",
+      "numbers": [
+        1,
+        3,
+        5,
+        25,
+        39,
+        41
+      ],
+      "specialNumber": 34,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "799",
+      "drawDate": "2013-09-26",
+      "numbers": [
+        4,
+        6,
+        8,
+        10,
+        19,
+        28
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "800",
+      "drawDate": "2013-09-30",
+      "numbers": [
+        8,
+        12,
+        22,
+        23,
+        25,
+        35
+      ],
+      "specialNumber": 43,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "801",
+      "drawDate": "2013-10-03",
+      "numbers": [
+        2,
+        18,
+        19,
+        20,
+        25,
+        31
+      ],
+      "specialNumber": 32,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "802",
+      "drawDate": "2013-10-07",
+      "numbers": [
+        9,
+        13,
+        18,
+        19,
+        25,
+        30
+      ],
+      "specialNumber": 15,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "803",
+      "drawDate": "2013-10-10",
+      "numbers": [
+        9,
+        29,
+        33,
+        34,
+        35,
+        41
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "804",
+      "drawDate": "2013-10-14",
+      "numbers": [
+        6,
+        20,
+        23,
+        25,
+        31,
+        33
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "805",
+      "drawDate": "2013-10-17",
+      "numbers": [
+        2,
+        14,
+        19,
+        22,
+        24,
+        43
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "806",
+      "drawDate": "2013-10-21",
+      "numbers": [
+        3,
+        16,
+        19,
+        25,
+        39,
+        40
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "807",
+      "drawDate": "2013-10-24",
+      "numbers": [
+        1,
+        6,
+        12,
+        20,
+        22,
+        23
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "808",
+      "drawDate": "2013-10-28",
+      "numbers": [
+        13,
+        18,
+        22,
+        28,
+        41,
+        42
+      ],
+      "specialNumber": 26,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "809",
+      "drawDate": "2013-10-31",
+      "numbers": [
+        2,
+        11,
+        20,
+        31,
+        32,
+        37
+      ],
+      "specialNumber": 17,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "810",
+      "drawDate": "2013-11-04",
+      "numbers": [
+        3,
+        31,
+        32,
+        38,
+        39,
+        40
+      ],
+      "specialNumber": 37,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "811",
+      "drawDate": "2013-11-07",
+      "numbers": [
+        2,
+        6,
+        20,
+        24,
+        31,
+        40
+      ],
+      "specialNumber": 34,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "812",
+      "drawDate": "2013-11-11",
+      "numbers": [
+        1,
+        12,
+        15,
+        26,
+        34,
+        40
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "813",
+      "drawDate": "2013-11-14",
+      "numbers": [
+        9,
+        10,
+        12,
+        13,
+        28,
+        38
+      ],
+      "specialNumber": 39,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "814",
+      "drawDate": "2013-11-18",
+      "numbers": [
+        4,
+        7,
+        15,
+        23,
+        38,
+        42
+      ],
+      "specialNumber": 1,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "815",
+      "drawDate": "2013-11-21",
+      "numbers": [
+        1,
+        2,
+        6,
+        24,
+        25,
+        41
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "816",
+      "drawDate": "2013-11-25",
+      "numbers": [
+        5,
+        14,
+        19,
+        24,
+        27,
+        37
+      ],
+      "specialNumber": 9,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "817",
+      "drawDate": "2013-11-28",
+      "numbers": [
+        16,
+        21,
+        27,
+        32,
+        34,
+        43
+      ],
+      "specialNumber": 42,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "818",
+      "drawDate": "2013-12-02",
+      "numbers": [
+        5,
+        21,
+        24,
+        34,
+        37,
+        38
+      ],
+      "specialNumber": 16,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "819",
+      "drawDate": "2013-12-05",
+      "numbers": [
+        10,
+        19,
+        23,
+        25,
+        30,
+        40
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "820",
+      "drawDate": "2013-12-09",
+      "numbers": [
+        1,
+        11,
+        19,
+        28,
+        39,
+        43
+      ],
+      "specialNumber": 16,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "821",
+      "drawDate": "2013-12-12",
+      "numbers": [
+        7,
+        10,
+        12,
+        34,
+        40,
+        43
+      ],
+      "specialNumber": 16,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "822",
+      "drawDate": "2013-12-16",
+      "numbers": [
+        6,
+        11,
+        15,
+        24,
+        27,
+        33
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "823",
+      "drawDate": "2013-12-19",
+      "numbers": [
+        5,
+        6,
+        23,
+        30,
+        37,
+        38
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "824",
+      "drawDate": "2013-12-23",
+      "numbers": [
+        16,
+        19,
+        26,
+        27,
+        29,
+        32
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "825",
+      "drawDate": "2013-12-26",
+      "numbers": [
+        6,
+        10,
+        12,
+        16,
+        39,
+        40
+      ],
+      "specialNumber": 20,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "826",
+      "drawDate": "2013-12-30",
+      "numbers": [
+        5,
+        15,
+        22,
+        24,
+        29,
+        36
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    }
+  ],
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 2105,
+      "error": null
+    },
+    "seed": {
+      "ok": false,
+      "drawCount": 0
+    },
+    "merged": {
+      "totalDrawCount": 2105
+    }
+  }
+}

@@ -68,6 +68,7 @@ const games = [
     pathGame: 'mini-loto',
     fetchOfficial: () =>
       fetchOfficialMizuhoLoto({
+        probeFile: 'jp-mini-loto-probe.json',
         type: 'miniloto',
         currentPath: '/takarakuji/check/loto/miniloto/index.html',
         oldPrefix: 'loto',
@@ -81,6 +82,7 @@ const games = [
     pathGame: 'loto6',
     fetchOfficial: () =>
       fetchOfficialMizuhoLoto({
+        probeFile: 'jp-loto6-probe.json',
         type: 'loto6',
         currentPath: '/takarakuji/check/loto/loto6/index.html',
         oldPrefix: 'loto6',
@@ -246,7 +248,12 @@ async function fetchOfficialMarkSix() {
   return draws;
 }
 
-async function fetchOfficialMizuhoLoto({ type, currentPath, oldPrefix, numberCount }) {
+async function fetchOfficialMizuhoLoto({ probeFile, type, currentPath, oldPrefix, numberCount }) {
+  const probeDraws = await readProbeDraws(probeFile, { numberCount });
+  if (probeDraws.length > 0) {
+    return probeDraws;
+  }
+
   const urls = new Set([new URL(currentPath, MIZUHO_BASE).toString()]);
   const indexUrl = new URL('/takarakuji/check/loto/backnumber/index.html', MIZUHO_BASE).toString();
   const indexHtml = await fetchText(indexUrl);
@@ -266,6 +273,33 @@ async function fetchOfficialMizuhoLoto({ type, currentPath, oldPrefix, numberCou
     draws.push(...parseMizuhoLotoHtml(html, { numberCount }));
   }
   return draws;
+}
+
+async function readProbeDraws(probeFile, { numberCount }) {
+  if (!probeFile) return [];
+  const path = resolve(root, 'tmp', probeFile);
+  let payload;
+  try {
+    payload = JSON.parse(await readFile(path, 'utf8'));
+  } catch (_error) {
+    return [];
+  }
+
+  const draws = Array.isArray(payload.draws) ? payload.draws : [];
+  return draws
+    .map((draw) => {
+      const drawId = stringValue(draw.drawId);
+      const drawDate = normalizeDrawDate(draw.drawDate);
+      const numbers = Array.isArray(draw.numbers)
+        ? draw.numbers.map(parseInteger).filter((value) => value != null)
+        : [];
+      const specialNumber = parseInteger(draw.specialNumber);
+      if (!drawId || !drawDate || numbers.length !== numberCount || specialNumber == null) {
+        return null;
+      }
+      return officialDraw({ drawId, drawDate, numbers, specialNumber });
+    })
+    .filter(Boolean);
 }
 
 function extractMizuhoLinks(html, type) {

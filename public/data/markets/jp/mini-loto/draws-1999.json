@@ -1,11 +1,291 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-26T17:41:44.502Z",
+  "generatedAt": "2026-05-27T08:35:24.927Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "1999",
-  "drawCount": 6,
+  "drawCount": 26,
   "draws": [
+    {
+      "drawId": "1",
+      "drawDate": "1999-04-13",
+      "numbers": [
+        1,
+        3,
+        17,
+        20,
+        25
+      ],
+      "specialNumber": 26,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2",
+      "drawDate": "1999-04-27",
+      "numbers": [
+        2,
+        11,
+        12,
+        21,
+        30
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "3",
+      "drawDate": "1999-05-11",
+      "numbers": [
+        1,
+        8,
+        10,
+        24,
+        30
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "4",
+      "drawDate": "1999-05-25",
+      "numbers": [
+        11,
+        12,
+        14,
+        20,
+        31
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "5",
+      "drawDate": "1999-06-08",
+      "numbers": [
+        8,
+        9,
+        15,
+        21,
+        25
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "6",
+      "drawDate": "1999-06-22",
+      "numbers": [
+        2,
+        11,
+        16,
+        24,
+        29
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "7",
+      "drawDate": "1999-07-06",
+      "numbers": [
+        3,
+        24,
+        25,
+        26,
+        31
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "8",
+      "drawDate": "1999-07-20",
+      "numbers": [
+        22,
+        24,
+        25,
+        28,
+        30
+      ],
+      "specialNumber": 21,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "9",
+      "drawDate": "1999-08-03",
+      "numbers": [
+        2,
+        11,
+        12,
+        13,
+        28
+      ],
+      "specialNumber": 15,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "10",
+      "drawDate": "1999-08-17",
+      "numbers": [
+        8,
+        19,
+        21,
+        23,
+        30
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "11",
+      "drawDate": "1999-08-31",
+      "numbers": [
+        17,
+        18,
+        19,
+        20,
+        30
+      ],
+      "specialNumber": 31,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "12",
+      "drawDate": "1999-09-14",
+      "numbers": [
+        5,
+        9,
+        13,
+        16,
+        19
+      ],
+      "specialNumber": 21,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "13",
+      "drawDate": "1999-09-28",
+      "numbers": [
+        6,
+        11,
+        18,
+        25,
+        28
+      ],
+      "specialNumber": 20,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "14",
+      "drawDate": "1999-10-05",
+      "numbers": [
+        2,
+        21,
+        24,
+        26,
+        29
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "15",
+      "drawDate": "1999-10-12",
+      "numbers": [
+        6,
+        8,
+        17,
+        23,
+        24
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "16",
+      "drawDate": "1999-10-19",
+      "numbers": [
+        2,
+        20,
+        24,
+        26,
+        27
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "17",
+      "drawDate": "1999-10-26",
+      "numbers": [
+        10,
+        18,
+        20,
+        25,
+        27
+      ],
+      "specialNumber": 1,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "18",
+      "drawDate": "1999-11-02",
+      "numbers": [
+        1,
+        14,
+        16,
+        23,
+        25
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "19",
+      "drawDate": "1999-11-09",
+      "numbers": [
+        2,
+        9,
+        10,
+        22,
+        27
+      ],
+      "specialNumber": 1,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "20",
+      "drawDate": "1999-11-16",
+      "numbers": [
+        14,
+        20,
+        22,
+        25,
+        30
+      ],
+      "specialNumber": 15,
+      "status": "official",
+      "verificationStatus": "official"
+    },
     {
       "drawId": "21",
       "drawDate": "1999-11-23",
@@ -17,8 +297,8 @@
         31
       ],
       "specialNumber": 6,
-      "status": "official_seed",
-      "verificationStatus": "official_seed"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "22",
@@ -31,8 +311,8 @@
         30
       ],
       "specialNumber": 14,
-      "status": "official_seed",
-      "verificationStatus": "official_seed"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "23",
@@ -45,8 +325,8 @@
         26
       ],
       "specialNumber": 15,
-      "status": "official_seed",
-      "verificationStatus": "official_seed"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "24",
@@ -59,8 +339,8 @@
         28
       ],
       "specialNumber": 15,
-      "status": "official_seed",
-      "verificationStatus": "official_seed"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "25",
@@ -73,8 +353,8 @@
         29
       ],
       "specialNumber": 15,
-      "status": "official_seed",
-      "verificationStatus": "official_seed"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "26",
@@ -87,23 +367,23 @@
         15
       ],
       "specialNumber": 4,
-      "status": "official_seed",
-      "verificationStatus": "official_seed"
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_seed",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/backnumber/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
+      "ok": true,
+      "drawCount": 1388,
+      "error": null
     },
     "seed": {
-      "ok": true,
-      "drawCount": 14
+      "ok": false,
+      "drawCount": 0
     },
     "merged": {
-      "totalDrawCount": 14
+      "totalDrawCount": 1388
     }
   }
 }

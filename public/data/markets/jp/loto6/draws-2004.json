@@ -1,0 +1,805 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-27T08:35:24.927Z",
+  "marketId": "JP",
+  "gameId": "loto6_jp",
+  "year": "2004",
+  "drawCount": 52,
+  "draws": [
+    {
+      "drawId": "168",
+      "drawDate": "2004-01-08",
+      "numbers": [
+        1,
+        6,
+        31,
+        32,
+        36,
+        39
+      ],
+      "specialNumber": 42,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "169",
+      "drawDate": "2004-01-15",
+      "numbers": [
+        3,
+        15,
+        17,
+        19,
+        26,
+        36
+      ],
+      "specialNumber": 39,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "170",
+      "drawDate": "2004-01-22",
+      "numbers": [
+        10,
+        12,
+        15,
+        17,
+        30,
+        31
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "171",
+      "drawDate": "2004-01-29",
+      "numbers": [
+        5,
+        6,
+        17,
+        23,
+        32,
+        33
+      ],
+      "specialNumber": 39,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "172",
+      "drawDate": "2004-02-05",
+      "numbers": [
+        10,
+        11,
+        22,
+        23,
+        33,
+        34
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "173",
+      "drawDate": "2004-02-12",
+      "numbers": [
+        6,
+        10,
+        22,
+        30,
+        31,
+        35
+      ],
+      "specialNumber": 18,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "174",
+      "drawDate": "2004-02-19",
+      "numbers": [
+        2,
+        9,
+        16,
+        36,
+        38,
+        42
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "175",
+      "drawDate": "2004-02-26",
+      "numbers": [
+        2,
+        3,
+        10,
+        22,
+        28,
+        40
+      ],
+      "specialNumber": 43,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "176",
+      "drawDate": "2004-03-04",
+      "numbers": [
+        8,
+        19,
+        25,
+        31,
+        34,
+        37
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "177",
+      "drawDate": "2004-03-11",
+      "numbers": [
+        6,
+        18,
+        19,
+        30,
+        36,
+        41
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "178",
+      "drawDate": "2004-03-18",
+      "numbers": [
+        10,
+        22,
+        27,
+        30,
+        36,
+        39
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "179",
+      "drawDate": "2004-03-25",
+      "numbers": [
+        3,
+        6,
+        11,
+        13,
+        15,
+        16
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "180",
+      "drawDate": "2004-04-01",
+      "numbers": [
+        4,
+        10,
+        11,
+        12,
+        20,
+        36
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "181",
+      "drawDate": "2004-04-08",
+      "numbers": [
+        1,
+        2,
+        7,
+        21,
+        29,
+        30
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "182",
+      "drawDate": "2004-04-15",
+      "numbers": [
+        22,
+        23,
+        28,
+        37,
+        40,
+        43
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "183",
+      "drawDate": "2004-04-22",
+      "numbers": [
+        14,
+        29,
+        31,
+        36,
+        38,
+        40
+      ],
+      "specialNumber": 33,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "184",
+      "drawDate": "2004-04-29",
+      "numbers": [
+        5,
+        7,
+        23,
+        31,
+        39,
+        42
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "185",
+      "drawDate": "2004-05-06",
+      "numbers": [
+        8,
+        13,
+        14,
+        18,
+        35,
+        41
+      ],
+      "specialNumber": 33,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "186",
+      "drawDate": "2004-05-13",
+      "numbers": [
+        7,
+        16,
+        18,
+        33,
+        36,
+        41
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "187",
+      "drawDate": "2004-05-20",
+      "numbers": [
+        12,
+        21,
+        22,
+        27,
+        39,
+        40
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "188",
+      "drawDate": "2004-05-27",
+      "numbers": [
+        3,
+        8,
+        18,
+        25,
+        26,
+        39
+      ],
+      "specialNumber": 38,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "189",
+      "drawDate": "2004-06-03",
+      "numbers": [
+        3,
+        32,
+        35,
+        36,
+        39,
+        40
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "190",
+      "drawDate": "2004-06-10",
+      "numbers": [
+        17,
+        23,
+        30,
+        31,
+        39,
+        43
+      ],
+      "specialNumber": 42,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "191",
+      "drawDate": "2004-06-17",
+      "numbers": [
+        4,
+        7,
+        25,
+        27,
+        34,
+        43
+      ],
+      "specialNumber": 35,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "192",
+      "drawDate": "2004-06-24",
+      "numbers": [
+        3,
+        7,
+        19,
+        27,
+        39,
+        41
+      ],
+      "specialNumber": 10,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "193",
+      "drawDate": "2004-07-01",
+      "numbers": [
+        3,
+        4,
+        18,
+        31,
+        40,
+        43
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "194",
+      "drawDate": "2004-07-08",
+      "numbers": [
+        4,
+        11,
+        12,
+        21,
+        36,
+        38
+      ],
+      "specialNumber": 37,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "195",
+      "drawDate": "2004-07-15",
+      "numbers": [
+        5,
+        10,
+        12,
+        22,
+        26,
+        41
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "196",
+      "drawDate": "2004-07-22",
+      "numbers": [
+        4,
+        5,
+        11,
+        16,
+        30,
+        33
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "197",
+      "drawDate": "2004-07-29",
+      "numbers": [
+        9,
+        10,
+        17,
+        22,
+        28,
+        30
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "198",
+      "drawDate": "2004-08-05",
+      "numbers": [
+        4,
+        5,
+        6,
+        17,
+        20,
+        42
+      ],
+      "specialNumber": 10,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "199",
+      "drawDate": "2004-08-12",
+      "numbers": [
+        3,
+        14,
+        24,
+        25,
+        33,
+        36
+      ],
+      "specialNumber": 41,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "200",
+      "drawDate": "2004-08-19",
+      "numbers": [
+        4,
+        7,
+        11,
+        19,
+        25,
+        28
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "201",
+      "drawDate": "2004-08-26",
+      "numbers": [
+        10,
+        13,
+        16,
+        17,
+        24,
+        39
+      ],
+      "specialNumber": 43,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "202",
+      "drawDate": "2004-09-02",
+      "numbers": [
+        9,
+        18,
+        26,
+        28,
+        33,
+        40
+      ],
+      "specialNumber": 10,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "203",
+      "drawDate": "2004-09-09",
+      "numbers": [
+        12,
+        18,
+        20,
+        27,
+        35,
+        37
+      ],
+      "specialNumber": 39,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "204",
+      "drawDate": "2004-09-16",
+      "numbers": [
+        2,
+        17,
+        20,
+        25,
+        39,
+        42
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "205",
+      "drawDate": "2004-09-23",
+      "numbers": [
+        4,
+        7,
+        9,
+        16,
+        18,
+        34
+      ],
+      "specialNumber": 26,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "206",
+      "drawDate": "2004-09-30",
+      "numbers": [
+        1,
+        3,
+        16,
+        22,
+        41,
+        43
+      ],
+      "specialNumber": 13,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "207",
+      "drawDate": "2004-10-07",
+      "numbers": [
+        17,
+        21,
+        23,
+        30,
+        31,
+        34
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "208",
+      "drawDate": "2004-10-14",
+      "numbers": [
+        18,
+        24,
+        29,
+        32,
+        35,
+        39
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "209",
+      "drawDate": "2004-10-21",
+      "numbers": [
+        8,
+        27,
+        30,
+        35,
+        40,
+        41
+      ],
+      "specialNumber": 9,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "210",
+      "drawDate": "2004-10-28",
+      "numbers": [
+        1,
+        6,
+        21,
+        22,
+        37,
+        40
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "211",
+      "drawDate": "2004-11-04",
+      "numbers": [
+        10,
+        14,
+        23,
+        26,
+        33,
+        36
+      ],
+      "specialNumber": 24,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "212",
+      "drawDate": "2004-11-11",
+      "numbers": [
+        1,
+        11,
+        17,
+        32,
+        35,
+        39
+      ],
+      "specialNumber": 20,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "213",
+      "drawDate": "2004-11-18",
+      "numbers": [
+        4,
+        7,
+        18,
+        26,
+        29,
+        43
+      ],
+      "specialNumber": 8,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "214",
+      "drawDate": "2004-11-25",
+      "numbers": [
+        4,
+        7,
+        9,
+        11,
+        20,
+        36
+      ],
+      "specialNumber": 32,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "215",
+      "drawDate": "2004-12-02",
+      "numbers": [
+        1,
+        4,
+        13,
+        18,
+        22,
+        31
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "216",
+      "drawDate": "2004-12-09",
+      "numbers": [
+        9,
+        21,
+        29,
+        33,
+        35,
+        41
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "217",
+      "drawDate": "2004-12-16",
+      "numbers": [
+        8,
+        19,
+        23,
+        27,
+        29,
+        39
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "218",
+      "drawDate": "2004-12-23",
+      "numbers": [
+        8,
+        10,
+        18,
+        22,
+        31,
+        36
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "219",
+      "drawDate": "2004-12-30",
+      "numbers": [
+        27,
+        28,
+        29,
+        34,
+        35,
+        39
+      ],
+      "specialNumber": 33,
+      "status": "official",
+      "verificationStatus": "official"
+    }
+  ],
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 2105,
+      "error": null
+    },
+    "seed": {
+      "ok": false,
+      "drawCount": 0
+    },
+    "merged": {
+      "totalDrawCount": 2105
+    }
+  }
+}

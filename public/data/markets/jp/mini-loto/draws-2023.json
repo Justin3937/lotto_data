@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-27T08:35:24.927Z",
+  "marketId": "JP",
+  "gameId": "mini_loto",
+  "year": "2023",
+  "drawCount": 51,
+  "draws": [
+    {
+      "drawId": "1214",
+      "drawDate": "2023-01-10",
+      "numbers": [
+        5,
+        9,
+        10,
+        19,
+        26
+      ],
+      "specialNumber": 2,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1215",
+      "drawDate": "2023-01-17",
+      "numbers": [
+        1,
+        2,
+        3,
+        5,
+        20
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1216",
+      "drawDate": "2023-01-24",
+      "numbers": [
+        10,
+        12,
+        18,
+        25,
+        28
+      ],
+      "specialNumber": 13,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1217",
+      "drawDate": "2023-01-31",
+      "numbers": [
+        8,
+        10,
+        14,
+        20,
+        25
+      ],
+      "specialNumber": 30,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1218",
+      "drawDate": "2023-02-07",
+      "numbers": [
+        1,
+        3,
+        4,
+        7,
+        11
+      ],
+      "specialNumber": 16,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1219",
+      "drawDate": "2023-02-14",
+      "numbers": [
+        9,
+        10,
+        13,
+        21,
+        29
+      ],
+      "specialNumber": 11,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1220",
+      "drawDate": "2023-02-21",
+      "numbers": [
+        2,
+        5,
+        11,
+        12,
+        30
+      ],
+      "specialNumber": 16,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1221",
+      "drawDate": "2023-02-28",
+      "numbers": [
+        4,
+        11,
+        13,
+        21,
+        26
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1222",
+      "drawDate": "2023-03-07",
+      "numbers": [
+        4,
+        18,
+        23,
+        26,
+        28
+      ],
+      "specialNumber": 7,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1223",
+      "drawDate": "2023-03-14",
+      "numbers": [
+        1,
+        11,
+        21,
+        26,
+        31
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1224",
+      "drawDate": "2023-03-21",
+      "numbers": [
+        1,
+        5,
+        8,
+        11,
+        22
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1225",
+      "drawDate": "2023-03-28",
+      "numbers": [
+        1,
+        7,
+        15,
+        29,
+        31
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1226",
+      "drawDate": "2023-04-04",
+      "numbers": [
+        2,
+        5,
+        13,
+        18,
+        21
+      ],
+      "specialNumber": 4,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1227",
+      "drawDate": "2023-04-11",
+      "numbers": [
+        1,
+        5,
+        11,
+        20,
+        26
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1228",
+      "drawDate": "2023-04-18",
+      "numbers": [
+        1,
+        4,
+        18,
+        19,
+        26
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1229",
+      "drawDate": "2023-04-25",
+      "numbers": [
+        1,
+        5,
+        7,
+        12,
+        27
+      ],
+      "specialNumber": 26,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1230",
+      "drawDate": "2023-05-02",
+      "numbers": [
+        4,
+        18,
+        21,
+        22,
+        23
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1231",
+      "drawDate": "2023-05-09",
+      "numbers": [
+        1,
+        14,
+        20,
+        21,
+        31
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1232",
+      "drawDate": "2023-05-16",
+      "numbers": [
+        4,
+        5,
+        17,
+        27,
+        29
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1233",
+      "drawDate": "2023-05-23",
+      "numbers": [
+        3,
+        8,
+        17,
+        19,
+        23
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1234",
+      "drawDate": "2023-05-30",
+      "numbers": [
+        4,
+        14,
+        15,
+        27,
+        28
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1235",
+      "drawDate": "2023-06-06",
+      "numbers": [
+        8,
+        12,
+        17,
+        22,
+        28
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1236",
+      "drawDate": "2023-06-13",
+      "numbers": [
+        1,
+        18,
+        19,
+        30,
+        31
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1237",
+      "drawDate": "2023-06-20",
+      "numbers": [
+        2,
+        9,
+        10,
+        25,
+        31
+      ],
+      "specialNumber": 18,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1238",
+      "drawDate": "2023-06-27",
+      "numbers": [
+        13,
+        16,
+        19,
+        21,
+        25
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1239",
+      "drawDate": "2023-07-04",
+      "numbers": [
+        7,
+        9,
+        11,
+        18,
+        30
+      ],
+      "specialNumber": 1,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1240",
+      "drawDate": "2023-07-11",
+      "numbers": [
+        13,
+        15,
+        20,
+        27,
+        30
+      ],
+      "specialNumber": 6,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1241",
+      "drawDate": "2023-07-18",
+      "numbers": [
+        1,
+        2,
+        3,
+        7,
+        27
+      ],
+      "specialNumber": 11,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1242",
+      "drawDate": "2023-07-25",
+      "numbers": [
+        5,
+        7,
+        18,
+        19,
+        27
+      ],
+      "specialNumber": 29,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1243",
+      "drawDate": "2023-08-01",
+      "numbers": [
+        2,
+        4,
+        13,
+        15,
+        20
+      ],
+      "specialNumber": 24,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1244",
+      "drawDate": "2023-08-08",
+      "numbers": [
+        2,
+        6,
+        9,
+        11,
+        19
+      ],
+      "specialNumber": 22,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1245",
+      "drawDate": "2023-08-15",
+      "numbers": [
+        10,
+        11,
+        16,
+        29,
+        30
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1246",
+      "drawDate": "2023-08-22",
+      "numbers": [
+        16,
+        17,
+        20,
+        21,
+        28
+      ],
+      "specialNumber": 18,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1247",
+      "drawDate": "2023-08-29",
+      "numbers": [
+        9,
+        15,
+        23,
+        26,
+        30
+      ],
+      "specialNumber": 19,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1248",
+      "drawDate": "2023-09-05",
+      "numbers": [
+        2,
+        4,
+        5,
+        14,
+        25
+      ],
+      "specialNumber": 24,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1249",
+      "drawDate": "2023-09-12",
+      "numbers": [
+        7,
+        9,
+        11,
+        14,
+        21
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1250",
+      "drawDate": "2023-09-19",
+      "numbers": [
+        2,
+        12,
+        13,
+        19,
+        23
+      ],
+      "specialNumber": 27,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1251",
+      "drawDate": "2023-09-26",
+      "numbers": [
+        3,
+        4,
+        5,
+        30,
+        31
+      ],
+      "specialNumber": 17,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1252",
+      "drawDate": "2023-10-03",
+      "numbers": [
+        1,
+        4,
+        11,
+        25,
+        30
+      ],
+      "specialNumber": 10,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1253",
+      "drawDate": "2023-10-10",
+      "numbers": [
+        1,
+        11,
+        17,
+        19,
+        25
+      ],
+      "specialNumber": 28,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1254",
+      "drawDate": "2023-10-17",
+      "numbers": [
+        1,
+        5,
+        12,
+        17,
+        28
+      ],
+      "specialNumber": 14,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1255",
+      "drawDate": "2023-10-24",
+      "numbers": [
+        2,
+        3,
+        4,
+        17,
+        23
+      ],
+      "specialNumber": 12,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1256",
+      "drawDate": "2023-10-31",
+      "numbers": [
+        7,
+        8,
+        14,
+        19,
+        21
+      ],
+      "specialNumber": 23,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1257",
+      "drawDate": "2023-11-07",
+      "numbers": [
+        8,
+        13,
+        19,
+        22,
+        24
+      ],
+      "specialNumber": 21,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1258",
+      "drawDate": "2023-11-14",
+      "numbers": [
+        3,
+        6,
+        12,
+        19,
+        30
+      ],
+      "specialNumber": 13,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1259",
+      "drawDate": "2023-11-21",
+      "numbers": [
+        1,
+        13,
+        17,
+        18,
+        22
+      ],
+      "specialNumber": 25,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1260",
+      "drawDate": "2023-11-28",
+      "numbers": [
+        2,
+        4,
+        14,
+        21,
+        29
+      ],
+      "specialNumber": 12,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1261",
+      "drawDate": "2023-12-05",
+      "numbers": [
+        19,
+        21,
+        25,
+        29,
+        31
+      ],
+      "specialNumber": 7,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1262",
+      "drawDate": "2023-12-12",
+      "numbers": [
+        11,
+        16,
+        18,
+        19,
+        29
+      ],
+      "specialNumber": 31,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1263",
+      "drawDate": "2023-12-19",
+      "numbers": [
+        1,
+        2,
+        15,
+        25,
+        28
+      ],
+      "specialNumber": 5,
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "1264",
+      "drawDate": "2023-12-26",
+      "numbers": [
+        2,
+        7,
+        10,
+        22,
+        27
+      ],
+      "specialNumber": 24,
+      "status": "official",
+      "verificationStatus": "official"
+    }
+  ],
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 1388,
+      "error": null
+    },
+    "seed": {
+      "ok": false,
+      "drawCount": 0
+    },
+    "merged": {
+      "totalDrawCount": 1388
+    }
+  }
+}
