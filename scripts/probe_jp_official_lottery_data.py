@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-PoC: fetch JP Loto 6 & Mini Loto historical draws from Mizuho Bank official pages.
+PoC: fetch JP Loto 6, Mini Loto, and Loto 7 historical draws from Mizuho Bank official pages.
 
 Usage:
   pip install -r scripts/requirements-probe.txt
@@ -63,8 +63,9 @@ class FetchReport:
 class GameConfig:
     game_id: str
     main_count: int
+    special_count: int
     warmup_url: str
-    csv_url_tpl: str
+    csv_url_tpl: str | None
     csv_start: int
     html_url_tpl: str
     html_start: int
@@ -77,6 +78,7 @@ class GameConfig:
 LOTO6 = GameConfig(
     game_id="loto6_jp",
     main_count=6,
+    special_count=1,
     warmup_url="https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html",
     csv_url_tpl="https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto6/csv/A102{n:04d}.CSV",
     csv_start=461,
@@ -91,6 +93,7 @@ LOTO6 = GameConfig(
 MINI_LOTO = GameConfig(
     game_id="mini_loto",
     main_count=5,
+    special_count=1,
     warmup_url="https://www.mizuhobank.co.jp/takarakuji/check/loto/miniloto/index.html",
     csv_url_tpl="https://www.mizuhobank.co.jp/retail/takarakuji/loto/miniloto/csv/A101{n:04d}.CSV",
     csv_start=521,
@@ -100,6 +103,21 @@ MINI_LOTO = GameConfig(
     html_step=20,
     detail_url_tpl=None,
     latest_guess=1400,
+)
+
+LOTO7 = GameConfig(
+    game_id="loto7_jp",
+    main_count=7,
+    special_count=2,
+    warmup_url="https://www.mizuhobank.co.jp/takarakuji/check/loto/loto7/index.html",
+    csv_url_tpl=None,
+    csv_start=0,
+    html_url_tpl="https://www.mizuhobank.co.jp/takarakuji/check/loto/backnumber/detail.html?fromto={start}_{end}&type=loto7",
+    html_start=1,
+    html_end=700,
+    html_step=20,
+    detail_url_tpl=None,
+    latest_guess=700,
 )
 
 
@@ -167,7 +185,12 @@ def is_access_denied(status: int, text: str) -> bool:
     return status == 403 or "Access Denied" in text or "edgesuite.net" in text
 
 
-def parse_csv_draw(text: str, main_count: int, source_url: str) -> dict[str, Any] | None:
+def parse_csv_draw(
+    text: str,
+    main_count: int,
+    special_count: int,
+    source_url: str,
+) -> dict[str, Any] | None:
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
     if not lines:
         return None
@@ -189,41 +212,53 @@ def parse_csv_draw(text: str, main_count: int, source_url: str) -> dict[str, Any
             break
 
     main_numbers: list[int] = []
-    special_number: int | None = None
+    special_numbers: list[int] = []
     for line in lines:
         if line.startswith("本数字,"):
             parts = line.split(",")
             if "ボーナス数字" in parts:
                 idx = parts.index("ボーナス数字")
                 main_numbers = [int(x) for x in parts[1:idx] if x.isdigit()]
-                if idx + 1 < len(parts) and parts[idx + 1].isdigit():
-                    special_number = int(parts[idx + 1])
+                special_numbers = [
+                    int(x)
+                    for x in parts[idx + 1 : idx + 1 + special_count]
+                    if x.isdigit()
+                ]
             else:
                 nums = [int(x) for x in parts[1:] if x.isdigit()]
                 main_numbers = nums[:main_count]
-                if len(nums) > main_count:
-                    special_number = nums[main_count]
+                special_numbers = nums[main_count : main_count + special_count]
 
-    if not draw_date or len(main_numbers) != main_count or special_number is None:
+    if (
+        not draw_date
+        or len(main_numbers) != main_count
+        or len(special_numbers) != special_count
+    ):
         return None
 
     return {
         "drawId": draw_id,
         "drawDate": draw_date,
         "numbers": main_numbers,
-        "specialNumber": special_number,
+        "specialNumber": special_numbers[0],
+        "specialNumbers": special_numbers,
         "source": "official",
         "_sourceUrl": source_url,
     }
 
 
-def parse_html_draws(html: str, main_count: int, source_url: str) -> list[dict[str, Any]]:
+def parse_html_draws(
+    html: str,
+    main_count: int,
+    special_count: int,
+    source_url: str,
+) -> list[dict[str, Any]]:
     soup = BeautifulSoup(html, "html.parser")
     draws: list[dict[str, Any]] = []
     for table in soup.find_all("table"):
         for tr in table.find_all("tr"):
             cells = [c.get_text(strip=True) for c in tr.find_all(["th", "td"])]
-            if len(cells) < 2 + main_count + 1:
+            if len(cells) < 2 + main_count + special_count:
                 continue
             if cells[0] in ("回別", "回"):
                 continue
@@ -234,16 +269,22 @@ def parse_html_draws(html: str, main_count: int, source_url: str) -> list[dict[s
                 continue
             draw_id = str(int(draw_id))
 
-            nums = [int(x) for x in cells[2 : 2 + main_count + 1] if x.isdigit()]
-            if len(nums) != main_count + 1:
+            nums = [
+                int(x)
+                for x in cells[2 : 2 + main_count + special_count]
+                if x.isdigit()
+            ]
+            if len(nums) != main_count + special_count:
                 continue
+            special_numbers = nums[main_count : main_count + special_count]
 
             draws.append(
                 {
                     "drawId": draw_id,
                     "drawDate": draw_date,
                     "numbers": nums[:main_count],
-                    "specialNumber": nums[main_count],
+                    "specialNumber": special_numbers[0],
+                    "specialNumbers": special_numbers,
                     "source": "official",
                     "_sourceUrl": source_url,
                 }
@@ -252,6 +293,9 @@ def parse_html_draws(html: str, main_count: int, source_url: str) -> list[dict[s
 
 
 def find_latest_csv_draw(page: Page, cfg: GameConfig, report: FetchReport) -> int:
+    if cfg.csv_url_tpl is None:
+        return cfg.csv_start - 1
+
     n = cfg.latest_guess
     while n >= cfg.csv_start:
         url = cfg.csv_url_tpl.format(n=n)
@@ -297,7 +341,7 @@ def collect_game(page: Page, cfg: GameConfig, report: FetchReport) -> list[dict[
             )
             continue
 
-        parsed = parse_html_draws(text, cfg.main_count, url)
+        parsed = parse_html_draws(text, cfg.main_count, cfg.special_count, url)
         if not parsed:
             report.record_fail(url, "parse_failed")
             continue
@@ -322,7 +366,7 @@ def collect_game(page: Page, cfg: GameConfig, report: FetchReport) -> list[dict[
                 )
                 continue
 
-            parsed = parse_html_draws(text, cfg.main_count, url)
+            parsed = parse_html_draws(text, cfg.main_count, cfg.special_count, url)
             if not parsed:
                 report.record_fail(url, "parse_failed")
                 continue
@@ -332,31 +376,32 @@ def collect_game(page: Page, cfg: GameConfig, report: FetchReport) -> list[dict[
             if i % 5 == 0 or i == len(html_starts):
                 print(f"  [{cfg.game_id}] detail pages {i}/{len(html_starts)}", flush=True)
 
-    latest = find_latest_csv_draw(page, cfg, report)
-    print(f"  [{cfg.game_id}] latest CSV draw: {latest}", flush=True)
+    if cfg.csv_url_tpl is not None:
+        latest = find_latest_csv_draw(page, cfg, report)
+        print(f"  [{cfg.game_id}] latest CSV draw: {latest}", flush=True)
 
-    csv_total = latest - cfg.csv_start + 1
-    for idx, n in enumerate(range(cfg.csv_start, latest + 1), 1):
-        url = cfg.csv_url_tpl.format(n=n)
-        status, text = fetch_text(page, url)
-        time.sleep(REQUEST_DELAY_SEC)
-        if status != 200 or is_access_denied(status, text):
-            report.record_fail(
-                url,
-                f"status={status}",
-                access_denied=is_access_denied(status, text),
-            )
-            continue
+        csv_total = latest - cfg.csv_start + 1
+        for idx, n in enumerate(range(cfg.csv_start, latest + 1), 1):
+            url = cfg.csv_url_tpl.format(n=n)
+            status, text = fetch_text(page, url)
+            time.sleep(REQUEST_DELAY_SEC)
+            if status != 200 or is_access_denied(status, text):
+                report.record_fail(
+                    url,
+                    f"status={status}",
+                    access_denied=is_access_denied(status, text),
+                )
+                continue
 
-        draw = parse_csv_draw(text, cfg.main_count, url)
-        if not draw:
-            report.record_fail(url, "parse_failed")
-            continue
+            draw = parse_csv_draw(text, cfg.main_count, cfg.special_count, url)
+            if not draw:
+                report.record_fail(url, "parse_failed")
+                continue
 
-        report.record_ok(url)
-        draws.append(draw)
-        if idx % 100 == 0 or idx == csv_total:
-            print(f"  [{cfg.game_id}] CSV {idx}/{csv_total}", flush=True)
+            report.record_ok(url)
+            draws.append(draw)
+            if idx % 100 == 0 or idx == csv_total:
+                print(f"  [{cfg.game_id}] CSV {idx}/{csv_total}", flush=True)
 
     return dedupe_and_sort(draws)
 
@@ -453,24 +498,36 @@ def main() -> int:
         report.record_ok(MINI_LOTO.warmup_url)
 
         mini_draws = collect_game(page, MINI_LOTO, report)
+
+        # Switch context to Loto 7 index
+        page.goto(LOTO7.warmup_url, wait_until="domcontentloaded", timeout=120_000)
+        time.sleep(1)
+        report.record_ok(LOTO7.warmup_url)
+
+        loto7_draws = collect_game(page, LOTO7, report)
         browser.close()
 
     loto6_out = build_output(LOTO6, loto6_draws)
     mini_out = build_output(MINI_LOTO, mini_draws)
+    loto7_out = build_output(LOTO7, loto7_draws)
 
     loto6_path = TMP_DIR / "jp-loto6-probe.json"
     mini_path = TMP_DIR / "jp-mini-loto-probe.json"
+    loto7_path = TMP_DIR / "jp-loto7-probe.json"
     write_json(loto6_path, loto6_out)
     write_json(mini_path, mini_out)
+    write_json(loto7_path, loto7_out)
 
     print("\n=== Results ===")
     print_stats("Loto 6", loto6_draws, len(report.failed_urls))
     print_stats("Mini Loto", mini_draws, len(report.failed_urls))
+    print_stats("Loto 7", loto7_draws, len(report.failed_urls))
     print_report(report)
 
     print("\n=== Output files ===")
     print(loto6_path)
     print(mini_path)
+    print(loto7_path)
 
     print("\n=== Productization next steps ===")
     print("1. Run as scheduled job (e.g. weekly) on a server with headed Chromium or approved IP.")
@@ -479,9 +536,9 @@ def main() -> int:
     print("4. Add retries/backoff for transient 403; alert if Access Denied spikes.")
     print("5. Validate draw count vs official index before publishing to app cache.")
 
-    ok = len(loto6_draws) >= 100 and len(mini_draws) >= 100
+    ok = len(loto6_draws) >= 100 and len(mini_draws) >= 100 and len(loto7_draws) >= 100
     if not ok:
-        print("\nWARNING: acceptance threshold not met (need >100 draws each).")
+        print("\nWARNING: acceptance threshold not met (need >100 draws for each JP game).")
         return 2
     return 0
 

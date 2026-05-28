@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-28T06:37:14.078Z",
+  "marketId": "US",
+  "gameId": "lotto_america",
+  "totalDrawCount": 7,
+  "latestDrawId": "2026-05-16",
+  "latestDrawDate": "2026-05-16",
+  "years": [
+    {
+      "year": "2026",
+      "drawCount": 7,
+      "firstDrawDate": "2026-05-02",
+      "latestDrawDate": "2026-05-16",
+      "path": "markets/us/lotto-america/draws-2026.json"
+    }
+  ],
+  "verificationStatus": "official_seed",
+  "sourceSummary": {
+    "official": {
+      "ok": false,
+      "drawCount": 0,
+      "error": "Official source returned zero parsed draws"
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 7
+    },
+    "merged": {
+      "totalDrawCount": 7
+    }
+  }
+}

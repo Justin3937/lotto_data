@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-27T18:04:38.882Z",
+  "generatedAt": "2026-05-28T06:37:14.078Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2026",
@@ -17,6 +17,9 @@
         26
       ],
       "specialNumber": 24,
+      "specialNumbers": [
+        24
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -31,6 +34,9 @@
         11
       ],
       "specialNumber": 26,
+      "specialNumbers": [
+        26
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -45,6 +51,9 @@
         31
       ],
       "specialNumber": 21,
+      "specialNumbers": [
+        21
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -59,6 +68,9 @@
         31
       ],
       "specialNumber": 11,
+      "specialNumbers": [
+        11
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -73,6 +85,9 @@
         31
       ],
       "specialNumber": 5,
+      "specialNumbers": [
+        5
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -87,6 +102,9 @@
         29
       ],
       "specialNumber": 26,
+      "specialNumbers": [
+        26
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -101,6 +119,9 @@
         30
       ],
       "specialNumber": 20,
+      "specialNumbers": [
+        20
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -115,6 +136,9 @@
         20
       ],
       "specialNumber": 4,
+      "specialNumbers": [
+        4
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -129,6 +153,9 @@
         29
       ],
       "specialNumber": 3,
+      "specialNumbers": [
+        3
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -143,6 +170,9 @@
         31
       ],
       "specialNumber": 30,
+      "specialNumbers": [
+        30
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -157,6 +187,9 @@
         31
       ],
       "specialNumber": 23,
+      "specialNumbers": [
+        23
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -171,6 +204,9 @@
         28
       ],
       "specialNumber": 6,
+      "specialNumbers": [
+        6
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -185,6 +221,9 @@
         21
       ],
       "specialNumber": 14,
+      "specialNumbers": [
+        14
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -199,6 +238,9 @@
         28
       ],
       "specialNumber": 12,
+      "specialNumbers": [
+        12
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -213,6 +255,9 @@
         31
       ],
       "specialNumber": 25,
+      "specialNumbers": [
+        25
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -227,6 +272,9 @@
         31
       ],
       "specialNumber": 10,
+      "specialNumbers": [
+        10
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -241,6 +289,9 @@
         29
       ],
       "specialNumber": 22,
+      "specialNumbers": [
+        22
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -255,6 +306,9 @@
         31
       ],
       "specialNumber": 11,
+      "specialNumbers": [
+        11
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -269,6 +323,9 @@
         31
       ],
       "specialNumber": 28,
+      "specialNumbers": [
+        28
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -283,6 +340,9 @@
         31
       ],
       "specialNumber": 23,
+      "specialNumbers": [
+        23
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -297,6 +357,9 @@
         23
       ],
       "specialNumber": 21,
+      "specialNumbers": [
+        21
+      ],
       "status": "official",
       "verificationStatus": "official"
     }

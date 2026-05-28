@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-27T18:04:38.882Z",
+  "generatedAt": "2026-05-28T06:37:14.078Z",
   "markets": [
     {
       "marketId": "HK",
@@ -33,6 +33,14 @@
           "drawsIndexPath": "markets/jp/loto6/draws-index.json",
           "allDrawsPath": "markets/jp/loto6/draws-all.json",
           "verificationStatus": "official"
+        },
+        {
+          "gameId": "loto7_jp",
+          "latestDrawId": "678",
+          "latestPath": "markets/jp/loto7/latest.json",
+          "drawsIndexPath": "markets/jp/loto7/draws-index.json",
+          "allDrawsPath": "markets/jp/loto7/draws-all.json",
+          "verificationStatus": "official_seed"
         }
       ]
     },
@@ -54,6 +62,14 @@
           "drawsIndexPath": "markets/us/mega-millions/draws-index.json",
           "allDrawsPath": "markets/us/mega-millions/draws-all.json",
           "verificationStatus": "official"
+        },
+        {
+          "gameId": "lotto_america",
+          "latestDrawId": "2026-05-16",
+          "latestPath": "markets/us/lotto-america/latest.json",
+          "drawsIndexPath": "markets/us/lotto-america/draws-index.json",
+          "allDrawsPath": "markets/us/lotto-america/draws-all.json",
+          "verificationStatus": "official_seed"
         }
       ]
     }

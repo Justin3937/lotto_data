@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-27T18:04:38.882Z",
+  "generatedAt": "2026-05-28T06:37:14.078Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
@@ -14,6 +14,9 @@
       64
     ],
     "specialNumber": 10,
+    "specialNumbers": [
+      10
+    ],
     "status": "official",
     "verificationStatus": "official"
   },
@@ -29,6 +32,9 @@
         60
       ],
       "specialNumber": 6,
+      "specialNumbers": [
+        6
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -43,6 +49,9 @@
         64
       ],
       "specialNumber": 15,
+      "specialNumbers": [
+        15
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -57,6 +66,9 @@
         45
       ],
       "specialNumber": 26,
+      "specialNumbers": [
+        26
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -71,6 +83,9 @@
         61
       ],
       "specialNumber": 1,
+      "specialNumbers": [
+        1
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -85,6 +100,9 @@
         64
       ],
       "specialNumber": 26,
+      "specialNumbers": [
+        26
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -99,6 +117,9 @@
         63
       ],
       "specialNumber": 11,
+      "specialNumbers": [
+        11
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -113,6 +134,9 @@
         57
       ],
       "specialNumber": 2,
+      "specialNumbers": [
+        2
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -127,6 +151,9 @@
         62
       ],
       "specialNumber": 3,
+      "specialNumbers": [
+        3
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -141,6 +168,9 @@
         67
       ],
       "specialNumber": 15,
+      "specialNumbers": [
+        15
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -155,6 +185,9 @@
         65
       ],
       "specialNumber": 14,
+      "specialNumbers": [
+        14
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -169,6 +202,9 @@
         63
       ],
       "specialNumber": 13,
+      "specialNumbers": [
+        13
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -183,6 +219,9 @@
         68
       ],
       "specialNumber": 5,
+      "specialNumbers": [
+        5
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -197,6 +236,9 @@
         56
       ],
       "specialNumber": 22,
+      "specialNumbers": [
+        22
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -211,6 +253,9 @@
         64
       ],
       "specialNumber": 7,
+      "specialNumbers": [
+        7
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -225,6 +270,9 @@
         67
       ],
       "specialNumber": 15,
+      "specialNumbers": [
+        15
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -239,6 +287,9 @@
         65
       ],
       "specialNumber": 18,
+      "specialNumbers": [
+        18
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -253,6 +304,9 @@
         65
       ],
       "specialNumber": 12,
+      "specialNumbers": [
+        12
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -267,6 +321,9 @@
         57
       ],
       "specialNumber": 25,
+      "specialNumbers": [
+        25
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -281,6 +338,9 @@
         66
       ],
       "specialNumber": 26,
+      "specialNumbers": [
+        26
+      ],
       "status": "official",
       "verificationStatus": "official"
     },
@@ -295,6 +355,9 @@
         64
       ],
       "specialNumber": 10,
+      "specialNumbers": [
+        10
+      ],
       "status": "official",
       "verificationStatus": "official"
     }

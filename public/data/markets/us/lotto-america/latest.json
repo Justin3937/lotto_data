@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-28T06:37:14.078Z",
+  "marketId": "US",
+  "gameId": "lotto_america",
+  "latestDraw": {
+    "drawId": "2026-05-16",
+    "drawDate": "2026-05-16",
+    "numbers": [
+      1,
+      4,
+      24,
+      31,
+      46
+    ],
+    "specialNumber": 2,
+    "specialNumbers": [
+      2
+    ],
+    "status": "official_seed",
+    "verificationStatus": "official_seed"
+  },
+  "recentDraws": [
+    {
+      "drawId": "2026-05-02",
+      "drawDate": "2026-05-02",
+      "numbers": [
+        4,
+        18,
+        35,
+        43,
+        50
+      ],
+      "specialNumber": 8,
+      "specialNumbers": [
+        8
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "2026-05-04",
+      "drawDate": "2026-05-04",
+      "numbers": [
+        9,
+        10,
+        12,
+        50,
+        52
+      ],
+      "specialNumber": 3,
+      "specialNumbers": [
+        3
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "2026-05-06",
+      "drawDate": "2026-05-06",
+      "numbers": [
+        3,
+        6,
+        7,
+        18,
+        49
+      ],
+      "specialNumber": 10,
+      "specialNumbers": [
+        10
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "2026-05-09",
+      "drawDate": "2026-05-09",
+      "numbers": [
+        8,
+        12,
+        13,
+        27,
+        42
+      ],
+      "specialNumber": 4,
+      "specialNumbers": [
+        4
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "2026-05-11",
+      "drawDate": "2026-05-11",
+      "numbers": [
+        16,
+        19,
+        22,
+        34,
+        46
+      ],
+      "specialNumber": 1,
+      "specialNumbers": [
+        1
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "2026-05-13",
+      "drawDate": "2026-05-13",
+      "numbers": [
+        17,
+        18,
+        28,
+        37,
+        42
+      ],
+      "specialNumber": 4,
+      "specialNumbers": [
+        4
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    },
+    {
+      "drawId": "2026-05-16",
+      "drawDate": "2026-05-16",
+      "numbers": [
+        1,
+        4,
+        24,
+        31,
+        46
+      ],
+      "specialNumber": 2,
+      "specialNumbers": [
+        2
+      ],
+      "status": "official_seed",
+      "verificationStatus": "official_seed"
+    }
+  ],
+  "verificationStatus": "official_seed",
+  "sourceSummary": {
+    "official": {
+      "ok": false,
+      "drawCount": 0,
+      "error": "Official source returned zero parsed draws"
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 7
+    },
+    "merged": {
+      "totalDrawCount": 7
+    }
+  }
+}

@@ -90,6 +90,21 @@ const games = [
       }),
   },
   {
+    marketId: 'JP',
+    gameId: 'loto7_jp',
+    pathMarket: 'jp',
+    pathGame: 'loto7',
+    fetchOfficial: () =>
+      fetchOfficialMizuhoLoto({
+        probeFile: 'jp-loto7-probe.json',
+        type: 'loto7',
+        currentPath: '/takarakuji/check/loto/loto7/index.html',
+        oldPrefix: 'loto7',
+        numberCount: 7,
+        specialCount: 2,
+      }),
+  },
+  {
     marketId: 'US',
     gameId: 'powerball',
     pathMarket: 'us',
@@ -102,6 +117,13 @@ const games = [
     pathMarket: 'us',
     pathGame: 'mega-millions',
     fetchOfficial: fetchOfficialMegaMillions,
+  },
+  {
+    marketId: 'US',
+    gameId: 'lotto_america',
+    pathMarket: 'us',
+    pathGame: 'lotto-america',
+    fetchOfficial: fetchOfficialLottoAmerica,
   },
 ];
 
@@ -205,6 +227,13 @@ async function fetchOfficialMegaMillions() {
     .filter(Boolean);
 }
 
+async function fetchOfficialLottoAmerica() {
+  // TODO: replace with a stable official batch API if MUSL exposes one.
+  // Keep the game wired into the pipeline; seed data is used until a remote
+  // source is proven stable in CI.
+  return [];
+}
+
 async function fetchOfficialMarkSix() {
   const windows = defaultOfficialFetchWindows(new Date());
   const draws = [];
@@ -248,8 +277,15 @@ async function fetchOfficialMarkSix() {
   return draws;
 }
 
-async function fetchOfficialMizuhoLoto({ probeFile, type, currentPath, oldPrefix, numberCount }) {
-  const probeDraws = await readProbeDraws(probeFile, { numberCount });
+async function fetchOfficialMizuhoLoto({
+  probeFile,
+  type,
+  currentPath,
+  oldPrefix,
+  numberCount,
+  specialCount = 1,
+}) {
+  const probeDraws = await readProbeDraws(probeFile, { numberCount, specialCount });
   if (probeDraws.length > 0) {
     return probeDraws;
   }
@@ -270,12 +306,12 @@ async function fetchOfficialMizuhoLoto({ probeFile, type, currentPath, oldPrefix
   const draws = [];
   for (const url of urls) {
     const html = await fetchText(url);
-    draws.push(...parseMizuhoLotoHtml(html, { numberCount }));
+    draws.push(...parseMizuhoLotoHtml(html, { numberCount, specialCount }));
   }
   return draws;
 }
 
-async function readProbeDraws(probeFile, { numberCount }) {
+async function readProbeDraws(probeFile, { numberCount, specialCount = 1 }) {
   if (!probeFile) return [];
   const path = resolve(root, 'tmp', probeFile);
   let payload;
@@ -293,11 +329,11 @@ async function readProbeDraws(probeFile, { numberCount }) {
       const numbers = Array.isArray(draw.numbers)
         ? draw.numbers.map(parseInteger).filter((value) => value != null)
         : [];
-      const specialNumber = parseInteger(draw.specialNumber);
-      if (!drawId || !drawDate || numbers.length !== numberCount || specialNumber == null) {
+      const specialNumbers = parseSpecialNumbers(draw, specialCount);
+      if (!drawId || !drawDate || numbers.length !== numberCount || specialNumbers.length !== specialCount) {
         return null;
       }
-      return officialDraw({ drawId, drawDate, numbers, specialNumber });
+      return officialDraw({ drawId, drawDate, numbers, specialNumbers });
     })
     .filter(Boolean);
 }
@@ -333,7 +369,7 @@ function extractMizuhoLinks(html, type) {
 
 function buildMizuhoFallbackUrls({ type, oldPrefix }) {
   const urls = [];
-  const estimatedLatest = type === 'loto6' ? 2100 : 1400;
+  const estimatedLatest = type === 'loto6' ? 2100 : type === 'loto7' ? 700 : 1400;
   for (let start = 1; start <= estimatedLatest; start += 20) {
     const end = start + 19;
     urls.push(
@@ -352,22 +388,22 @@ function buildMizuhoFallbackUrls({ type, oldPrefix }) {
   return urls;
 }
 
-function parseMizuhoLotoHtml(html, { numberCount }) {
+function parseMizuhoLotoHtml(html, { numberCount, specialCount = 1 }) {
   const text = normalizeJapaneseText(stripHtml(html));
   const draws = [];
-  const pattern = /第\s*(\d+)\s*回\s+(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日[^0-9]{0,40}((?:\d{1,2}\s+){5,8})/g;
+  const pattern = /第\s*(\d+)\s*回\s+(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日[^0-9]{0,40}((?:\d{1,2}\s+){5,9})/g;
   let match;
   while ((match = pattern.exec(text)) != null) {
     const allNumbers = parseNumberList(match[5]);
-    if (allNumbers.length < numberCount + 1) continue;
+    if (allNumbers.length < numberCount + specialCount) continue;
     const numbers = allNumbers.slice(0, numberCount);
-    const specialNumber = allNumbers[numberCount];
+    const specialNumbers = allNumbers.slice(numberCount, numberCount + specialCount);
     draws.push(
       officialDraw({
         drawId: match[1],
         drawDate: `${match[2]}-${match[3].padStart(2, '0')}-${match[4].padStart(2, '0')}`,
         numbers,
-        specialNumber,
+        specialNumbers,
       }),
     );
   }
@@ -541,12 +577,19 @@ function seedVerificationStatus(seedDraws) {
     : 'official_seed';
 }
 
-function officialDraw({ drawId, drawDate, numbers, specialNumber }) {
+function officialDraw({ drawId, drawDate, numbers, specialNumber, specialNumbers }) {
+  const resolvedSpecialNumbers =
+    Array.isArray(specialNumbers) && specialNumbers.length > 0
+      ? specialNumbers.map(Number)
+      : specialNumber == null
+        ? []
+        : [Number(specialNumber)];
   return {
     drawId: stringValue(drawId),
     drawDate,
     numbers: numbers.map(Number),
-    specialNumber,
+    specialNumber: resolvedSpecialNumbers[0] ?? null,
+    specialNumbers: resolvedSpecialNumbers,
     status: 'official',
     verificationStatus: 'official',
   };
@@ -563,9 +606,23 @@ function seedDraw(value) {
     drawDate,
     numbers,
     specialNumber: parseInteger(value.specialNumber),
+    specialNumbers: parseSpecialNumbers(value),
     status: value.status ?? 'official_seed',
     verificationStatus: value.verificationStatus ?? 'official_seed',
   };
+}
+
+function parseSpecialNumbers(value, expectedCount = null) {
+  const raw = Array.isArray(value.specialNumbers) ? value.specialNumbers : null;
+  const specialNumbers = raw
+    ? raw.map(parseInteger).filter((item) => item != null)
+    : [];
+  if (specialNumbers.length > 0) return specialNumbers;
+
+  const specialNumber = parseInteger(value.specialNumber);
+  if (specialNumber == null) return [];
+  if (expectedCount != null && expectedCount > 1) return [specialNumber];
+  return [specialNumber];
 }
 
 async function fetchJson(url, options = {}) {
