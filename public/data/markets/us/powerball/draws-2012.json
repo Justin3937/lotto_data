@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-28T06:37:14.078Z",
+  "generatedAt": "2026-05-29T02:27:31.364Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2012",
@@ -1779,7 +1779,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1945,
+      "drawCount": 1946,
       "error": null
     },
     "seed": {
@@ -1787,7 +1787,7 @@
       "drawCount": 1945
     },
     "merged": {
-      "totalDrawCount": 1945
+      "totalDrawCount": 1946
     }
   }
 }

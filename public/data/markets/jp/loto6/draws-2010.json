@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-28T06:37:14.078Z",
+  "generatedAt": "2026-05-29T02:27:31.364Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "year": "2010",
@@ -946,9 +946,9 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 2105,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/backnumber/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
     },
     "seed": {
       "ok": true,
