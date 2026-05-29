@@ -1,6 +1,6 @@
 # JP Official Lottery Data Probe
 
-Minimal PoC to fetch **Loto 6** and **Mini Loto** historical draws from Mizuho Bank official pages.
+Minimal PoC to fetch **Loto 6**, **Mini Loto**, and **Loto 7** historical draws from Mizuho Bank official pages.
 
 ## Setup
 
@@ -19,6 +19,7 @@ Outputs:
 
 - `tmp/jp-loto6-probe.json`
 - `tmp/jp-mini-loto-probe.json`
+- `tmp/jp-loto7-probe.json`
 
 ## Fetch method
 
@@ -30,6 +31,7 @@ Outputs:
 | Loto 6 (461+) | Official detail CSV: `.../loto6/csv/A102XXXX.CSV` |
 | Mini Loto (1–520) | HTML backnumber tables: `.../backnumber/lotoXXXX.html` |
 | Mini Loto (521+) | Official detail CSV: `.../miniloto/csv/A101XXXX.CSV` |
+| Loto 7 | Official detail CSV: `.../loto7/csv/A103XXXX.CSV` |
 
 Direct HTTP (`urllib`, headless Playwright) returns **403 Access Denied** (Akamai / edgesuite.net).
 

@@ -1,33 +1,124 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T06:48:45.519Z",
+  "generatedAt": "2026-05-29T07:59:07.389Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
-  "totalDrawCount": 1,
+  "totalDrawCount": 678,
   "latestDrawId": "678",
   "latestDrawDate": "2026-05-22",
   "years": [
     {
+      "year": "2013",
+      "drawCount": 39,
+      "firstDrawDate": "2013-04-05",
+      "latestDrawDate": "2013-12-27",
+      "path": "markets/jp/loto7/draws-2013.json"
+    },
+    {
+      "year": "2014",
+      "drawCount": 51,
+      "firstDrawDate": "2014-01-10",
+      "latestDrawDate": "2014-12-26",
+      "path": "markets/jp/loto7/draws-2014.json"
+    },
+    {
+      "year": "2015",
+      "drawCount": 51,
+      "firstDrawDate": "2015-01-09",
+      "latestDrawDate": "2015-12-25",
+      "path": "markets/jp/loto7/draws-2015.json"
+    },
+    {
+      "year": "2016",
+      "drawCount": 52,
+      "firstDrawDate": "2016-01-08",
+      "latestDrawDate": "2016-12-30",
+      "path": "markets/jp/loto7/draws-2016.json"
+    },
+    {
+      "year": "2017",
+      "drawCount": 52,
+      "firstDrawDate": "2017-01-06",
+      "latestDrawDate": "2017-12-29",
+      "path": "markets/jp/loto7/draws-2017.json"
+    },
+    {
+      "year": "2018",
+      "drawCount": 52,
+      "firstDrawDate": "2018-01-05",
+      "latestDrawDate": "2018-12-28",
+      "path": "markets/jp/loto7/draws-2018.json"
+    },
+    {
+      "year": "2019",
+      "drawCount": 52,
+      "firstDrawDate": "2019-01-04",
+      "latestDrawDate": "2019-12-27",
+      "path": "markets/jp/loto7/draws-2019.json"
+    },
+    {
+      "year": "2020",
+      "drawCount": 51,
+      "firstDrawDate": "2020-01-10",
+      "latestDrawDate": "2020-12-25",
+      "path": "markets/jp/loto7/draws-2020.json"
+    },
+    {
+      "year": "2021",
+      "drawCount": 51,
+      "firstDrawDate": "2021-01-08",
+      "latestDrawDate": "2021-12-24",
+      "path": "markets/jp/loto7/draws-2021.json"
+    },
+    {
+      "year": "2022",
+      "drawCount": 52,
+      "firstDrawDate": "2022-01-07",
+      "latestDrawDate": "2022-12-30",
+      "path": "markets/jp/loto7/draws-2022.json"
+    },
+    {
+      "year": "2023",
+      "drawCount": 52,
+      "firstDrawDate": "2023-01-06",
+      "latestDrawDate": "2023-12-29",
+      "path": "markets/jp/loto7/draws-2023.json"
+    },
+    {
+      "year": "2024",
+      "drawCount": 52,
+      "firstDrawDate": "2024-01-05",
+      "latestDrawDate": "2024-12-27",
+      "path": "markets/jp/loto7/draws-2024.json"
+    },
+    {
+      "year": "2025",
+      "drawCount": 51,
+      "firstDrawDate": "2025-01-10",
+      "latestDrawDate": "2025-12-26",
+      "path": "markets/jp/loto7/draws-2025.json"
+    },
+    {
       "year": "2026",
-      "drawCount": 1,
-      "firstDrawDate": "2026-05-22",
+      "drawCount": 20,
+      "firstDrawDate": "2026-01-09",
       "latestDrawDate": "2026-05-22",
       "path": "markets/jp/loto7/draws-2026.json"
     }
   ],
-  "verificationStatus": "official_seed",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/backnumber/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
+      "ok": true,
+      "drawCount": 678,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 1
     },
     "merged": {
-      "totalDrawCount": 1
+      "totalDrawCount": 678
     }
   }
 }

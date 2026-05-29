@@ -330,7 +330,8 @@ def collect_game(page: Page, cfg: GameConfig, report: FetchReport) -> list[dict[
     # HTML backnumber pages (older draws)
     html_starts = list(range(cfg.html_start, cfg.html_end + 1, cfg.html_step))
     for i, start in enumerate(html_starts, 1):
-        url = cfg.html_url_tpl.format(start=start)
+        end = start + cfg.html_step - 1
+        url = cfg.html_url_tpl.format(start=start, end=end)
         status, text = fetch_text(page, url)
         time.sleep(REQUEST_DELAY_SEC)
         if status != 200 or is_access_denied(status, text):

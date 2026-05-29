@@ -11,6 +11,8 @@ const MEGA_MILLIONS_ENDPOINT =
 const LOTTO_AMERICA_ARCHIVE_URL = 'https://www.lottoamerica.com/archive';
 const MIZUHO_BASE = 'https://www.mizuhobank.co.jp';
 const FETCH_TIMEOUT_MS = 20000;
+const BROWSER_USER_AGENT =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 const MONTH_NUMBERS = {
   January: '01',
   February: '02',
@@ -117,6 +119,11 @@ const games = [
         oldPrefix: 'loto7',
         numberCount: 7,
         specialCount: 2,
+        csv: {
+          type: 'loto7',
+          prefix: 'A103',
+          start: 1,
+        },
       }),
   },
   {
@@ -302,17 +309,33 @@ async function fetchOfficialMizuhoLoto({
   oldPrefix,
   numberCount,
   specialCount = 1,
+  csv = null,
 }) {
   const probeDraws = await readProbeDraws(probeFile, { numberCount, specialCount });
   if (probeDraws.length > 0) {
     return probeDraws;
   }
 
+  if (csv) {
+    const csvDraws = await fetchMizuhoCsvDraws({
+      ...csv,
+      numberCount,
+      specialCount,
+    });
+    if (csvDraws.length > 0) {
+      return csvDraws;
+    }
+  }
+
   const urls = new Set([new URL(currentPath, MIZUHO_BASE).toString()]);
   const indexUrl = new URL('/takarakuji/check/loto/backnumber/index.html', MIZUHO_BASE).toString();
-  const indexHtml = await fetchText(indexUrl);
-  for (const url of extractMizuhoLinks(indexHtml, type)) {
-    urls.add(url);
+  try {
+    const indexHtml = await fetchText(indexUrl);
+    for (const url of extractMizuhoLinks(indexHtml, type)) {
+      urls.add(url);
+    }
+  } catch (_error) {
+    // The backnumber index is commonly blocked by Akamai, but direct detail pages may still work.
   }
 
   if (urls.size <= 1) {
@@ -327,6 +350,79 @@ async function fetchOfficialMizuhoLoto({
     draws.push(...parseMizuhoLotoHtml(html, { numberCount, specialCount }));
   }
   return draws;
+}
+
+async function fetchMizuhoCsvDraws({ type, prefix, start, numberCount, specialCount }) {
+  const latest = await findMizuhoLatestCsvDraw({ type, prefix });
+  const draws = [];
+  const batchSize = 12;
+  for (let batchStart = start; batchStart <= latest; batchStart += batchSize) {
+    const batch = [];
+    for (let n = batchStart; n < batchStart + batchSize && n <= latest; n += 1) {
+      batch.push(fetchMizuhoCsvDraw({ type, prefix, n, numberCount, specialCount }));
+    }
+    draws.push(...(await Promise.all(batch)).filter(Boolean));
+  }
+  return draws;
+}
+
+async function findMizuhoLatestCsvDraw({ type, prefix }) {
+  const text = await fetchText(`${MIZUHO_BASE}/takarakuji/apl/txt/${type}/name.txt`, {
+    headers: {
+      accept: 'text/plain,*/*',
+      'user-agent': BROWSER_USER_AGENT,
+    },
+  });
+  const pattern = new RegExp(`${prefix}(\\d{4})\\.CSV`, 'g');
+  const drawIds = [...text.matchAll(pattern)].map((match) => Number.parseInt(match[1], 10));
+  const latest = Math.max(...drawIds.filter(Number.isFinite));
+  if (!Number.isFinite(latest)) {
+    throw new Error(`Unable to find latest ${type} CSV draw from name.txt`);
+  }
+  return latest;
+}
+
+async function fetchMizuhoCsvDraw({ type, prefix, n, numberCount, specialCount }) {
+  const url = `${MIZUHO_BASE}/retail/takarakuji/loto/${type}/csv/${prefix}${String(n).padStart(4, '0')}.CSV`;
+  const text = await fetchShiftJisText(url, {
+    headers: {
+      'user-agent': BROWSER_USER_AGENT,
+    },
+  });
+  return parseMizuhoCsvDraw(text, { numberCount, specialCount, sourceDrawId: n });
+}
+
+function parseMizuhoCsvDraw(text, { numberCount, specialCount, sourceDrawId }) {
+  const rows = text
+    .replace(/[Ａ-Ｚａ-ｚ０-９]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0xfee0))
+    .split(/\r\n|\n|\r/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => line.split(/\s*,\s*/));
+  const header = rows.find((row) => row[0]?.includes('回'));
+  const numberRow = rows.find((row) => row[0] === '本数字');
+  if (!header || !numberRow) return null;
+
+  const drawId = drawIdFromJapaneseLabel(header[0]) ?? String(sourceDrawId);
+  const drawDate = normalizeJapaneseDrawDate(header[2]);
+  const bonusIndex = numberRow.findIndex((item) => item.includes('ボーナス'));
+  const numbers = numberRow.slice(1, 1 + numberCount).map(parseInteger).filter((item) => item != null);
+  const specialNumbers =
+    bonusIndex >= 0
+      ? numberRow
+          .slice(bonusIndex + 1, bonusIndex + 1 + specialCount)
+          .map(parseInteger)
+          .filter((item) => item != null)
+      : [];
+  if (!drawId || !drawDate || numbers.length !== numberCount || specialNumbers.length !== specialCount) {
+    return null;
+  }
+  return officialDraw({ drawId, drawDate, numbers, specialNumbers });
+}
+
+function drawIdFromJapaneseLabel(value) {
+  const match = String(value ?? '').match(/(\d+)/);
+  return match ? String(Number.parseInt(match[1], 10)) : null;
 }
 
 async function readProbeDraws(probeFile, { numberCount, specialCount = 1 }) {
@@ -696,6 +792,30 @@ async function fetchText(url, options = {}) {
   }
 }
 
+async function fetchShiftJisText(url, options = {}) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal,
+      headers: {
+        accept: 'text/csv,text/plain,*/*',
+        'user-agent': USER_AGENT,
+        ...(options.headers ?? {}),
+      },
+    });
+    const body = await response.arrayBuffer();
+    const text = new TextDecoder('shift_jis').decode(body);
+    if (!response.ok) {
+      throw new Error(`${url} failed: HTTP ${response.status} ${text.slice(0, 120)}`);
+    }
+    return text;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 function defaultOfficialFetchWindows(date) {
   const end = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
   const windows = [];
@@ -748,6 +868,26 @@ function normalizeDrawDate(value) {
   const ymd = text.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/);
   if (ymd) return `${ymd[1]}-${ymd[2].padStart(2, '0')}-${ymd[3].padStart(2, '0')}`;
   return null;
+}
+
+function normalizeJapaneseDrawDate(value) {
+  if (value == null) return null;
+  const text = String(value).trim();
+  const western = text.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
+  if (western) {
+    return `${western[1]}-${western[2].padStart(2, '0')}-${western[3].padStart(2, '0')}`;
+  }
+  const era = text.match(/(昭和|平成|令和)(元|\d+)年(\d{1,2})月(\d{1,2})日/);
+  if (!era) return null;
+  const eraYear = era[2] === '元' ? 1 : Number.parseInt(era[2], 10);
+  const baseYear = {
+    昭和: 1925,
+    平成: 1988,
+    令和: 2018,
+  }[era[1]];
+  if (!baseYear || !Number.isFinite(eraYear)) return null;
+  const year = String(baseYear + eraYear);
+  return `${year}-${era[3].padStart(2, '0')}-${era[4].padStart(2, '0')}`;
 }
 
 function stringValue(value) {
