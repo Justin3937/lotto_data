@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-29T07:18:05.520Z",
+  "marketId": "US",
+  "gameId": "lotto_america",
+  "year": "2017",
+  "drawCount": 14,
+  "draws": [
+    {
+      "drawId": "2017-11-15",
+      "drawDate": "2017-11-15",
+      "numbers": [
+        2,
+        9,
+        18,
+        31,
+        39
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-11-18",
+      "drawDate": "2017-11-18",
+      "numbers": [
+        4,
+        25,
+        26,
+        41,
+        47
+      ],
+      "specialNumber": 6,
+      "specialNumbers": [
+        6
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-11-22",
+      "drawDate": "2017-11-22",
+      "numbers": [
+        6,
+        8,
+        22,
+        29,
+        34
+      ],
+      "specialNumber": 8,
+      "specialNumbers": [
+        8
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-11-25",
+      "drawDate": "2017-11-25",
+      "numbers": [
+        1,
+        7,
+        16,
+        25,
+        26
+      ],
+      "specialNumber": 8,
+      "specialNumbers": [
+        8
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-11-29",
+      "drawDate": "2017-11-29",
+      "numbers": [
+        1,
+        4,
+        5,
+        16,
+        38
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-02",
+      "drawDate": "2017-12-02",
+      "numbers": [
+        22,
+        28,
+        45,
+        47,
+        51
+      ],
+      "specialNumber": 6,
+      "specialNumbers": [
+        6
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-06",
+      "drawDate": "2017-12-06",
+      "numbers": [
+        18,
+        29,
+        37,
+        39,
+        42
+      ],
+      "specialNumber": 4,
+      "specialNumbers": [
+        4
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-09",
+      "drawDate": "2017-12-09",
+      "numbers": [
+        2,
+        5,
+        7,
+        22,
+        25
+      ],
+      "specialNumber": 2,
+      "specialNumbers": [
+        2
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-13",
+      "drawDate": "2017-12-13",
+      "numbers": [
+        9,
+        18,
+        23,
+        46,
+        50
+      ],
+      "specialNumber": 3,
+      "specialNumbers": [
+        3
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-16",
+      "drawDate": "2017-12-16",
+      "numbers": [
+        5,
+        16,
+        27,
+        34,
+        44
+      ],
+      "specialNumber": 5,
+      "specialNumbers": [
+        5
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-20",
+      "drawDate": "2017-12-20",
+      "numbers": [
+        5,
+        12,
+        23,
+        24,
+        32
+      ],
+      "specialNumber": 2,
+      "specialNumbers": [
+        2
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-23",
+      "drawDate": "2017-12-23",
+      "numbers": [
+        2,
+        32,
+        37,
+        39,
+        51
+      ],
+      "specialNumber": 5,
+      "specialNumbers": [
+        5
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-27",
+      "drawDate": "2017-12-27",
+      "numbers": [
+        4,
+        30,
+        38,
+        47,
+        48
+      ],
+      "specialNumber": 3,
+      "specialNumbers": [
+        3
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2017-12-30",
+      "drawDate": "2017-12-30",
+      "numbers": [
+        4,
+        7,
+        10,
+        14,
+        17
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    }
+  ],
+  "verificationStatus": "official",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 1093,
+      "error": null
+    },
+    "seed": {
+      "ok": false,
+      "drawCount": 0
+    },
+    "merged": {
+      "totalDrawCount": 1093
+    }
+  }
+}

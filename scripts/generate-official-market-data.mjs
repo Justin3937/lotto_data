@@ -8,8 +8,23 @@ const POWERBALL_ENDPOINT =
   'https://data.ny.gov/resource/d6yy-54nr.json?$limit=50000&$order=draw_date';
 const MEGA_MILLIONS_ENDPOINT =
   'https://data.ny.gov/resource/5xaw-6ayf.json?$limit=50000&$order=draw_date';
+const LOTTO_AMERICA_ARCHIVE_URL = 'https://www.lottoamerica.com/archive';
 const MIZUHO_BASE = 'https://www.mizuhobank.co.jp';
 const FETCH_TIMEOUT_MS = 20000;
+const MONTH_NUMBERS = {
+  January: '01',
+  February: '02',
+  March: '03',
+  April: '04',
+  May: '05',
+  June: '06',
+  July: '07',
+  August: '08',
+  September: '09',
+  October: '10',
+  November: '11',
+  December: '12',
+};
 const HKJC_MARK_SIX_QUERY = `
 fragment lotteryDrawsFragment on LotteryDraw {
   id
@@ -228,10 +243,13 @@ async function fetchOfficialMegaMillions() {
 }
 
 async function fetchOfficialLottoAmerica() {
-  // TODO: replace with a stable official batch API if MUSL exposes one.
-  // Keep the game wired into the pipeline; seed data is used until a remote
-  // source is proven stable in CI.
-  return [];
+  const currentYear = new Date(checkedAt).getUTCFullYear();
+  const draws = [];
+  for (let year = 2017; year <= currentYear; year += 1) {
+    const html = await fetchText(`${LOTTO_AMERICA_ARCHIVE_URL}/${year}`);
+    draws.push(...parseLottoAmericaArchiveHtml(html));
+  }
+  return draws;
 }
 
 async function fetchOfficialMarkSix() {
@@ -404,6 +422,31 @@ function parseMizuhoLotoHtml(html, { numberCount, specialCount = 1 }) {
         drawDate: `${match[2]}-${match[3].padStart(2, '0')}-${match[4].padStart(2, '0')}`,
         numbers,
         specialNumbers,
+      }),
+    );
+  }
+  return draws;
+}
+
+function parseLottoAmericaArchiveHtml(html) {
+  const draws = [];
+  const cardPattern =
+    /<div class="[^"]*\b_date\b[^"]*">[\s\S]*?<strong>([A-Za-z]+)\s+(\d{1,2})<\/strong>,\s*(\d{4})[\s\S]*?<ul class="[^"]*\bballs\b[^"]*">([\s\S]*?)<\/ul>/g;
+  let match;
+  while ((match = cardPattern.exec(html)) != null) {
+    const [, monthName, day, year, listHtml] = match;
+    const month = MONTH_NUMBERS[monthName];
+    if (!month) continue;
+    const values = [...listHtml.matchAll(/<li(?:\s+class="[^"]+")?[^>]*>\s*(\d{1,2})\s*<\/li>/g)]
+      .map((item) => Number.parseInt(item[1], 10))
+      .filter((item) => Number.isFinite(item));
+    if (values.length !== 7) continue;
+    draws.push(
+      officialDraw({
+        drawId: `${year}-${month}-${day.padStart(2, '0')}`,
+        drawDate: `${year}-${month}-${day.padStart(2, '0')}`,
+        numbers: values.slice(0, 5),
+        specialNumber: values[5],
       }),
     );
   }

@@ -1,33 +1,96 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T06:48:45.519Z",
+  "generatedAt": "2026-05-29T07:18:05.520Z",
   "marketId": "US",
   "gameId": "lotto_america",
-  "totalDrawCount": 7,
-  "latestDrawId": "2026-05-16",
-  "latestDrawDate": "2026-05-16",
+  "totalDrawCount": 1093,
+  "latestDrawId": "2026-05-27",
+  "latestDrawDate": "2026-05-27",
   "years": [
     {
+      "year": "2017",
+      "drawCount": 14,
+      "firstDrawDate": "2017-11-15",
+      "latestDrawDate": "2017-12-30",
+      "path": "markets/us/lotto-america/draws-2017.json"
+    },
+    {
+      "year": "2018",
+      "drawCount": 104,
+      "firstDrawDate": "2018-01-03",
+      "latestDrawDate": "2018-12-29",
+      "path": "markets/us/lotto-america/draws-2018.json"
+    },
+    {
+      "year": "2019",
+      "drawCount": 104,
+      "firstDrawDate": "2019-01-02",
+      "latestDrawDate": "2019-12-28",
+      "path": "markets/us/lotto-america/draws-2019.json"
+    },
+    {
+      "year": "2020",
+      "drawCount": 105,
+      "firstDrawDate": "2020-01-01",
+      "latestDrawDate": "2020-12-30",
+      "path": "markets/us/lotto-america/draws-2020.json"
+    },
+    {
+      "year": "2021",
+      "drawCount": 104,
+      "firstDrawDate": "2021-01-02",
+      "latestDrawDate": "2021-12-29",
+      "path": "markets/us/lotto-america/draws-2021.json"
+    },
+    {
+      "year": "2022",
+      "drawCount": 129,
+      "firstDrawDate": "2022-01-01",
+      "latestDrawDate": "2022-12-31",
+      "path": "markets/us/lotto-america/draws-2022.json"
+    },
+    {
+      "year": "2023",
+      "drawCount": 156,
+      "firstDrawDate": "2023-01-02",
+      "latestDrawDate": "2023-12-30",
+      "path": "markets/us/lotto-america/draws-2023.json"
+    },
+    {
+      "year": "2024",
+      "drawCount": 157,
+      "firstDrawDate": "2024-01-01",
+      "latestDrawDate": "2024-12-30",
+      "path": "markets/us/lotto-america/draws-2024.json"
+    },
+    {
+      "year": "2025",
+      "drawCount": 157,
+      "firstDrawDate": "2025-01-01",
+      "latestDrawDate": "2025-12-31",
+      "path": "markets/us/lotto-america/draws-2025.json"
+    },
+    {
       "year": "2026",
-      "drawCount": 7,
-      "firstDrawDate": "2026-05-02",
-      "latestDrawDate": "2026-05-16",
+      "drawCount": 63,
+      "firstDrawDate": "2026-01-03",
+      "latestDrawDate": "2026-05-27",
       "path": "markets/us/lotto-america/draws-2026.json"
     }
   ],
-  "verificationStatus": "official_seed",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "Official source returned zero parsed draws"
+      "ok": true,
+      "drawCount": 1093,
+      "error": null
     },
     "seed": {
-      "ok": true,
-      "drawCount": 7
+      "ok": false,
+      "drawCount": 0
     },
     "merged": {
-      "totalDrawCount": 7
+      "totalDrawCount": 1093
     }
   }
 }
