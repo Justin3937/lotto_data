@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T07:59:07.389Z",
+  "generatedAt": "2026-05-29T08:15:10.587Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "year": "2024",
@@ -1050,13 +1050,13 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 678,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://www.mizuhobank.co.jp/retail/takarakuji/loto/loto7/csv/A1030001.CSV failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
     },
     "seed": {
       "ok": true,
-      "drawCount": 1
+      "drawCount": 678
     },
     "merged": {
       "totalDrawCount": 678
