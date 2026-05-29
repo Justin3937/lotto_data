@@ -33,6 +33,7 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - name: Generate JP official probe
         continue-on-error: true
+        timeout-minutes: 30
         run: xvfb-run -a npm run generate:jp-official
       - run: npm run generate
       - name: Commit generated data
