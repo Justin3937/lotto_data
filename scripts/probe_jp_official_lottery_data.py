@@ -26,6 +26,7 @@ from playwright.sync_api import Page, sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 TMP_DIR = ROOT / "tmp"
+PUBLIC_DATA_DIR = ROOT / "public" / "data"
 SOURCE_NAME = "Mizuho Bank"
 HEADLESS = os.environ.get("HEADLESS", "0") == "1"
 REQUEST_DELAY_SEC = float(os.environ.get("REQUEST_DELAY_SEC", "0.25"))
@@ -62,6 +63,7 @@ class FetchReport:
 @dataclass
 class GameConfig:
     game_id: str
+    cache_path: str
     main_count: int
     special_count: int
     warmup_url: str
@@ -77,6 +79,7 @@ class GameConfig:
 
 LOTO6 = GameConfig(
     game_id="loto6_jp",
+    cache_path="markets/jp/loto6/draws-all.json",
     main_count=6,
     special_count=1,
     warmup_url="https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html",
@@ -92,6 +95,7 @@ LOTO6 = GameConfig(
 
 MINI_LOTO = GameConfig(
     game_id="mini_loto",
+    cache_path="markets/jp/mini-loto/draws-all.json",
     main_count=5,
     special_count=1,
     warmup_url="https://www.mizuhobank.co.jp/takarakuji/check/loto/miniloto/index.html",
@@ -107,6 +111,7 @@ MINI_LOTO = GameConfig(
 
 LOTO7 = GameConfig(
     game_id="loto7_jp",
+    cache_path="markets/jp/loto7/draws-all.json",
     main_count=7,
     special_count=2,
     warmup_url="https://www.mizuhobank.co.jp/takarakuji/check/loto/loto7/index.html",
@@ -292,11 +297,81 @@ def parse_html_draws(
     return draws
 
 
-def find_latest_csv_draw(page: Page, cfg: GameConfig, report: FetchReport) -> int:
+def read_cached_draws(cfg: GameConfig) -> list[dict[str, Any]]:
+    path = PUBLIC_DATA_DIR / cfg.cache_path
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    except json.JSONDecodeError as error:
+        print(f"  [{cfg.game_id}] cache ignored: invalid JSON in {path}: {error}", flush=True)
+        return []
+
+    draws = []
+    for item in payload.get("draws", []):
+        normalized = normalize_cached_draw(item, cfg)
+        if normalized:
+            draws.append(normalized)
+
+    draws = dedupe_and_sort(draws)
+    if not has_contiguous_draw_ids(draws):
+        print(f"  [{cfg.game_id}] cache ignored: drawId sequence has gaps", flush=True)
+        return []
+    return draws
+
+
+def normalize_cached_draw(item: dict[str, Any], cfg: GameConfig) -> dict[str, Any] | None:
+    draw_id = draw_id_from_label(str(item.get("drawId", "")))
+    draw_date = parse_jp_date(str(item.get("drawDate", ""))) or str(item.get("drawDate", ""))
+    numbers = [int(n) for n in item.get("numbers", []) if isinstance(n, int)]
+
+    raw_specials = item.get("specialNumbers")
+    if isinstance(raw_specials, list):
+        special_numbers = [int(n) for n in raw_specials if isinstance(n, int)]
+    elif isinstance(item.get("specialNumber"), int):
+        special_numbers = [int(item["specialNumber"])]
+    else:
+        special_numbers = []
+
+    if (
+        not draw_id
+        or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", draw_date)
+        or len(numbers) != cfg.main_count
+        or len(special_numbers) != cfg.special_count
+    ):
+        return None
+
+    return {
+        "drawId": str(int(draw_id)),
+        "drawDate": draw_date,
+        "numbers": numbers,
+        "specialNumber": special_numbers[0],
+        "specialNumbers": special_numbers,
+        "source": "official",
+    }
+
+
+def has_contiguous_draw_ids(draws: list[dict[str, Any]]) -> bool:
+    if not draws:
+        return False
+    ids = sorted(int(draw["drawId"]) for draw in draws)
+    return ids == list(range(ids[0], ids[-1] + 1))
+
+
+def latest_draw_id(draws: list[dict[str, Any]]) -> int:
+    return max((int(draw["drawId"]) for draw in draws), default=0)
+
+
+def find_latest_csv_draw(
+    page: Page,
+    cfg: GameConfig,
+    report: FetchReport,
+    cached_latest: int = 0,
+) -> int:
     if cfg.csv_url_tpl is None:
         return cfg.csv_start - 1
 
-    n = cfg.latest_guess
+    n = max(cfg.latest_guess, cached_latest, cfg.csv_start)
     while n >= cfg.csv_start:
         url = cfg.csv_url_tpl.format(n=n)
         status, text = fetch_text(page, url)
@@ -324,11 +399,30 @@ def find_latest_csv_draw(page: Page, cfg: GameConfig, report: FetchReport) -> in
     return latest
 
 
-def collect_game(page: Page, cfg: GameConfig, report: FetchReport) -> list[dict[str, Any]]:
-    draws: list[dict[str, Any]] = []
+def collect_game(
+    page: Page,
+    cfg: GameConfig,
+    report: FetchReport,
+    cached_draws: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    draws: list[dict[str, Any]] = list(cached_draws)
+    cached_latest = latest_draw_id(cached_draws)
+    if cached_draws:
+        print(f"  [{cfg.game_id}] cache baseline: {len(cached_draws)} draws through {cached_latest}", flush=True)
 
     # HTML backnumber pages (older draws)
-    html_starts = list(range(cfg.html_start, cfg.html_end + 1, cfg.html_step))
+    html_end = cfg.html_end
+    if cached_draws and cfg.csv_url_tpl is None:
+        html_end = max(cfg.html_end, cached_latest + cfg.html_step)
+
+    html_starts = list(range(cfg.html_start, html_end + 1, cfg.html_step))
+    if cached_draws:
+        html_starts = [
+            start
+            for start in html_starts
+            if start + cfg.html_step - 1 >= cached_latest + 1
+        ]
+
     for i, start in enumerate(html_starts, 1):
         end = start + cfg.html_step - 1
         url = cfg.html_url_tpl.format(start=start, end=end)
@@ -378,11 +472,12 @@ def collect_game(page: Page, cfg: GameConfig, report: FetchReport) -> list[dict[
                 print(f"  [{cfg.game_id}] detail pages {i}/{len(html_starts)}", flush=True)
 
     if cfg.csv_url_tpl is not None:
-        latest = find_latest_csv_draw(page, cfg, report)
+        latest = find_latest_csv_draw(page, cfg, report, cached_latest)
         print(f"  [{cfg.game_id}] latest CSV draw: {latest}", flush=True)
 
-        csv_total = latest - cfg.csv_start + 1
-        for idx, n in enumerate(range(cfg.csv_start, latest + 1), 1):
+        csv_start = max(cfg.csv_start, cached_latest + 1) if cached_draws else cfg.csv_start
+        csv_total = max(0, latest - csv_start + 1)
+        for idx, n in enumerate(range(csv_start, latest + 1), 1):
             url = cfg.csv_url_tpl.format(n=n)
             status, text = fetch_text(page, url)
             time.sleep(REQUEST_DELAY_SEC)
@@ -491,21 +586,21 @@ def main() -> int:
             return 1
         report.record_ok(LOTO6.warmup_url)
 
-        loto6_draws = collect_game(page, LOTO6, report)
+        loto6_draws = collect_game(page, LOTO6, report, read_cached_draws(LOTO6))
 
         # Switch context to Mini Loto index
         page.goto(MINI_LOTO.warmup_url, wait_until="domcontentloaded", timeout=120_000)
         time.sleep(1)
         report.record_ok(MINI_LOTO.warmup_url)
 
-        mini_draws = collect_game(page, MINI_LOTO, report)
+        mini_draws = collect_game(page, MINI_LOTO, report, read_cached_draws(MINI_LOTO))
 
         # Switch context to Loto 7 index
         page.goto(LOTO7.warmup_url, wait_until="domcontentloaded", timeout=120_000)
         time.sleep(1)
         report.record_ok(LOTO7.warmup_url)
 
-        loto7_draws = collect_game(page, LOTO7, report)
+        loto7_draws = collect_game(page, LOTO7, report, read_cached_draws(LOTO7))
         browser.close()
 
     loto6_out = build_output(LOTO6, loto6_draws)
@@ -532,7 +627,7 @@ def main() -> int:
 
     print("\n=== Productization next steps ===")
     print("1. Run as scheduled job (e.g. weekly) on a server with headed Chromium or approved IP.")
-    print("2. Persist last fetched drawId; only pull new CSV + latest index page.")
+    print("2. Persisted public/data is reused as a cache baseline; only missing/latest ranges are fetched.")
     print("3. Wrap fetch layer behind an internal API; Flutter app reads JSON/API only.")
     print("4. Add retries/backoff for transient 403; alert if Access Denied spikes.")
     print("5. Validate draw count vs official index before publishing to app cache.")
