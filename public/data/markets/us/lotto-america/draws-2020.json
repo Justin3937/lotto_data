@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T08:15:10.587Z",
+  "generatedAt": "2026-05-29T10:36:00.976Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2020",
@@ -1795,9 +1795,9 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 1093,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
