@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T17:49:49.370Z",
+  "generatedAt": "2026-05-30T08:58:52.911Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2026",
-  "drawCount": 42,
+  "drawCount": 43,
   "draws": [
     {
       "drawId": "2026-01-02",
@@ -719,13 +719,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-05-29",
+      "drawDate": "2026-05-29",
+      "numbers": [
+        19,
+        24,
+        47,
+        59,
+        65
+      ],
+      "specialNumber": 7,
+      "specialNumbers": [
+        7
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2505,
+      "drawCount": 2506,
       "error": null
     },
     "seed": {
@@ -733,7 +750,7 @@
       "drawCount": 2505
     },
     "merged": {
-      "totalDrawCount": 2505
+      "totalDrawCount": 2506
     }
   }
 }
