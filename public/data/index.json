@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T19:28:53.496Z",
+  "generatedAt": "2026-06-02T18:15:00.000Z",
   "markets": [
     {
       "marketId": "HK",
       "games": [
         {
           "gameId": "mark_six",
-          "latestDrawId": "202658N",
+          "latestDrawId": "202659N",
           "latestPath": "markets/hk/mark-six/latest.json",
           "drawsIndexPath": "markets/hk/mark-six/draws-index.json",
           "allDrawsPath": "markets/hk/mark-six/draws-all.json",
@@ -20,7 +20,7 @@
       "games": [
         {
           "gameId": "mini_loto",
-          "latestDrawId": "1388",
+          "latestDrawId": "1389",
           "latestPath": "markets/jp/mini-loto/latest.json",
           "drawsIndexPath": "markets/jp/mini-loto/draws-index.json",
           "allDrawsPath": "markets/jp/mini-loto/draws-all.json",
@@ -49,7 +49,7 @@
       "games": [
         {
           "gameId": "powerball",
-          "latestDrawId": "2026-05-30",
+          "latestDrawId": "2026-06-01",
           "latestPath": "markets/us/powerball/latest.json",
           "drawsIndexPath": "markets/us/powerball/draws-index.json",
           "allDrawsPath": "markets/us/powerball/draws-all.json",
@@ -65,7 +65,7 @@
         },
         {
           "gameId": "lotto_america",
-          "latestDrawId": "2026-05-30",
+          "latestDrawId": "2026-06-01",
           "latestPath": "markets/us/lotto-america/latest.json",
           "drawsIndexPath": "markets/us/lotto-america/draws-index.json",
           "allDrawsPath": "markets/us/lotto-america/draws-all.json",

@@ -1,45 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T19:28:53.496Z",
+  "generatedAt": "2026-06-02T18:15:00.000Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "latestDraw": {
-    "drawId": "202658N",
-    "drawDate": "2026-05-30",
+    "drawId": "202659N",
+    "drawDate": "2026-06-02",
     "numbers": [
-      1,
-      12,
-      21,
-      39,
-      40,
-      41
+      9,
+      14,
+      16,
+      35,
+      37,
+      45
     ],
-    "specialNumber": 42,
+    "specialNumber": 20,
     "specialNumbers": [
-      42
+      20
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "202639N",
-      "drawDate": "2026-04-11",
-      "numbers": [
-        11,
-        14,
-        17,
-        28,
-        40,
-        42
-      ],
-      "specialNumber": 2,
-      "specialNumbers": [
-        2
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "202640N",
       "drawDate": "2026-04-14",
@@ -381,13 +363,31 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "202659N",
+      "drawDate": "2026-06-02",
+      "numbers": [
+        9,
+        14,
+        16,
+        35,
+        37,
+        45
+      ],
+      "specialNumber": 20,
+      "specialNumbers": [
+        20
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 58,
+      "drawCount": 59,
       "error": null
     },
     "seed": {
@@ -395,7 +395,7 @@
       "drawCount": 58
     },
     "merged": {
-      "totalDrawCount": 58
+      "totalDrawCount": 59
     }
   }
 }
