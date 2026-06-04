@@ -83,9 +83,10 @@ const games = [
     gameId: 'mini_loto',
     pathMarket: 'jp',
     pathGame: 'mini-loto',
-    fetchOfficial: () =>
+    fetchOfficial: (seedDraws) =>
       fetchOfficialMizuhoLoto({
         probeFile: 'jp-mini-loto-probe.json',
+        seedDraws,
         type: 'miniloto',
         currentPath: '/takarakuji/check/loto/miniloto/index.html',
         oldPrefix: 'loto',
@@ -97,9 +98,10 @@ const games = [
     gameId: 'loto6_jp',
     pathMarket: 'jp',
     pathGame: 'loto6',
-    fetchOfficial: () =>
+    fetchOfficial: (seedDraws) =>
       fetchOfficialMizuhoLoto({
         probeFile: 'jp-loto6-probe.json',
+        seedDraws,
         type: 'loto6',
         currentPath: '/takarakuji/check/loto/loto6/index.html',
         oldPrefix: 'loto6',
@@ -111,9 +113,10 @@ const games = [
     gameId: 'loto7_jp',
     pathMarket: 'jp',
     pathGame: 'loto7',
-    fetchOfficial: () =>
+    fetchOfficial: (seedDraws) =>
       fetchOfficialMizuhoLoto({
         probeFile: 'jp-loto7-probe.json',
+        seedDraws,
         type: 'loto7',
         currentPath: '/takarakuji/check/loto/loto7/index.html',
         oldPrefix: 'loto7',
@@ -153,7 +156,7 @@ const generated = [];
 
 for (const game of games) {
   const seedDraws = await readSeedDraws(game);
-  const officialState = await safeFetchOfficial(game);
+  const officialState = await safeFetchOfficial(game, seedDraws);
   const draws = mergeDraws({
     seedDraws,
     officialDraws: officialState.draws,
@@ -197,9 +200,9 @@ for (const file of files) {
   console.log(`Wrote data/${file.key}`);
 }
 
-async function safeFetchOfficial(game) {
+async function safeFetchOfficial(game, seedDraws) {
   try {
-    const draws = await game.fetchOfficial();
+    const draws = await game.fetchOfficial(seedDraws);
     return {
       ok: draws.length > 0,
       draws,
@@ -304,6 +307,7 @@ async function fetchOfficialMarkSix() {
 
 async function fetchOfficialMizuhoLoto({
   probeFile,
+  seedDraws = [],
   type,
   currentPath,
   oldPrefix,
@@ -312,7 +316,7 @@ async function fetchOfficialMizuhoLoto({
   csv = null,
 }) {
   const probeDraws = await readProbeDraws(probeFile, { numberCount, specialCount });
-  if (probeDraws.length > 0) {
+  if (isAtLeastAsFresh(probeDraws, seedDraws)) {
     return probeDraws;
   }
 
@@ -350,6 +354,20 @@ async function fetchOfficialMizuhoLoto({
     draws.push(...parseMizuhoLotoHtml(html, { numberCount, specialCount }));
   }
   return draws;
+}
+
+function isAtLeastAsFresh(candidateDraws, baselineDraws) {
+  if (candidateDraws.length === 0) return false;
+  const candidateLatest = latestDrawDate(candidateDraws);
+  const baselineLatest = latestDrawDate(baselineDraws);
+  return !baselineLatest || (!!candidateLatest && candidateLatest >= baselineLatest);
+}
+
+function latestDrawDate(draws) {
+  return draws.reduce((latest, draw) => {
+    const drawDate = normalizeDrawDate(draw.drawDate);
+    return drawDate && (!latest || drawDate > latest) ? drawDate : latest;
+  }, null);
 }
 
 async function fetchMizuhoCsvDraws({ type, prefix, start, numberCount, specialCount }) {
