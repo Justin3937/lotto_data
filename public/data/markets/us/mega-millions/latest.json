@@ -1,43 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-05T16:59:33.233Z",
+  "generatedAt": "2026-06-06T11:54:23.751Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "latestDraw": {
-    "drawId": "2026-06-02",
-    "drawDate": "2026-06-02",
+    "drawId": "2026-06-05",
+    "drawDate": "2026-06-05",
     "numbers": [
-      15,
-      26,
-      43,
-      48,
-      60
+      13,
+      30,
+      50,
+      52,
+      66
     ],
-    "specialNumber": 12,
+    "specialNumber": 2,
     "specialNumbers": [
-      12
+      2
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-03-27",
-      "drawDate": "2026-03-27",
-      "numbers": [
-        13,
-        27,
-        28,
-        41,
-        62
-      ],
-      "specialNumber": 16,
-      "specialNumbers": [
-        16
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-03-31",
       "drawDate": "2026-03-31",
@@ -360,13 +343,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-06-05",
+      "drawDate": "2026-06-05",
+      "numbers": [
+        13,
+        30,
+        50,
+        52,
+        66
+      ],
+      "specialNumber": 2,
+      "specialNumbers": [
+        2
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2507,
+      "drawCount": 2508,
       "error": null
     },
     "seed": {
@@ -374,7 +374,7 @@
       "drawCount": 2507
     },
     "merged": {
-      "totalDrawCount": 2507
+      "totalDrawCount": 2508
     }
   }
 }
