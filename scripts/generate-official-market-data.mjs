@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { duePolls } from './lottery-due-windows.mjs';
 
 const SCHEMA_VERSION = 1;
 const USER_AGENT = 'lotto-data-github-pages/0.2';
@@ -153,8 +154,25 @@ const games = [
 ];
 
 const generated = [];
+const dueWindowOnly = process.env.LOTTO_DUE_WINDOW_ONLY === '1';
+const selectedGameIds = new Set(
+  String(process.env.LOTTO_GAME_IDS ?? '')
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean),
+);
+const dueGameIds = new Set(duePolls(new Date(checkedAt)).map((entry) => entry.gameId));
+const gamesToGenerate = games.filter((game) => {
+  if (selectedGameIds.size > 0) return selectedGameIds.has(game.gameId);
+  if (dueWindowOnly) return dueGameIds.has(game.gameId);
+  return true;
+});
 
-for (const game of games) {
+if (gamesToGenerate.length === 0) {
+  console.log('No lottery games are due for this scheduled window.');
+}
+
+for (const game of gamesToGenerate) {
   const seedDraws = await readSeedDraws(game);
   const officialState = await safeFetchOfficial(game, seedDraws);
   const draws = mergeDraws({
@@ -188,7 +206,12 @@ for (const game of games) {
   });
 }
 
-const files = buildIndexFile(generated);
+const files =
+  gamesToGenerate.length === 0
+    ? []
+    : gamesToGenerate.length === games.length
+      ? buildIndexFile(generated)
+      : [await buildMergedIndexFile(generated)];
 for (const output of generated) {
   files.push(...buildGameFiles(output));
 }
@@ -602,14 +625,7 @@ function buildIndexFile(outputs) {
   const byMarket = new Map();
   for (const output of outputs) {
     const list = byMarket.get(output.game.marketId) ?? [];
-    list.push({
-      gameId: output.game.gameId,
-      latestDrawId: output.latestDraw.drawId,
-      latestPath: gameKey(output.game, 'latest.json'),
-      drawsIndexPath: gameKey(output.game, 'draws-index.json'),
-      allDrawsPath: gameKey(output.game, 'draws-all.json'),
-      verificationStatus: output.verificationStatus,
-    });
+    list.push(indexGameEntry(output));
     byMarket.set(output.game.marketId, list);
   }
 
@@ -626,6 +642,56 @@ function buildIndexFile(outputs) {
       }),
     },
   ];
+}
+
+async function buildMergedIndexFile(outputs) {
+  let existing;
+  try {
+    existing = JSON.parse(await readFile(resolve(publicDataDir, 'index.json'), 'utf8'));
+  } catch (_error) {
+    existing = null;
+  }
+
+  const byMarket = new Map();
+  for (const market of Array.isArray(existing?.markets) ? existing.markets : []) {
+    if (typeof market.marketId !== 'string') continue;
+    byMarket.set(market.marketId, Array.isArray(market.games) ? [...market.games] : []);
+  }
+
+  for (const output of outputs) {
+    const list = byMarket.get(output.game.marketId) ?? [];
+    const entry = indexGameEntry(output);
+    const index = list.findIndex((item) => item?.gameId === output.game.gameId);
+    if (index >= 0) {
+      list[index] = entry;
+    } else {
+      list.push(entry);
+    }
+    byMarket.set(output.game.marketId, list);
+  }
+
+  return {
+    key: 'index.json',
+    body: stableJson({
+      schemaVersion: SCHEMA_VERSION,
+      generatedAt: checkedAt,
+      markets: [...byMarket.entries()].map(([marketId, marketGames]) => ({
+        marketId,
+        games: marketGames,
+      })),
+    }),
+  };
+}
+
+function indexGameEntry(output) {
+  return {
+    gameId: output.game.gameId,
+    latestDrawId: output.latestDraw.drawId,
+    latestPath: gameKey(output.game, 'latest.json'),
+    drawsIndexPath: gameKey(output.game, 'draws-index.json'),
+    allDrawsPath: gameKey(output.game, 'draws-all.json'),
+    verificationStatus: output.verificationStatus,
+  };
 }
 
 function buildGameFiles({ game, draws, latestDraw, verificationStatus, sourceSummary }) {
