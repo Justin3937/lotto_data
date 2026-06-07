@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T12:09:50.171Z",
+  "generatedAt": "2026-06-07T03:41:08.879Z",
   "marketId": "US",
   "gameId": "lotto_america",
-  "totalDrawCount": 1096,
+  "totalDrawCount": 1097,
   "draws": [
     {
       "drawId": "2017-11-15",
@@ -18636,13 +18636,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-06-06",
+      "drawDate": "2026-06-06",
+      "numbers": [
+        8,
+        22,
+        24,
+        37,
+        47
+      ],
+      "specialNumber": 5,
+      "specialNumbers": [
+        5
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1096,
+      "drawCount": 1097,
       "error": null
     },
     "seed": {
@@ -18650,7 +18667,7 @@
       "drawCount": 1096
     },
     "merged": {
-      "totalDrawCount": 1096
+      "totalDrawCount": 1097
     }
   }
 }
