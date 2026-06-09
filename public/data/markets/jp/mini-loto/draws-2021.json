@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T12:09:50.171Z",
+  "generatedAt": "2026-06-09T05:34:27.007Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2021",
@@ -894,8 +894,13 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
+      "ok": false,
+      "drawCount": 0,
+      "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
+    },
+    "unofficialBackup": {
       "ok": true,
-      "drawCount": 1389,
+      "drawCount": 79,
       "error": null
     },
     "seed": {
