@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-09T05:34:27.007Z",
+  "generatedAt": "2026-06-09T11:47:14.394Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2026",
-  "drawCount": 22,
+  "drawCount": 23,
   "draws": [
     {
       "drawId": "1368",
@@ -379,9 +379,27 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "1390",
+      "drawDate": "2026-06-09",
+      "numbers": [
+        3,
+        6,
+        23,
+        25,
+        27
+      ],
+      "specialNumber": 24,
+      "specialNumbers": [
+        24
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "takarakuji.syumimania.com"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": false,
@@ -390,7 +408,7 @@
     },
     "unofficialBackup": {
       "ok": true,
-      "drawCount": 79,
+      "drawCount": 80,
       "error": null
     },
     "seed": {
@@ -398,7 +416,7 @@
       "drawCount": 1389
     },
     "merged": {
-      "totalDrawCount": 1389
+      "totalDrawCount": 1390
     }
   }
 }

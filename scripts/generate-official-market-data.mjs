@@ -527,19 +527,34 @@ function parseMizuhoCsvDraw(text, { numberCount, specialCount, sourceDrawId }) {
 
   const drawId = drawIdFromJapaneseLabel(header[0]) ?? String(sourceDrawId);
   const drawDate = normalizeJapaneseDrawDate(header[2]);
-  const bonusIndex = numberRow.findIndex((item) => item.includes('ボーナス'));
   const numbers = numberRow.slice(1, 1 + numberCount).map(parseInteger).filter((item) => item != null);
-  const specialNumbers =
-    bonusIndex >= 0
-      ? numberRow
-          .slice(bonusIndex + 1, bonusIndex + 1 + specialCount)
-          .map(parseInteger)
-          .filter((item) => item != null)
-      : [];
+  const specialNumbers = parseMizuhoSpecialNumbers(numberRow, { numberCount, specialCount });
   if (!drawId || !drawDate || numbers.length !== numberCount || specialNumbers.length !== specialCount) {
     return null;
   }
   return officialDraw({ drawId, drawDate, numbers, specialNumbers });
+}
+
+function parseMizuhoSpecialNumbers(numberRow, { numberCount, specialCount }) {
+  const bonusIndex = numberRow.findIndex((item) => item.includes('ボーナス'));
+  if (bonusIndex >= 0) {
+    const specialNumbers = numberRow
+      .slice(bonusIndex + 1, bonusIndex + 1 + specialCount)
+      .map(parseInteger)
+      .filter((item) => item != null);
+    if (specialNumbers.length === specialCount) return specialNumbers;
+  }
+
+  const parenthesized = numberRow
+    .flatMap((item) => [...String(item ?? '').matchAll(/\(\s*(\d{1,2})\s*\)/g)])
+    .map((match) => Number.parseInt(match[1], 10))
+    .filter(Number.isFinite);
+  if (parenthesized.length >= specialCount) return parenthesized.slice(0, specialCount);
+
+  return numberRow
+    .slice(1 + numberCount, 1 + numberCount + specialCount)
+    .map((item) => parseInteger(String(item ?? '').replace(/[()]/g, '')))
+    .filter((item) => item != null);
 }
 
 function drawIdFromJapaneseLabel(value) {
@@ -803,7 +818,12 @@ function parseSyumimaniaTableHtml(html, {
     if (!tableMatch) continue;
     const mainRowNumbers = parseSyumimaniaRowNumbers(tableMatch[0], '本数字');
     const numbers = mainRowNumbers.slice(0, numberCount);
-    let specialNumbers = parseSyumimaniaRowNumbers(tableMatch[0], 'ボーナス数字').slice(0, specialCount);
+    let specialNumbers = parseSyumimaniaParenthesizedRowNumbers(tableMatch[0], '本数字').slice(0, specialCount);
+    if (specialNumbers.length === 0) {
+      specialNumbers = parseSyumimaniaRowNumbers(tableMatch[0], 'ボーナス数字', {
+        excludeLabels: ['本数字'],
+      }).slice(0, specialCount);
+    }
     if (specialNumbers.length === 0 && mainRowNumbers.length >= numberCount + specialCount) {
       specialNumbers = mainRowNumbers.slice(numberCount, numberCount + specialCount);
     }
@@ -823,13 +843,28 @@ function parseSyumimaniaTableHtml(html, {
   return draws;
 }
 
-function parseSyumimaniaRowNumbers(tableHtml, label) {
+function findSyumimaniaRow(tableHtml, label, { excludeLabels = [] } = {}) {
   const rowPattern = /<tr[\s\S]*?<\/tr>/g;
-  const row = [...tableHtml.matchAll(rowPattern)]
+  return [...tableHtml.matchAll(rowPattern)]
     .map((match) => match[0])
-    .find((item) => normalizeJapaneseText(stripHtml(item)).includes(label));
+    .find((item) => {
+      const text = normalizeJapaneseText(stripHtml(item));
+      return text.includes(label) && excludeLabels.every((exclude) => !text.includes(exclude));
+    });
+}
+
+function parseSyumimaniaRowNumbers(tableHtml, label, options = {}) {
+  const row = findSyumimaniaRow(tableHtml, label, options);
   if (!row || row.includes('***')) return [];
   return [...row.matchAll(/<td[^>]*>\s*\(?\s*(\d{1,2})\s*\)?\s*<\/td>/g)]
+    .map((match) => Number.parseInt(match[1], 10))
+    .filter(Number.isFinite);
+}
+
+function parseSyumimaniaParenthesizedRowNumbers(tableHtml, label, options = {}) {
+  const row = findSyumimaniaRow(tableHtml, label, options);
+  if (!row || row.includes('***')) return [];
+  return [...row.matchAll(/\(\s*(\d{1,2})\s*\)/g)]
     .map((match) => Number.parseInt(match[1], 10))
     .filter(Number.isFinite);
 }
