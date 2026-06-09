@@ -11,6 +11,8 @@ const MEGA_MILLIONS_ENDPOINT =
   'https://data.ny.gov/resource/5xaw-6ayf.json?$limit=50000&$order=draw_date';
 const LOTTO_AMERICA_ARCHIVE_URL = 'https://www.lottoamerica.com/archive';
 const MIZUHO_BASE = 'https://www.mizuhobank.co.jp';
+const SYUMIMANIA_BASE = 'https://takarakuji.syumimania.com';
+const LOTTO_NET_BASE = 'https://www.lotto.net';
 const FETCH_TIMEOUT_MS = 20000;
 const BROWSER_USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
@@ -93,6 +95,8 @@ const games = [
         oldPrefix: 'loto',
         numberCount: 5,
       }),
+    fetchUnofficialBackup: (seedDraws) =>
+      fetchSyumimaniaMiniLotoBackup({ seedDraws, numberCount: 5, specialCount: 1 }),
   },
   {
     marketId: 'JP',
@@ -107,6 +111,14 @@ const games = [
         currentPath: '/takarakuji/check/loto/loto6/index.html',
         oldPrefix: 'loto6',
         numberCount: 6,
+      }),
+    fetchUnofficialBackup: (seedDraws) =>
+      fetchSyumimaniaTableBackup({
+        seedDraws,
+        url: `${SYUMIMANIA_BASE}/loto6/`,
+        gameNamePattern: 'ロト6',
+        numberCount: 6,
+        specialCount: 1,
       }),
   },
   {
@@ -129,6 +141,14 @@ const games = [
           start: 1,
         },
       }),
+    fetchUnofficialBackup: (seedDraws) =>
+      fetchSyumimaniaTableBackup({
+        seedDraws,
+        url: `${SYUMIMANIA_BASE}/loto7/`,
+        gameNamePattern: 'ロト7',
+        numberCount: 7,
+        specialCount: 2,
+      }),
   },
   {
     marketId: 'US',
@@ -136,6 +156,12 @@ const games = [
     pathMarket: 'us',
     pathGame: 'powerball',
     fetchOfficial: fetchOfficialPowerball,
+    fetchUnofficialBackup: () =>
+      fetchLottoNetBackup({
+        url: `${LOTTO_NET_BASE}/powerball/numbers`,
+        specialClass: 'powerball',
+        numberCount: 5,
+      }),
   },
   {
     marketId: 'US',
@@ -143,6 +169,12 @@ const games = [
     pathMarket: 'us',
     pathGame: 'mega-millions',
     fetchOfficial: fetchOfficialMegaMillions,
+    fetchUnofficialBackup: () =>
+      fetchLottoNetBackup({
+        url: `${LOTTO_NET_BASE}/mega-millions/numbers`,
+        specialClass: 'mega-ball',
+        numberCount: 5,
+      }),
   },
   {
     marketId: 'US',
@@ -150,6 +182,12 @@ const games = [
     pathMarket: 'us',
     pathGame: 'lotto-america',
     fetchOfficial: fetchOfficialLottoAmerica,
+    fetchUnofficialBackup: () =>
+      fetchLottoNetBackup({
+        url: `${LOTTO_NET_BASE}/lotto-america/numbers`,
+        specialClass: 'star-ball',
+        numberCount: 5,
+      }),
   },
 ];
 
@@ -175,8 +213,10 @@ if (gamesToGenerate.length === 0) {
 for (const game of gamesToGenerate) {
   const seedDraws = await readSeedDraws(game);
   const officialState = await safeFetchOfficial(game, seedDraws);
+  const unofficialState = await safeFetchUnofficialBackup(game, seedDraws);
   const draws = mergeDraws({
     seedDraws,
+    unofficialDraws: unofficialState.draws,
     officialDraws: officialState.draws,
   });
 
@@ -188,12 +228,17 @@ for (const game of gamesToGenerate) {
     game,
     draws,
     latestDraw: draws[draws.length - 1],
-    verificationStatus: officialState.ok ? 'official' : seedVerificationStatus(seedDraws),
+    verificationStatus: mergedVerificationStatus(draws, officialState, seedDraws),
     sourceSummary: {
       official: {
         ok: officialState.ok,
         drawCount: officialState.draws.length,
         error: officialState.error,
+      },
+      unofficialBackup: {
+        ok: unofficialState.ok,
+        drawCount: unofficialState.draws.length,
+        error: unofficialState.error,
       },
       seed: {
         ok: seedDraws.length > 0,
@@ -224,6 +269,13 @@ for (const file of files) {
 }
 
 async function safeFetchOfficial(game, seedDraws) {
+  if (officialFetchDisabledFor(game)) {
+    return {
+      ok: false,
+      draws: [],
+      error: 'Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH',
+    };
+  }
   try {
     const draws = await game.fetchOfficial(seedDraws);
     return {
@@ -238,6 +290,35 @@ async function safeFetchOfficial(game, seedDraws) {
       error: error instanceof Error ? error.message : String(error),
     };
   }
+}
+
+async function safeFetchUnofficialBackup(game, seedDraws) {
+  if (typeof game.fetchUnofficialBackup !== 'function') {
+    return {
+      ok: false,
+      draws: [],
+      error: null,
+    };
+  }
+  try {
+    const draws = await game.fetchUnofficialBackup(seedDraws);
+    return {
+      ok: draws.length > 0,
+      draws,
+      error: draws.length > 0 ? null : 'Unofficial backup returned zero parsed draws',
+    };
+  } catch (error) {
+    return {
+      ok: false,
+      draws: [],
+      error: error instanceof Error ? error.message : String(error),
+    };
+  }
+}
+
+function officialFetchDisabledFor(game) {
+  return process.env.LOTTO_DISABLE_OFFICIAL_FETCH === '1' &&
+    (game.marketId === 'JP' || game.marketId === 'US');
 }
 
 async function fetchOfficialPowerball() {
@@ -590,6 +671,208 @@ function parseLottoAmericaArchiveHtml(html) {
   return draws;
 }
 
+async function fetchLottoNetBackup({ url, specialClass, numberCount }) {
+  const html = await fetchText(url, {
+    headers: {
+      'user-agent': BROWSER_USER_AGENT,
+    },
+  });
+  return parseLottoNetNumbersHtml(html, { specialClass, numberCount });
+}
+
+function parseLottoNetNumbersHtml(html, { specialClass, numberCount }) {
+  const draws = [];
+  const cardPattern =
+    /<div class="(?:results-big|results-med)">([\s\S]*?)(?=<div class="(?:results-big|results-med|promo-box)"|<a name="previousResults"|$)/g;
+  let match;
+  while ((match = cardPattern.exec(html)) != null) {
+    const cardHtml = match[1];
+    const dateMatch = cardHtml.match(
+      /<div class="date">\s*[A-Za-z]+\s*<span>(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})<\/span>/,
+    );
+    if (!dateMatch) continue;
+    const [, day, monthName, year] = dateMatch;
+    const month = MONTH_NUMBERS[monthName];
+    if (!month) continue;
+
+    const mainNumbers = [];
+    const ballPattern = /<li class="ball ([^"]+)">\s*<span>(\d{1,2})<\/span>/g;
+    let ballMatch;
+    let specialNumber = null;
+    while ((ballMatch = ballPattern.exec(cardHtml)) != null) {
+      const classes = ballMatch[1].split(/\s+/);
+      const value = Number.parseInt(ballMatch[2], 10);
+      if (!Number.isFinite(value)) continue;
+      if (classes.includes(specialClass)) {
+        specialNumber = value;
+      } else if (classes.includes('ball') && mainNumbers.length < numberCount) {
+        mainNumbers.push(value);
+      }
+    }
+    if (mainNumbers.length !== numberCount || specialNumber == null) continue;
+    const drawDate = `${year}-${month}-${day.padStart(2, '0')}`;
+    draws.push(
+      unofficialBackupDraw({
+        drawId: drawDate,
+        drawDate,
+        numbers: mainNumbers,
+        specialNumber,
+        sourceName: 'lotto.net',
+      }),
+    );
+  }
+  return draws;
+}
+
+async function fetchSyumimaniaMiniLotoBackup({ seedDraws, numberCount, specialCount }) {
+  const categoryHtml = await fetchText(`${SYUMIMANIA_BASE}/category/miniloto/`, {
+    headers: {
+      'user-agent': BROWSER_USER_AGENT,
+    },
+  });
+  const urls = [...categoryHtml.matchAll(/href="(https:\/\/takarakuji\.syumimania\.com\/miniloto-\d+\/)"/g)]
+    .map((match) => match[1])
+    .filter((url, index, list) => list.indexOf(url) === index)
+    .slice(0, 8);
+  const baseline = latestSeedBaseline(seedDraws);
+  const draws = [];
+  for (const url of urls) {
+    const html = await fetchText(url, {
+      headers: {
+        'user-agent': BROWSER_USER_AGENT,
+      },
+    });
+    draws.push(
+      ...parseSyumimaniaTableHtml(html, {
+        seedBaseline: baseline,
+        gameNamePattern: 'ミニロト',
+        numberCount,
+        specialCount,
+      }),
+    );
+  }
+  return draws;
+}
+
+async function fetchSyumimaniaTableBackup({
+  seedDraws,
+  url,
+  gameNamePattern,
+  numberCount,
+  specialCount,
+}) {
+  const html = await fetchText(url, {
+    headers: {
+      'user-agent': BROWSER_USER_AGENT,
+    },
+  });
+  return parseSyumimaniaTableHtml(html, {
+    seedBaseline: latestSeedBaseline(seedDraws),
+    gameNamePattern,
+    numberCount,
+    specialCount,
+  });
+}
+
+function parseSyumimaniaTableHtml(html, {
+  seedBaseline,
+  gameNamePattern,
+  numberCount,
+  specialCount,
+}) {
+  const draws = [];
+  const headingPattern = new RegExp(
+    `<h[23][^>]*>[\\s\\S]*?第\\s*(\\d+)\\s*回\\s*${gameNamePattern}[\\s\\S]*?<\\/h[23]>`,
+    'g',
+  );
+  const headings = [];
+  let match;
+  while ((match = headingPattern.exec(html)) != null) {
+    headings.push({
+      drawId: String(Number.parseInt(match[1], 10)),
+      start: match.index,
+      end: headingPattern.lastIndex,
+    });
+  }
+
+  for (let i = 0; i < headings.length; i += 1) {
+    const heading = headings[i];
+    const nextStart = headings[i + 1]?.start ?? html.length;
+    const block = html.slice(heading.end, nextStart);
+    const tableMatch = block.match(/<table[\s\S]*?<\/table>/);
+    if (!tableMatch) continue;
+    const mainRowNumbers = parseSyumimaniaRowNumbers(tableMatch[0], '本数字');
+    const numbers = mainRowNumbers.slice(0, numberCount);
+    let specialNumbers = parseSyumimaniaRowNumbers(tableMatch[0], 'ボーナス数字').slice(0, specialCount);
+    if (specialNumbers.length === 0 && mainRowNumbers.length >= numberCount + specialCount) {
+      specialNumbers = mainRowNumbers.slice(numberCount, numberCount + specialCount);
+    }
+    if (numbers.length !== numberCount || specialNumbers.length !== specialCount) continue;
+    const drawDate = deriveScheduledDrawDate(seedBaseline, heading.drawId);
+    if (!drawDate) continue;
+    draws.push(
+      unofficialBackupDraw({
+        drawId: heading.drawId,
+        drawDate,
+        numbers,
+        specialNumbers,
+        sourceName: 'takarakuji.syumimania.com',
+      }),
+    );
+  }
+  return draws;
+}
+
+function parseSyumimaniaRowNumbers(tableHtml, label) {
+  const rowPattern = /<tr[\s\S]*?<\/tr>/g;
+  const row = [...tableHtml.matchAll(rowPattern)]
+    .map((match) => match[0])
+    .find((item) => normalizeJapaneseText(stripHtml(item)).includes(label));
+  if (!row || row.includes('***')) return [];
+  return [...row.matchAll(/<td[^>]*>\s*\(?\s*(\d{1,2})\s*\)?\s*<\/td>/g)]
+    .map((match) => Number.parseInt(match[1], 10))
+    .filter(Number.isFinite);
+}
+
+function latestSeedBaseline(seedDraws) {
+  if (!Array.isArray(seedDraws) || seedDraws.length === 0) return null;
+  return seedDraws.reduce((latest, draw) => {
+    if (!draw?.drawId || !draw?.drawDate) return latest;
+    if (!latest) return draw;
+    return draw.drawDate.localeCompare(latest.drawDate) > 0 ||
+      (draw.drawDate === latest.drawDate && String(draw.drawId).localeCompare(String(latest.drawId)) > 0)
+      ? draw
+      : latest;
+  }, null);
+}
+
+function deriveScheduledDrawDate(seedBaseline, drawId) {
+  if (!seedBaseline) return null;
+  const baselineId = Number.parseInt(seedBaseline.drawId, 10);
+  const targetId = Number.parseInt(drawId, 10);
+  const baselineDate = normalizeDrawDate(seedBaseline.drawDate);
+  if (!Number.isFinite(baselineId) || !Number.isFinite(targetId) || !baselineDate) return null;
+  const date = new Date(`${baselineDate}T00:00:00Z`);
+  if (targetId === baselineId) return baselineDate;
+  const step = targetId > baselineId ? 1 : -1;
+  let cursorId = baselineId;
+  while (cursorId !== targetId) {
+    date.setUTCDate(date.getUTCDate() + step);
+    if (isJapaneseDrawWeekday(date, baselineDate)) {
+      cursorId += step;
+    }
+  }
+  return date.toISOString().slice(0, 10);
+}
+
+function isJapaneseDrawWeekday(date, baselineDate) {
+  const weekday = date.getUTCDay();
+  const baselineWeekday = new Date(`${baselineDate}T00:00:00Z`).getUTCDay();
+  if (baselineWeekday === 2) return weekday === 2;
+  if (baselineWeekday === 5) return weekday === 5;
+  return weekday === 1 || weekday === 4;
+}
+
 async function readSeedDraws(game) {
   const indexPath = resolve(
     publicDataDir,
@@ -780,10 +1063,16 @@ function gameKey(game, leaf) {
   return `markets/${game.pathMarket}/${game.pathGame}/${leaf}`;
 }
 
-function mergeDraws({ seedDraws, officialDraws }) {
+function mergeDraws({ seedDraws, unofficialDraws = [], officialDraws }) {
   const byDrawId = new Map();
   for (const draw of seedDraws) {
     byDrawId.set(draw.drawId, draw);
+  }
+  for (const draw of unofficialDraws) {
+    const existing = byDrawId.get(draw.drawId);
+    if (!existing || existing.verificationStatus !== 'official') {
+      byDrawId.set(draw.drawId, draw);
+    }
   }
   for (const draw of officialDraws) {
     byDrawId.set(draw.drawId, draw);
@@ -791,6 +1080,14 @@ function mergeDraws({ seedDraws, officialDraws }) {
   return [...byDrawId.values()].sort(
     (a, b) => a.drawDate.localeCompare(b.drawDate) || a.drawId.localeCompare(b.drawId),
   );
+}
+
+function mergedVerificationStatus(draws, officialState, seedDraws) {
+  const latestDraw = draws[draws.length - 1];
+  if (latestDraw?.verificationStatus === 'unofficial_backup_unverified') {
+    return 'official_with_unofficial_backup';
+  }
+  return officialState.ok ? 'official' : seedVerificationStatus(seedDraws);
 }
 
 function seedVerificationStatus(seedDraws) {
@@ -815,6 +1112,25 @@ function officialDraw({ drawId, drawDate, numbers, specialNumber, specialNumbers
     specialNumbers: resolvedSpecialNumbers,
     status: 'official',
     verificationStatus: 'official',
+  };
+}
+
+function unofficialBackupDraw({ drawId, drawDate, numbers, specialNumber, specialNumbers, sourceName }) {
+  const resolvedSpecialNumbers =
+    Array.isArray(specialNumbers) && specialNumbers.length > 0
+      ? specialNumbers.map(Number)
+      : specialNumber == null
+        ? []
+        : [Number(specialNumber)];
+  return {
+    drawId: stringValue(drawId),
+    drawDate,
+    numbers: numbers.map(Number),
+    specialNumber: resolvedSpecialNumbers[0] ?? null,
+    specialNumbers: resolvedSpecialNumbers,
+    status: 'unofficial_backup',
+    verificationStatus: 'unofficial_backup_unverified',
+    sourceName,
   };
 }
 

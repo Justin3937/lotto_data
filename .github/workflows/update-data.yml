@@ -20,6 +20,8 @@ concurrency:
 jobs:
   update-and-build:
     runs-on: ubuntu-latest
+    env:
+      LOTTO_DISABLE_OFFICIAL_FETCH: "1"
     outputs:
       has_due: ${{ steps.due.outputs.has_due }}
     steps:
@@ -41,7 +43,7 @@ jobs:
       - run: python -m playwright install --with-deps chromium
         if: github.event_name != 'schedule' || steps.due.outputs.has_due == 'true'
       - name: Generate JP official probe
-        if: github.event_name != 'schedule' || contains(steps.due.outputs.markets, 'JP')
+        if: env.LOTTO_DISABLE_OFFICIAL_FETCH != '1' && (github.event_name != 'schedule' || contains(steps.due.outputs.markets, 'JP'))
         continue-on-error: true
         timeout-minutes: 30
         run: xvfb-run -a npm run generate:jp-official
