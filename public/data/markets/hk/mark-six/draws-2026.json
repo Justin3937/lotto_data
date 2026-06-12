@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-11T16:54:30.705Z",
+  "generatedAt": "2026-06-12T18:07:15.434Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "year": "2026",
@@ -1141,7 +1141,7 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_fallback_history",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -1149,16 +1149,16 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
+      "ok": true,
+      "drawCount": 4288,
       "error": null
     },
     "seed": {
       "ok": true,
-      "drawCount": 62
+      "drawCount": 63
     },
     "merged": {
-      "totalDrawCount": 63
+      "totalDrawCount": 4351
     }
   }
 }

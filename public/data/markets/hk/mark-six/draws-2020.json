@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T18:07:15.434Z",
+  "marketId": "HK",
+  "gameId": "mark_six",
+  "year": "2020",
+  "drawCount": 30,
+  "draws": [
+    {
+      "drawId": "20/001",
+      "drawDate": "2020-01-02",
+      "numbers": [
+        15,
+        17,
+        29,
+        30,
+        34,
+        37
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/002",
+      "drawDate": "2020-01-07",
+      "numbers": [
+        1,
+        24,
+        25,
+        27,
+        31,
+        37
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/003",
+      "drawDate": "2020-01-12",
+      "numbers": [
+        5,
+        17,
+        35,
+        37,
+        42,
+        49
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/004",
+      "drawDate": "2020-01-16",
+      "numbers": [
+        2,
+        20,
+        24,
+        30,
+        32,
+        46
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/005",
+      "drawDate": "2020-01-18",
+      "numbers": [
+        18,
+        29,
+        32,
+        33,
+        36,
+        40
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/006",
+      "drawDate": "2020-01-21",
+      "numbers": [
+        11,
+        14,
+        21,
+        28,
+        37,
+        44
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/007",
+      "drawDate": "2020-01-23",
+      "numbers": [
+        2,
+        11,
+        13,
+        45,
+        46,
+        49
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/008",
+      "drawDate": "2020-02-01",
+      "numbers": [
+        3,
+        5,
+        30,
+        31,
+        43,
+        48
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/009",
+      "drawDate": "2020-09-24",
+      "numbers": [
+        11,
+        24,
+        26,
+        35,
+        42,
+        44
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/010",
+      "drawDate": "2020-09-29",
+      "numbers": [
+        9,
+        21,
+        26,
+        27,
+        28,
+        48
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/011",
+      "drawDate": "2020-10-08",
+      "numbers": [
+        21,
+        28,
+        33,
+        34,
+        40,
+        47
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/012",
+      "drawDate": "2020-10-15",
+      "numbers": [
+        9,
+        26,
+        28,
+        33,
+        38,
+        46
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/013",
+      "drawDate": "2020-10-22",
+      "numbers": [
+        1,
+        13,
+        19,
+        24,
+        29,
+        45
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/014",
+      "drawDate": "2020-10-29",
+      "numbers": [
+        6,
+        11,
+        33,
+        38,
+        40,
+        43
+      ],
+      "specialNumber": 2,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/015",
+      "drawDate": "2020-11-06",
+      "numbers": [
+        11,
+        17,
+        35,
+        36,
+        38,
+        40
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/016",
+      "drawDate": "2020-11-10",
+      "numbers": [
+        13,
+        15,
+        25,
+        28,
+        45,
+        49
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/017",
+      "drawDate": "2020-11-13",
+      "numbers": [
+        6,
+        15,
+        17,
+        18,
+        28,
+        47
+      ],
+      "specialNumber": 32,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/018",
+      "drawDate": "2020-11-17",
+      "numbers": [
+        13,
+        19,
+        20,
+        21,
+        33,
+        49
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/019",
+      "drawDate": "2020-11-20",
+      "numbers": [
+        22,
+        25,
+        30,
+        33,
+        34,
+        43
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/020",
+      "drawDate": "2020-11-24",
+      "numbers": [
+        7,
+        12,
+        16,
+        22,
+        45,
+        47
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/021",
+      "drawDate": "2020-11-27",
+      "numbers": [
+        5,
+        12,
+        13,
+        23,
+        27,
+        38
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/022",
+      "drawDate": "2020-12-01",
+      "numbers": [
+        24,
+        27,
+        29,
+        31,
+        42,
+        47
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/023",
+      "drawDate": "2020-12-04",
+      "numbers": [
+        11,
+        13,
+        19,
+        38,
+        39,
+        41
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/024",
+      "drawDate": "2020-12-08",
+      "numbers": [
+        7,
+        32,
+        34,
+        35,
+        48,
+        49
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/025",
+      "drawDate": "2020-12-11",
+      "numbers": [
+        1,
+        11,
+        23,
+        29,
+        41,
+        46
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/026",
+      "drawDate": "2020-12-15",
+      "numbers": [
+        2,
+        11,
+        13,
+        20,
+        21,
+        33
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/027",
+      "drawDate": "2020-12-18",
+      "numbers": [
+        8,
+        11,
+        12,
+        23,
+        34,
+        49
+      ],
+      "specialNumber": 28,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/028",
+      "drawDate": "2020-12-22",
+      "numbers": [
+        11,
+        20,
+        36,
+        37,
+        39,
+        48
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/029",
+      "drawDate": "2020-12-25",
+      "numbers": [
+        14,
+        18,
+        24,
+        27,
+        28,
+        41
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "20/030",
+      "drawDate": "2020-12-29",
+      "numbers": [
+        10,
+        11,
+        24,
+        39,
+        41,
+        42
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    }
+  ],
+  "verificationStatus": "official_with_fallback_history",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 63,
+      "error": null
+    },
+    "unofficialBackup": {
+      "ok": true,
+      "drawCount": 4288,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 63
+    },
+    "merged": {
+      "totalDrawCount": 4351
+    }
+  }
+}

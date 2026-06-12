@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T18:07:15.434Z",
+  "marketId": "HK",
+  "gameId": "mark_six",
+  "year": "2014",
+  "drawCount": 152,
+  "draws": [
+    {
+      "drawId": "14/001",
+      "drawDate": "2014-01-02",
+      "numbers": [
+        1,
+        36,
+        38,
+        43,
+        46,
+        49
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/002",
+      "drawDate": "2014-01-04",
+      "numbers": [
+        6,
+        16,
+        31,
+        32,
+        44,
+        49
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/003",
+      "drawDate": "2014-01-07",
+      "numbers": [
+        9,
+        16,
+        30,
+        31,
+        38,
+        41
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/004",
+      "drawDate": "2014-01-09",
+      "numbers": [
+        4,
+        15,
+        16,
+        28,
+        39,
+        45
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/005",
+      "drawDate": "2014-01-12",
+      "numbers": [
+        3,
+        16,
+        36,
+        39,
+        42,
+        44
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/006",
+      "drawDate": "2014-01-14",
+      "numbers": [
+        9,
+        11,
+        27,
+        31,
+        33,
+        34
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/007",
+      "drawDate": "2014-01-16",
+      "numbers": [
+        9,
+        15,
+        16,
+        17,
+        18,
+        37
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/008",
+      "drawDate": "2014-01-18",
+      "numbers": [
+        3,
+        17,
+        18,
+        26,
+        28,
+        44
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/009",
+      "drawDate": "2014-01-21",
+      "numbers": [
+        8,
+        20,
+        23,
+        34,
+        37,
+        49
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/010",
+      "drawDate": "2014-01-23",
+      "numbers": [
+        4,
+        5,
+        18,
+        21,
+        27,
+        31
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/011",
+      "drawDate": "2014-01-25",
+      "numbers": [
+        5,
+        20,
+        37,
+        38,
+        43,
+        48
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/012",
+      "drawDate": "2014-01-28",
+      "numbers": [
+        4,
+        20,
+        27,
+        30,
+        31,
+        37
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/013",
+      "drawDate": "2014-01-30",
+      "numbers": [
+        2,
+        3,
+        4,
+        16,
+        26,
+        36
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/014",
+      "drawDate": "2014-02-04",
+      "numbers": [
+        11,
+        13,
+        15,
+        39,
+        48,
+        49
+      ],
+      "specialNumber": 37,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/015",
+      "drawDate": "2014-02-06",
+      "numbers": [
+        26,
+        27,
+        32,
+        33,
+        37,
+        45
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/016",
+      "drawDate": "2014-02-09",
+      "numbers": [
+        20,
+        21,
+        35,
+        37,
+        47,
+        48
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/017",
+      "drawDate": "2014-02-11",
+      "numbers": [
+        7,
+        10,
+        24,
+        25,
+        27,
+        29
+      ],
+      "specialNumber": 19,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/018",
+      "drawDate": "2014-02-13",
+      "numbers": [
+        19,
+        23,
+        25,
+        40,
+        46,
+        49
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/019",
+      "drawDate": "2014-02-15",
+      "numbers": [
+        2,
+        14,
+        30,
+        32,
+        36,
+        45
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/020",
+      "drawDate": "2014-02-18",
+      "numbers": [
+        15,
+        21,
+        23,
+        25,
+        34,
+        45
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/021",
+      "drawDate": "2014-02-20",
+      "numbers": [
+        3,
+        5,
+        24,
+        26,
+        31,
+        40
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/022",
+      "drawDate": "2014-02-22",
+      "numbers": [
+        2,
+        23,
+        24,
+        29,
+        33,
+        35
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/023",
+      "drawDate": "2014-02-25",
+      "numbers": [
+        8,
+        26,
+        39,
+        40,
+        41,
+        43
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/024",
+      "drawDate": "2014-02-27",
+      "numbers": [
+        5,
+        9,
+        15,
+        24,
+        28,
+        35
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/025",
+      "drawDate": "2014-03-02",
+      "numbers": [
+        11,
+        16,
+        19,
+        21,
+        38,
+        46
+      ],
+      "specialNumber": 34,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/026",
+      "drawDate": "2014-03-04",
+      "numbers": [
+        3,
+        13,
+        16,
+        19,
+        27,
+        33
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/027",
+      "drawDate": "2014-03-06",
+      "numbers": [
+        6,
+        10,
+        20,
+        27,
+        39,
+        46
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/028",
+      "drawDate": "2014-03-08",
+      "numbers": [
+        2,
+        3,
+        16,
+        17,
+        24,
+        32
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/029",
+      "drawDate": "2014-03-11",
+      "numbers": [
+        4,
+        6,
+        15,
+        28,
+        30,
+        33
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/030",
+      "drawDate": "2014-03-13",
+      "numbers": [
+        7,
+        10,
+        17,
+        19,
+        20,
+        22
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/031",
+      "drawDate": "2014-03-15",
+      "numbers": [
+        2,
+        15,
+        21,
+        24,
+        29,
+        46
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/032",
+      "drawDate": "2014-03-18",
+      "numbers": [
+        2,
+        17,
+        23,
+        35,
+        42,
+        48
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/033",
+      "drawDate": "2014-03-20",
+      "numbers": [
+        1,
+        9,
+        18,
+        25,
+        37,
+        48
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/034",
+      "drawDate": "2014-03-22",
+      "numbers": [
+        11,
+        20,
+        21,
+        26,
+        34,
+        49
+      ],
+      "specialNumber": 4,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/035",
+      "drawDate": "2014-03-25",
+      "numbers": [
+        22,
+        28,
+        35,
+        36,
+        44,
+        45
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/036",
+      "drawDate": "2014-03-27",
+      "numbers": [
+        7,
+        23,
+        35,
+        42,
+        45,
+        49
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/037",
+      "drawDate": "2014-03-29",
+      "numbers": [
+        2,
+        10,
+        12,
+        18,
+        24,
+        33
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/038",
+      "drawDate": "2014-04-01",
+      "numbers": [
+        22,
+        33,
+        36,
+        43,
+        48,
+        49
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/039",
+      "drawDate": "2014-04-03",
+      "numbers": [
+        4,
+        9,
+        25,
+        26,
+        27,
+        28
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/040",
+      "drawDate": "2014-04-05",
+      "numbers": [
+        10,
+        19,
+        38,
+        39,
+        44,
+        45
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/041",
+      "drawDate": "2014-04-08",
+      "numbers": [
+        11,
+        24,
+        31,
+        45,
+        46,
+        47
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/042",
+      "drawDate": "2014-04-10",
+      "numbers": [
+        4,
+        18,
+        21,
+        31,
+        42,
+        49
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/043",
+      "drawDate": "2014-04-12",
+      "numbers": [
+        6,
+        18,
+        20,
+        28,
+        43,
+        45
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/044",
+      "drawDate": "2014-04-15",
+      "numbers": [
+        6,
+        14,
+        16,
+        28,
+        41,
+        45
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/045",
+      "drawDate": "2014-04-17",
+      "numbers": [
+        12,
+        14,
+        17,
+        23,
+        24,
+        45
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/046",
+      "drawDate": "2014-04-19",
+      "numbers": [
+        20,
+        21,
+        32,
+        35,
+        46,
+        47
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/047",
+      "drawDate": "2014-04-22",
+      "numbers": [
+        1,
+        3,
+        12,
+        29,
+        36,
+        41
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/048",
+      "drawDate": "2014-04-24",
+      "numbers": [
+        1,
+        17,
+        28,
+        32,
+        39,
+        40
+      ],
+      "specialNumber": 16,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/049",
+      "drawDate": "2014-04-26",
+      "numbers": [
+        9,
+        12,
+        22,
+        27,
+        36,
+        47
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/050",
+      "drawDate": "2014-04-29",
+      "numbers": [
+        2,
+        8,
+        15,
+        26,
+        37,
+        45
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/051",
+      "drawDate": "2014-05-01",
+      "numbers": [
+        1,
+        14,
+        28,
+        29,
+        37,
+        43
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/052",
+      "drawDate": "2014-05-03",
+      "numbers": [
+        2,
+        6,
+        13,
+        16,
+        30,
+        36
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/053",
+      "drawDate": "2014-05-06",
+      "numbers": [
+        10,
+        23,
+        33,
+        36,
+        39,
+        44
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/054",
+      "drawDate": "2014-05-08",
+      "numbers": [
+        2,
+        10,
+        12,
+        30,
+        37,
+        39
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/055",
+      "drawDate": "2014-05-11",
+      "numbers": [
+        11,
+        16,
+        26,
+        38,
+        45,
+        49
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/056",
+      "drawDate": "2014-05-13",
+      "numbers": [
+        9,
+        20,
+        22,
+        32,
+        35,
+        41
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/057",
+      "drawDate": "2014-05-15",
+      "numbers": [
+        9,
+        12,
+        16,
+        24,
+        34,
+        35
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/058",
+      "drawDate": "2014-05-18",
+      "numbers": [
+        9,
+        12,
+        21,
+        27,
+        37,
+        45
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/059",
+      "drawDate": "2014-05-20",
+      "numbers": [
+        10,
+        16,
+        33,
+        34,
+        44,
+        47
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/060",
+      "drawDate": "2014-05-22",
+      "numbers": [
+        9,
+        17,
+        28,
+        31,
+        35,
+        37
+      ],
+      "specialNumber": 19,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/061",
+      "drawDate": "2014-05-24",
+      "numbers": [
+        2,
+        4,
+        14,
+        30,
+        39,
+        41
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/062",
+      "drawDate": "2014-05-27",
+      "numbers": [
+        3,
+        10,
+        16,
+        30,
+        34,
+        44
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/063",
+      "drawDate": "2014-05-29",
+      "numbers": [
+        4,
+        14,
+        19,
+        24,
+        26,
+        48
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/064",
+      "drawDate": "2014-05-31",
+      "numbers": [
+        2,
+        10,
+        28,
+        32,
+        37,
+        47
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/065",
+      "drawDate": "2014-06-02",
+      "numbers": [
+        3,
+        13,
+        19,
+        20,
+        36,
+        39
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/066",
+      "drawDate": "2014-06-04",
+      "numbers": [
+        10,
+        11,
+        25,
+        33,
+        40,
+        46
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/067",
+      "drawDate": "2014-06-07",
+      "numbers": [
+        4,
+        8,
+        13,
+        19,
+        44,
+        48
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/068",
+      "drawDate": "2014-06-10",
+      "numbers": [
+        1,
+        30,
+        32,
+        35,
+        37,
+        44
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/069",
+      "drawDate": "2014-06-12",
+      "numbers": [
+        3,
+        18,
+        21,
+        41,
+        44,
+        45
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/070",
+      "drawDate": "2014-06-17",
+      "numbers": [
+        3,
+        4,
+        15,
+        16,
+        23,
+        45
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/071",
+      "drawDate": "2014-06-19",
+      "numbers": [
+        3,
+        17,
+        24,
+        30,
+        31,
+        44
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/072",
+      "drawDate": "2014-06-21",
+      "numbers": [
+        2,
+        17,
+        37,
+        40,
+        45,
+        49
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/073",
+      "drawDate": "2014-06-24",
+      "numbers": [
+        18,
+        24,
+        25,
+        30,
+        31,
+        35
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/074",
+      "drawDate": "2014-06-26",
+      "numbers": [
+        2,
+        20,
+        40,
+        42,
+        47,
+        48
+      ],
+      "specialNumber": 28,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/075",
+      "drawDate": "2014-06-29",
+      "numbers": [
+        15,
+        23,
+        26,
+        38,
+        46,
+        47
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/076",
+      "drawDate": "2014-07-03",
+      "numbers": [
+        14,
+        17,
+        34,
+        37,
+        43,
+        48
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/077",
+      "drawDate": "2014-07-05",
+      "numbers": [
+        10,
+        14,
+        32,
+        36,
+        37,
+        38
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/078",
+      "drawDate": "2014-07-08",
+      "numbers": [
+        4,
+        16,
+        22,
+        27,
+        38,
+        39
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/079",
+      "drawDate": "2014-07-10",
+      "numbers": [
+        1,
+        2,
+        9,
+        17,
+        22,
+        25
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/080",
+      "drawDate": "2014-07-12",
+      "numbers": [
+        3,
+        11,
+        13,
+        23,
+        40,
+        49
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/081",
+      "drawDate": "2014-07-15",
+      "numbers": [
+        2,
+        5,
+        9,
+        32,
+        41,
+        42
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/082",
+      "drawDate": "2014-07-17",
+      "numbers": [
+        1,
+        20,
+        28,
+        30,
+        42,
+        43
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/083",
+      "drawDate": "2014-07-19",
+      "numbers": [
+        1,
+        9,
+        30,
+        40,
+        41,
+        48
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/084",
+      "drawDate": "2014-07-22",
+      "numbers": [
+        1,
+        3,
+        14,
+        16,
+        24,
+        41
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/085",
+      "drawDate": "2014-07-24",
+      "numbers": [
+        4,
+        5,
+        21,
+        31,
+        36,
+        38
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/086",
+      "drawDate": "2014-07-26",
+      "numbers": [
+        1,
+        4,
+        15,
+        17,
+        36,
+        42
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/087",
+      "drawDate": "2014-07-29",
+      "numbers": [
+        11,
+        13,
+        15,
+        31,
+        37,
+        47
+      ],
+      "specialNumber": 19,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/088",
+      "drawDate": "2014-07-31",
+      "numbers": [
+        12,
+        22,
+        27,
+        35,
+        44,
+        48
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/089",
+      "drawDate": "2014-08-02",
+      "numbers": [
+        3,
+        22,
+        23,
+        26,
+        42,
+        48
+      ],
+      "specialNumber": 28,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/090",
+      "drawDate": "2014-08-05",
+      "numbers": [
+        5,
+        7,
+        8,
+        18,
+        24,
+        29
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/091",
+      "drawDate": "2014-08-07",
+      "numbers": [
+        5,
+        14,
+        31,
+        32,
+        36,
+        46
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/092",
+      "drawDate": "2014-08-09",
+      "numbers": [
+        1,
+        9,
+        15,
+        31,
+        33,
+        41
+      ],
+      "specialNumber": 37,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/093",
+      "drawDate": "2014-08-12",
+      "numbers": [
+        7,
+        9,
+        27,
+        31,
+        36,
+        39
+      ],
+      "specialNumber": 32,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/094",
+      "drawDate": "2014-08-14",
+      "numbers": [
+        4,
+        8,
+        14,
+        23,
+        48,
+        49
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/095",
+      "drawDate": "2014-08-16",
+      "numbers": [
+        23,
+        26,
+        27,
+        37,
+        42,
+        46
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/096",
+      "drawDate": "2014-08-19",
+      "numbers": [
+        2,
+        5,
+        27,
+        32,
+        42,
+        46
+      ],
+      "specialNumber": 16,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/097",
+      "drawDate": "2014-08-21",
+      "numbers": [
+        10,
+        14,
+        26,
+        29,
+        30,
+        31
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/098",
+      "drawDate": "2014-08-23",
+      "numbers": [
+        4,
+        12,
+        14,
+        24,
+        32,
+        38
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/099",
+      "drawDate": "2014-08-26",
+      "numbers": [
+        25,
+        29,
+        32,
+        33,
+        37,
+        44
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/100",
+      "drawDate": "2014-08-28",
+      "numbers": [
+        11,
+        17,
+        24,
+        27,
+        31,
+        38
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/101",
+      "drawDate": "2014-08-30",
+      "numbers": [
+        15,
+        18,
+        24,
+        27,
+        39,
+        49
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/102",
+      "drawDate": "2014-09-02",
+      "numbers": [
+        26,
+        28,
+        37,
+        43,
+        45,
+        47
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/103",
+      "drawDate": "2014-09-04",
+      "numbers": [
+        11,
+        14,
+        34,
+        36,
+        43,
+        46
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/104",
+      "drawDate": "2014-09-09",
+      "numbers": [
+        7,
+        25,
+        27,
+        36,
+        39,
+        42
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/105",
+      "drawDate": "2014-09-13",
+      "numbers": [
+        3,
+        12,
+        40,
+        43,
+        48,
+        49
+      ],
+      "specialNumber": 32,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/106",
+      "drawDate": "2014-09-16",
+      "numbers": [
+        4,
+        15,
+        17,
+        22,
+        34,
+        43
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/107",
+      "drawDate": "2014-09-18",
+      "numbers": [
+        6,
+        16,
+        20,
+        25,
+        27,
+        45
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/108",
+      "drawDate": "2014-09-20",
+      "numbers": [
+        3,
+        16,
+        32,
+        38,
+        40,
+        48
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/109",
+      "drawDate": "2014-09-23",
+      "numbers": [
+        12,
+        13,
+        20,
+        28,
+        41,
+        43
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/110",
+      "drawDate": "2014-09-25",
+      "numbers": [
+        3,
+        19,
+        42,
+        44,
+        48,
+        49
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/111",
+      "drawDate": "2014-09-28",
+      "numbers": [
+        6,
+        10,
+        12,
+        26,
+        28,
+        35
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/112",
+      "drawDate": "2014-09-30",
+      "numbers": [
+        10,
+        16,
+        20,
+        39,
+        45,
+        46
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/113",
+      "drawDate": "2014-10-02",
+      "numbers": [
+        4,
+        10,
+        24,
+        29,
+        33,
+        35
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/114",
+      "drawDate": "2014-10-04",
+      "numbers": [
+        5,
+        14,
+        22,
+        24,
+        27,
+        45
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/115",
+      "drawDate": "2014-10-07",
+      "numbers": [
+        12,
+        13,
+        26,
+        33,
+        42,
+        49
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/116",
+      "drawDate": "2014-10-09",
+      "numbers": [
+        2,
+        12,
+        14,
+        23,
+        40,
+        46
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/117",
+      "drawDate": "2014-10-11",
+      "numbers": [
+        26,
+        29,
+        34,
+        35,
+        37,
+        47
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/118",
+      "drawDate": "2014-10-14",
+      "numbers": [
+        1,
+        5,
+        8,
+        17,
+        20,
+        37
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/119",
+      "drawDate": "2014-10-16",
+      "numbers": [
+        4,
+        9,
+        34,
+        39,
+        48,
+        49
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/120",
+      "drawDate": "2014-10-18",
+      "numbers": [
+        12,
+        19,
+        22,
+        36,
+        40,
+        47
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/121",
+      "drawDate": "2014-10-21",
+      "numbers": [
+        6,
+        9,
+        17,
+        18,
+        29,
+        34
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/122",
+      "drawDate": "2014-10-23",
+      "numbers": [
+        11,
+        14,
+        28,
+        29,
+        37,
+        41
+      ],
+      "specialNumber": 19,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/123",
+      "drawDate": "2014-10-25",
+      "numbers": [
+        1,
+        13,
+        39,
+        40,
+        41,
+        43
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/124",
+      "drawDate": "2014-10-28",
+      "numbers": [
+        16,
+        26,
+        30,
+        37,
+        43,
+        47
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/125",
+      "drawDate": "2014-10-30",
+      "numbers": [
+        3,
+        19,
+        29,
+        36,
+        47,
+        49
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/126",
+      "drawDate": "2014-11-01",
+      "numbers": [
+        9,
+        10,
+        11,
+        20,
+        26,
+        44
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/127",
+      "drawDate": "2014-11-04",
+      "numbers": [
+        16,
+        23,
+        29,
+        30,
+        37,
+        38
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/128",
+      "drawDate": "2014-11-06",
+      "numbers": [
+        4,
+        10,
+        12,
+        14,
+        29,
+        48
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/129",
+      "drawDate": "2014-11-08",
+      "numbers": [
+        7,
+        8,
+        15,
+        32,
+        34,
+        39
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/130",
+      "drawDate": "2014-11-11",
+      "numbers": [
+        3,
+        5,
+        9,
+        19,
+        48,
+        49
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/131",
+      "drawDate": "2014-11-13",
+      "numbers": [
+        21,
+        36,
+        41,
+        42,
+        46,
+        49
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/132",
+      "drawDate": "2014-11-16",
+      "numbers": [
+        7,
+        15,
+        32,
+        33,
+        34,
+        43
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/133",
+      "drawDate": "2014-11-18",
+      "numbers": [
+        2,
+        6,
+        17,
+        24,
+        37,
+        49
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/134",
+      "drawDate": "2014-11-20",
+      "numbers": [
+        8,
+        16,
+        19,
+        33,
+        35,
+        46
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/135",
+      "drawDate": "2014-11-22",
+      "numbers": [
+        2,
+        12,
+        17,
+        27,
+        32,
+        33
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/136",
+      "drawDate": "2014-11-25",
+      "numbers": [
+        6,
+        35,
+        41,
+        42,
+        44,
+        47
+      ],
+      "specialNumber": 19,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/137",
+      "drawDate": "2014-11-27",
+      "numbers": [
+        2,
+        20,
+        22,
+        30,
+        40,
+        45
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/138",
+      "drawDate": "2014-11-29",
+      "numbers": [
+        7,
+        26,
+        29,
+        32,
+        33,
+        37
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/139",
+      "drawDate": "2014-12-02",
+      "numbers": [
+        1,
+        4,
+        13,
+        27,
+        47,
+        49
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/140",
+      "drawDate": "2014-12-04",
+      "numbers": [
+        1,
+        8,
+        20,
+        27,
+        33,
+        36
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/141",
+      "drawDate": "2014-12-06",
+      "numbers": [
+        17,
+        18,
+        21,
+        25,
+        40,
+        48
+      ],
+      "specialNumber": 16,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/142",
+      "drawDate": "2014-12-09",
+      "numbers": [
+        3,
+        4,
+        13,
+        29,
+        31,
+        41
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/143",
+      "drawDate": "2014-12-11",
+      "numbers": [
+        1,
+        7,
+        13,
+        32,
+        35,
+        39
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/144",
+      "drawDate": "2014-12-13",
+      "numbers": [
+        12,
+        14,
+        17,
+        20,
+        40,
+        48
+      ],
+      "specialNumber": 19,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/145",
+      "drawDate": "2014-12-16",
+      "numbers": [
+        1,
+        7,
+        14,
+        31,
+        34,
+        42
+      ],
+      "specialNumber": 16,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/146",
+      "drawDate": "2014-12-18",
+      "numbers": [
+        6,
+        8,
+        10,
+        21,
+        25,
+        29
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/147",
+      "drawDate": "2014-12-21",
+      "numbers": [
+        2,
+        25,
+        30,
+        36,
+        37,
+        43
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/148",
+      "drawDate": "2014-12-23",
+      "numbers": [
+        1,
+        4,
+        12,
+        14,
+        35,
+        47
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/149",
+      "drawDate": "2014-12-25",
+      "numbers": [
+        12,
+        19,
+        24,
+        43,
+        46,
+        47
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/150",
+      "drawDate": "2014-12-27",
+      "numbers": [
+        14,
+        15,
+        28,
+        31,
+        32,
+        48
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/151",
+      "drawDate": "2014-12-29",
+      "numbers": [
+        1,
+        25,
+        30,
+        33,
+        39,
+        40
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "14/152",
+      "drawDate": "2014-12-31",
+      "numbers": [
+        10,
+        19,
+        25,
+        32,
+        33,
+        37
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    }
+  ],
+  "verificationStatus": "official_with_fallback_history",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 63,
+      "error": null
+    },
+    "unofficialBackup": {
+      "ok": true,
+      "drawCount": 4288,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 63
+    },
+    "merged": {
+      "totalDrawCount": 4351
+    }
+  }
+}

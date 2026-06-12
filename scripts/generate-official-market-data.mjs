@@ -5,6 +5,8 @@ import { duePolls } from './lottery-due-windows.mjs';
 const SCHEMA_VERSION = 1;
 const USER_AGENT = 'lotto-data-github-pages/0.2';
 const HKJC_GRAPHQL_ENDPOINT = 'https://info.cld.hkjc.com/graphql/base/';
+const MARK_SIX_HISTORY_FALLBACK_URL =
+  'https://raw.githubusercontent.com/icelam/mark-six-data-visualization/master/data/all.json';
 const POWERBALL_ENDPOINT =
   'https://data.ny.gov/resource/d6yy-54nr.json?$limit=50000&$order=draw_date';
 const MEGA_MILLIONS_ENDPOINT =
@@ -14,6 +16,7 @@ const MIZUHO_BASE = 'https://www.mizuhobank.co.jp';
 const SYUMIMANIA_BASE = 'https://takarakuji.syumimania.com';
 const LOTTO_NET_BASE = 'https://www.lotto.net';
 const FETCH_TIMEOUT_MS = 20000;
+const UNOFFICIAL_BACKUP_ATTEMPTS = 3;
 const BROWSER_USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 const MONTH_NUMBERS = {
@@ -80,6 +83,7 @@ const games = [
     pathMarket: 'hk',
     pathGame: 'mark-six',
     fetchOfficial: fetchOfficialMarkSix,
+    fetchUnofficialBackup: fetchFallbackMarkSixHistory,
   },
   {
     marketId: 'JP',
@@ -300,20 +304,30 @@ async function safeFetchUnofficialBackup(game, seedDraws) {
       error: null,
     };
   }
-  try {
-    const draws = await game.fetchUnofficialBackup(seedDraws);
-    return {
-      ok: draws.length > 0,
-      draws,
-      error: draws.length > 0 ? null : 'Unofficial backup returned zero parsed draws',
-    };
-  } catch (error) {
-    return {
-      ok: false,
-      draws: [],
-      error: error instanceof Error ? error.message : String(error),
-    };
+  let lastError = 'Unofficial backup returned zero parsed draws';
+  for (let attempt = 1; attempt <= UNOFFICIAL_BACKUP_ATTEMPTS; attempt += 1) {
+    try {
+      const draws = await game.fetchUnofficialBackup(seedDraws);
+      if (draws.length > 0) {
+        return {
+          ok: true,
+          draws,
+          error: null,
+        };
+      }
+      lastError = 'Unofficial backup returned zero parsed draws';
+    } catch (error) {
+      lastError = error instanceof Error ? error.message : String(error);
+    }
+    if (attempt < UNOFFICIAL_BACKUP_ATTEMPTS) {
+      await new Promise((resolveDelay) => setTimeout(resolveDelay, attempt * 500));
+    }
   }
+  return {
+    ok: false,
+    draws: [],
+    error: lastError,
+  };
 }
 
 function officialFetchDisabledFor(game) {
@@ -407,6 +421,38 @@ async function fetchOfficialMarkSix() {
     );
   }
   return draws;
+}
+
+async function fetchFallbackMarkSixHistory() {
+  const payload = await fetchJson(MARK_SIX_HISTORY_FALLBACK_URL, {
+    headers: {
+      'user-agent': USER_AGENT,
+    },
+  });
+  const records = Array.isArray(payload)
+    ? payload
+    : Array.isArray(payload?.data)
+      ? payload.data
+      : Array.isArray(payload?.draws)
+        ? payload.draws
+        : [];
+  return records.map(parseFallbackMarkSixRecord).filter(Boolean);
+}
+
+function parseFallbackMarkSixRecord(record) {
+  const drawId = stringValue(record.id ?? record.drawId ?? record.drawNo);
+  const drawDate = normalizeDrawDate(record.date ?? record.drawDate ?? record.openDate);
+  const numbers = parseNumberList(record.no ?? record.numbers).slice(0, 6);
+  const specialNumber = parseInteger(record.sno ?? record.special ?? record.specialNumber);
+  if (!drawId || !drawDate || numbers.length !== 6 || specialNumber == null) return null;
+  return {
+    drawId,
+    drawDate,
+    numbers,
+    specialNumber,
+    status: 'fallback',
+    verificationStatus: 'fallback',
+  };
 }
 
 async function fetchOfficialMizuhoLoto({
@@ -1121,6 +1167,12 @@ function mergedVerificationStatus(draws, officialState, seedDraws) {
   const latestDraw = draws[draws.length - 1];
   if (latestDraw?.verificationStatus === 'unofficial_backup_unverified') {
     return 'official_with_unofficial_backup';
+  }
+  if (
+    officialState.ok &&
+    draws.some((draw) => draw.verificationStatus === 'fallback')
+  ) {
+    return 'official_with_fallback_history';
   }
   return officialState.ok ? 'official' : seedVerificationStatus(seedDraws);
 }

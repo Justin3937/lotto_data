@@ -1,13 +1,14 @@
 # Lotto Data GitHub Pages
 
-Public GitHub Pages mirror for official lottery data.
+Public GitHub Pages fallback for app-facing lottery data.
 
 ## Scope
 
-- Market: Hong Kong
-- Game: Mark Six
-- Source: HKJC official GraphQL endpoint only
-- Fallback sources are intentionally excluded from this public repo
+- Markets: Hong Kong, Japan, and United States
+- HK Mark Six combines current official HKJC data with public fallback history.
+- JP/US normally prefer official sources and can use unofficial backup sources.
+- While `LOTTO_DISABLE_OFFICIAL_FETCH=1`, JP/US backup draws remain marked
+  `unofficial_backup_unverified`.
 
 ## Local Generate
 
@@ -26,4 +27,7 @@ Generated data is written to `public/data/`. The human verification page is
 3. Enable GitHub Pages with GitHub Actions as the source.
 4. Run the `Update lottery data and publish Pages` workflow manually once.
 
-The workflow refreshes official data daily and publishes the static site.
+The workflow is scheduled at minute 17 of every hour to avoid GitHub Actions
+top-of-hour congestion. It runs only around configured post-draw windows, with
+a bounded six-hour catch-up period after the final regular polling window so a
+delayed GitHub schedule can still publish the draw.

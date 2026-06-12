@@ -1,0 +1,1590 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T18:07:15.434Z",
+  "marketId": "HK",
+  "gameId": "mark_six",
+  "year": "1997",
+  "drawCount": 104,
+  "draws": [
+    {
+      "drawId": "97/001",
+      "drawDate": "1997-01-02",
+      "numbers": [
+        16,
+        26,
+        28,
+        30,
+        33,
+        38
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/002",
+      "drawDate": "1997-01-07",
+      "numbers": [
+        2,
+        5,
+        13,
+        38,
+        39,
+        42
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/003",
+      "drawDate": "1997-01-09",
+      "numbers": [
+        9,
+        14,
+        20,
+        24,
+        29,
+        44
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/004",
+      "drawDate": "1997-01-14",
+      "numbers": [
+        12,
+        17,
+        26,
+        27,
+        33,
+        45
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/005",
+      "drawDate": "1997-01-16",
+      "numbers": [
+        2,
+        12,
+        16,
+        37,
+        38,
+        42
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/006",
+      "drawDate": "1997-01-21",
+      "numbers": [
+        2,
+        28,
+        39,
+        44,
+        45,
+        46
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/007",
+      "drawDate": "1997-01-23",
+      "numbers": [
+        12,
+        14,
+        20,
+        29,
+        36,
+        41
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/008",
+      "drawDate": "1997-01-28",
+      "numbers": [
+        5,
+        12,
+        14,
+        27,
+        33,
+        37
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/009",
+      "drawDate": "1997-01-30",
+      "numbers": [
+        4,
+        8,
+        12,
+        13,
+        34,
+        47
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/010",
+      "drawDate": "1997-02-04",
+      "numbers": [
+        29,
+        34,
+        37,
+        39,
+        40,
+        43
+      ],
+      "specialNumber": 32,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/011",
+      "drawDate": "1997-02-11",
+      "numbers": [
+        8,
+        10,
+        14,
+        27,
+        28,
+        29
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/012",
+      "drawDate": "1997-02-13",
+      "numbers": [
+        2,
+        11,
+        25,
+        26,
+        30,
+        34
+      ],
+      "specialNumber": 37,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/013",
+      "drawDate": "1997-02-18",
+      "numbers": [
+        1,
+        5,
+        14,
+        27,
+        29,
+        39
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/014",
+      "drawDate": "1997-02-20",
+      "numbers": [
+        9,
+        14,
+        16,
+        24,
+        29,
+        35
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/015",
+      "drawDate": "1997-02-25",
+      "numbers": [
+        4,
+        8,
+        9,
+        36,
+        39,
+        41
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/016",
+      "drawDate": "1997-02-27",
+      "numbers": [
+        20,
+        24,
+        28,
+        29,
+        32,
+        34
+      ],
+      "specialNumber": 4,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/017",
+      "drawDate": "1997-03-04",
+      "numbers": [
+        7,
+        19,
+        21,
+        24,
+        32,
+        39
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/018",
+      "drawDate": "1997-03-06",
+      "numbers": [
+        1,
+        9,
+        16,
+        18,
+        36,
+        40
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/019",
+      "drawDate": "1997-03-11",
+      "numbers": [
+        7,
+        21,
+        23,
+        26,
+        32,
+        34
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/020",
+      "drawDate": "1997-03-13",
+      "numbers": [
+        3,
+        8,
+        9,
+        21,
+        34,
+        36
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/021",
+      "drawDate": "1997-03-18",
+      "numbers": [
+        6,
+        9,
+        15,
+        21,
+        28,
+        43
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/022",
+      "drawDate": "1997-03-20",
+      "numbers": [
+        1,
+        22,
+        23,
+        39,
+        45,
+        46
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/023",
+      "drawDate": "1997-03-25",
+      "numbers": [
+        15,
+        24,
+        26,
+        28,
+        32,
+        44
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/024",
+      "drawDate": "1997-03-27",
+      "numbers": [
+        2,
+        29,
+        35,
+        40,
+        41,
+        46
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/025",
+      "drawDate": "1997-04-01",
+      "numbers": [
+        4,
+        9,
+        16,
+        25,
+        36,
+        46
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/026",
+      "drawDate": "1997-04-03",
+      "numbers": [
+        3,
+        5,
+        10,
+        18,
+        22,
+        43
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/027",
+      "drawDate": "1997-04-08",
+      "numbers": [
+        6,
+        13,
+        18,
+        21,
+        25,
+        39
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/028",
+      "drawDate": "1997-04-10",
+      "numbers": [
+        1,
+        3,
+        9,
+        10,
+        36,
+        42
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/029",
+      "drawDate": "1997-04-15",
+      "numbers": [
+        2,
+        4,
+        13,
+        18,
+        22,
+        45
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/030",
+      "drawDate": "1997-04-17",
+      "numbers": [
+        1,
+        2,
+        3,
+        8,
+        40,
+        46
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/031",
+      "drawDate": "1997-04-22",
+      "numbers": [
+        5,
+        10,
+        16,
+        22,
+        30,
+        37
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/032",
+      "drawDate": "1997-04-24",
+      "numbers": [
+        10,
+        16,
+        21,
+        22,
+        31,
+        47
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/033",
+      "drawDate": "1997-04-29",
+      "numbers": [
+        4,
+        15,
+        17,
+        19,
+        29,
+        39
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/034",
+      "drawDate": "1997-05-01",
+      "numbers": [
+        12,
+        19,
+        31,
+        35,
+        41,
+        43
+      ],
+      "specialNumber": 4,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/035",
+      "drawDate": "1997-05-06",
+      "numbers": [
+        1,
+        27,
+        32,
+        35,
+        37,
+        41
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/036",
+      "drawDate": "1997-05-08",
+      "numbers": [
+        3,
+        7,
+        10,
+        15,
+        37,
+        38
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/037",
+      "drawDate": "1997-05-13",
+      "numbers": [
+        7,
+        10,
+        11,
+        14,
+        16,
+        21
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/038",
+      "drawDate": "1997-05-15",
+      "numbers": [
+        14,
+        15,
+        16,
+        28,
+        30,
+        44
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/039",
+      "drawDate": "1997-05-20",
+      "numbers": [
+        1,
+        11,
+        14,
+        27,
+        30,
+        32
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/040",
+      "drawDate": "1997-05-22",
+      "numbers": [
+        5,
+        9,
+        23,
+        27,
+        28,
+        42
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/041",
+      "drawDate": "1997-05-27",
+      "numbers": [
+        2,
+        4,
+        8,
+        19,
+        36,
+        37
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/042",
+      "drawDate": "1997-05-29",
+      "numbers": [
+        6,
+        15,
+        22,
+        29,
+        36,
+        40
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/043",
+      "drawDate": "1997-06-03",
+      "numbers": [
+        6,
+        24,
+        25,
+        35,
+        39,
+        47
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/044",
+      "drawDate": "1997-06-05",
+      "numbers": [
+        14,
+        25,
+        31,
+        35,
+        42,
+        46
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/045",
+      "drawDate": "1997-06-10",
+      "numbers": [
+        31,
+        34,
+        37,
+        42,
+        44,
+        45
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/046",
+      "drawDate": "1997-06-12",
+      "numbers": [
+        7,
+        8,
+        17,
+        26,
+        39,
+        45
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/047",
+      "drawDate": "1997-06-17",
+      "numbers": [
+        12,
+        20,
+        27,
+        31,
+        38,
+        40
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/048",
+      "drawDate": "1997-06-19",
+      "numbers": [
+        3,
+        16,
+        18,
+        22,
+        38,
+        45
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/049",
+      "drawDate": "1997-06-24",
+      "numbers": [
+        10,
+        11,
+        19,
+        28,
+        37,
+        38
+      ],
+      "specialNumber": 34,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/050",
+      "drawDate": "1997-06-26",
+      "numbers": [
+        17,
+        30,
+        32,
+        38,
+        39,
+        42
+      ],
+      "specialNumber": 4,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/051",
+      "drawDate": "1997-07-05",
+      "numbers": [
+        1,
+        4,
+        7,
+        9,
+        17,
+        18
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/052",
+      "drawDate": "1997-07-08",
+      "numbers": [
+        3,
+        14,
+        18,
+        26,
+        28,
+        41
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/053",
+      "drawDate": "1997-07-10",
+      "numbers": [
+        5,
+        10,
+        16,
+        19,
+        20,
+        30
+      ],
+      "specialNumber": 34,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/054",
+      "drawDate": "1997-07-15",
+      "numbers": [
+        6,
+        23,
+        26,
+        34,
+        35,
+        42
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/055",
+      "drawDate": "1997-07-17",
+      "numbers": [
+        1,
+        12,
+        17,
+        19,
+        22,
+        34
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/056",
+      "drawDate": "1997-07-19",
+      "numbers": [
+        1,
+        3,
+        10,
+        14,
+        33,
+        45
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/057",
+      "drawDate": "1997-07-22",
+      "numbers": [
+        3,
+        13,
+        19,
+        35,
+        37,
+        46
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/058",
+      "drawDate": "1997-07-24",
+      "numbers": [
+        6,
+        10,
+        17,
+        25,
+        28,
+        34
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/059",
+      "drawDate": "1997-07-29",
+      "numbers": [
+        14,
+        15,
+        17,
+        37,
+        40,
+        45
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/060",
+      "drawDate": "1997-07-31",
+      "numbers": [
+        2,
+        15,
+        16,
+        22,
+        28,
+        36
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/061",
+      "drawDate": "1997-08-05",
+      "numbers": [
+        12,
+        16,
+        27,
+        33,
+        34,
+        37
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/062",
+      "drawDate": "1997-08-07",
+      "numbers": [
+        16,
+        21,
+        24,
+        32,
+        37,
+        45
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/063",
+      "drawDate": "1997-08-12",
+      "numbers": [
+        2,
+        9,
+        22,
+        26,
+        30,
+        36
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/064",
+      "drawDate": "1997-08-14",
+      "numbers": [
+        3,
+        8,
+        28,
+        32,
+        42,
+        43
+      ],
+      "specialNumber": 41,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/065",
+      "drawDate": "1997-08-16",
+      "numbers": [
+        2,
+        4,
+        5,
+        27,
+        29,
+        40
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/066",
+      "drawDate": "1997-08-19",
+      "numbers": [
+        19,
+        31,
+        35,
+        37,
+        38,
+        42
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/067",
+      "drawDate": "1997-08-21",
+      "numbers": [
+        12,
+        18,
+        24,
+        30,
+        34,
+        35
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/068",
+      "drawDate": "1997-08-26",
+      "numbers": [
+        3,
+        17,
+        22,
+        29,
+        34,
+        38
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/069",
+      "drawDate": "1997-08-28",
+      "numbers": [
+        3,
+        15,
+        16,
+        19,
+        32,
+        33
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/070",
+      "drawDate": "1997-08-30",
+      "numbers": [
+        8,
+        10,
+        18,
+        26,
+        42,
+        45
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/071",
+      "drawDate": "1997-09-02",
+      "numbers": [
+        6,
+        9,
+        28,
+        30,
+        42,
+        47
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/072",
+      "drawDate": "1997-09-04",
+      "numbers": [
+        2,
+        6,
+        14,
+        26,
+        33,
+        42
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/073",
+      "drawDate": "1997-09-09",
+      "numbers": [
+        2,
+        7,
+        18,
+        29,
+        42,
+        45
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/074",
+      "drawDate": "1997-09-11",
+      "numbers": [
+        1,
+        27,
+        37,
+        43,
+        44,
+        47
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/075",
+      "drawDate": "1997-09-15",
+      "numbers": [
+        6,
+        9,
+        14,
+        15,
+        31,
+        47
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/076",
+      "drawDate": "1997-09-18",
+      "numbers": [
+        5,
+        8,
+        19,
+        28,
+        32,
+        33
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/077",
+      "drawDate": "1997-09-23",
+      "numbers": [
+        9,
+        10,
+        14,
+        30,
+        32,
+        41
+      ],
+      "specialNumber": 37,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/078",
+      "drawDate": "1997-09-25",
+      "numbers": [
+        1,
+        15,
+        27,
+        34,
+        42,
+        46
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/079",
+      "drawDate": "1997-09-30",
+      "numbers": [
+        6,
+        24,
+        28,
+        31,
+        38,
+        45
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/080",
+      "drawDate": "1997-10-04",
+      "numbers": [
+        8,
+        22,
+        24,
+        26,
+        37,
+        43
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/081",
+      "drawDate": "1997-10-07",
+      "numbers": [
+        8,
+        12,
+        24,
+        26,
+        29,
+        42
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/082",
+      "drawDate": "1997-10-09",
+      "numbers": [
+        5,
+        8,
+        14,
+        25,
+        31,
+        32
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/083",
+      "drawDate": "1997-10-14",
+      "numbers": [
+        6,
+        11,
+        18,
+        24,
+        27,
+        29
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/084",
+      "drawDate": "1997-10-16",
+      "numbers": [
+        7,
+        13,
+        21,
+        27,
+        35,
+        41
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/085",
+      "drawDate": "1997-10-21",
+      "numbers": [
+        14,
+        16,
+        24,
+        25,
+        35,
+        38
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/086",
+      "drawDate": "1997-10-23",
+      "numbers": [
+        14,
+        23,
+        25,
+        29,
+        35,
+        41
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/087",
+      "drawDate": "1997-10-28",
+      "numbers": [
+        2,
+        4,
+        14,
+        32,
+        34,
+        41
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/088",
+      "drawDate": "1997-10-30",
+      "numbers": [
+        7,
+        15,
+        23,
+        26,
+        29,
+        34
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/089",
+      "drawDate": "1997-11-03",
+      "numbers": [
+        3,
+        5,
+        24,
+        37,
+        38,
+        45
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/090",
+      "drawDate": "1997-11-06",
+      "numbers": [
+        14,
+        16,
+        24,
+        25,
+        27,
+        33
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/091",
+      "drawDate": "1997-11-11",
+      "numbers": [
+        7,
+        17,
+        29,
+        35,
+        36,
+        47
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/092",
+      "drawDate": "1997-11-13",
+      "numbers": [
+        9,
+        18,
+        20,
+        24,
+        37,
+        39
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/093",
+      "drawDate": "1997-11-18",
+      "numbers": [
+        3,
+        12,
+        24,
+        33,
+        40,
+        46
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/094",
+      "drawDate": "1997-11-20",
+      "numbers": [
+        7,
+        14,
+        30,
+        35,
+        41,
+        42
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/095",
+      "drawDate": "1997-11-25",
+      "numbers": [
+        1,
+        2,
+        5,
+        19,
+        26,
+        40
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/096",
+      "drawDate": "1997-11-27",
+      "numbers": [
+        8,
+        11,
+        13,
+        40,
+        42,
+        44
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/097",
+      "drawDate": "1997-12-02",
+      "numbers": [
+        19,
+        22,
+        27,
+        28,
+        29,
+        46
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/098",
+      "drawDate": "1997-12-04",
+      "numbers": [
+        9,
+        13,
+        17,
+        18,
+        22,
+        41
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/099",
+      "drawDate": "1997-12-09",
+      "numbers": [
+        21,
+        25,
+        36,
+        42,
+        43,
+        45
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/100",
+      "drawDate": "1997-12-11",
+      "numbers": [
+        3,
+        17,
+        21,
+        23,
+        34,
+        37
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/101",
+      "drawDate": "1997-12-16",
+      "numbers": [
+        4,
+        7,
+        14,
+        20,
+        30,
+        47
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/102",
+      "drawDate": "1997-12-18",
+      "numbers": [
+        5,
+        8,
+        12,
+        16,
+        40,
+        47
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/103",
+      "drawDate": "1997-12-23",
+      "numbers": [
+        9,
+        13,
+        22,
+        34,
+        36,
+        43
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "97/104",
+      "drawDate": "1997-12-30",
+      "numbers": [
+        14,
+        19,
+        24,
+        30,
+        36,
+        45
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    }
+  ],
+  "verificationStatus": "official_with_fallback_history",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 63,
+      "error": null
+    },
+    "unofficialBackup": {
+      "ok": true,
+      "drawCount": 4288,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 63
+    },
+    "merged": {
+      "totalDrawCount": 4351
+    }
+  }
+}

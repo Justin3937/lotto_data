@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "generate:jp-official": "python scripts/probe_jp_official_lottery_data.py",
-    "generate": "node scripts/generate-official-market-data.mjs"
+    "generate": "node scripts/generate-official-market-data.mjs",
+    "test:schedule": "node --test scripts/lottery-due-windows.test.mjs"
   },
   "engines": {
     "node": ">=22"

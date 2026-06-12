@@ -3,6 +3,7 @@ import { pathToFileURL } from 'node:url';
 
 export const POLL_WINDOW_MINUTES = 60;
 export const POLL_OFFSETS_MINUTES = [60, 120, 180];
+export const CATCH_UP_GRACE_MINUTES = 360;
 
 export const DATA_POLL_SCHEDULES = [
   {
@@ -97,6 +98,20 @@ export function duePollWindow(now, schedule) {
           offsetMinutes,
         };
       }
+    }
+
+    const finalOffsetMinutes = POLL_OFFSETS_MINUTES[POLL_OFFSETS_MINUTES.length - 1];
+    const finalScheduledMs = drawAtMs + finalOffsetMinutes * 60000;
+    const finalWindowEndMs = finalScheduledMs + POLL_WINDOW_MINUTES * 60000;
+    const catchUpEndMs = finalWindowEndMs + CATCH_UP_GRACE_MINUTES * 60000;
+    if (nowMs >= finalWindowEndMs && nowMs < catchUpEndMs) {
+      return {
+        targetDrawDate: formatLocalDate(dateParts),
+        drawAt: new Date(drawAtMs).toISOString(),
+        scheduledFor: new Date(finalScheduledMs).toISOString(),
+        offsetMinutes: finalOffsetMinutes,
+        catchUp: true,
+      };
     }
   }
 

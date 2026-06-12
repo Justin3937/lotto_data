@@ -1,0 +1,2265 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T18:07:15.434Z",
+  "marketId": "HK",
+  "gameId": "mark_six",
+  "year": "2008",
+  "drawCount": 149,
+  "draws": [
+    {
+      "drawId": "08/001",
+      "drawDate": "2008-01-03",
+      "numbers": [
+        5,
+        8,
+        36,
+        39,
+        42,
+        46
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/002",
+      "drawDate": "2008-01-05",
+      "numbers": [
+        3,
+        11,
+        14,
+        32,
+        33,
+        42
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/003",
+      "drawDate": "2008-01-08",
+      "numbers": [
+        2,
+        9,
+        14,
+        24,
+        40,
+        45
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/004",
+      "drawDate": "2008-01-10",
+      "numbers": [
+        4,
+        20,
+        36,
+        42,
+        46,
+        47
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/005",
+      "drawDate": "2008-01-13",
+      "numbers": [
+        8,
+        13,
+        18,
+        22,
+        26,
+        42
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/006",
+      "drawDate": "2008-01-15",
+      "numbers": [
+        10,
+        11,
+        15,
+        18,
+        37,
+        45
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/007",
+      "drawDate": "2008-01-17",
+      "numbers": [
+        8,
+        19,
+        24,
+        35,
+        36,
+        40
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/008",
+      "drawDate": "2008-01-19",
+      "numbers": [
+        4,
+        7,
+        8,
+        20,
+        32,
+        34
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/009",
+      "drawDate": "2008-01-22",
+      "numbers": [
+        9,
+        16,
+        17,
+        30,
+        33,
+        49
+      ],
+      "specialNumber": 41,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/010",
+      "drawDate": "2008-01-24",
+      "numbers": [
+        10,
+        23,
+        26,
+        38,
+        42,
+        46
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/011",
+      "drawDate": "2008-01-26",
+      "numbers": [
+        13,
+        15,
+        19,
+        22,
+        33,
+        38
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/012",
+      "drawDate": "2008-01-29",
+      "numbers": [
+        16,
+        22,
+        24,
+        33,
+        43,
+        44
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/013",
+      "drawDate": "2008-01-31",
+      "numbers": [
+        24,
+        32,
+        41,
+        42,
+        48,
+        49
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/014",
+      "drawDate": "2008-02-03",
+      "numbers": [
+        1,
+        34,
+        36,
+        37,
+        42,
+        46
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/015",
+      "drawDate": "2008-02-05",
+      "numbers": [
+        3,
+        6,
+        36,
+        40,
+        43,
+        48
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/016",
+      "drawDate": "2008-02-08",
+      "numbers": [
+        2,
+        16,
+        30,
+        31,
+        38,
+        48
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/017",
+      "drawDate": "2008-02-10",
+      "numbers": [
+        7,
+        24,
+        26,
+        30,
+        32,
+        39
+      ],
+      "specialNumber": 47,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/018",
+      "drawDate": "2008-02-12",
+      "numbers": [
+        12,
+        23,
+        31,
+        37,
+        40,
+        45
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/019",
+      "drawDate": "2008-02-14",
+      "numbers": [
+        4,
+        6,
+        15,
+        29,
+        33,
+        39
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/020",
+      "drawDate": "2008-02-16",
+      "numbers": [
+        2,
+        5,
+        8,
+        22,
+        29,
+        41
+      ],
+      "specialNumber": 28,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/021",
+      "drawDate": "2008-02-19",
+      "numbers": [
+        5,
+        15,
+        29,
+        32,
+        38,
+        39
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/022",
+      "drawDate": "2008-02-21",
+      "numbers": [
+        18,
+        22,
+        24,
+        27,
+        30,
+        48
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/023",
+      "drawDate": "2008-02-23",
+      "numbers": [
+        2,
+        9,
+        14,
+        24,
+        33,
+        47
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/024",
+      "drawDate": "2008-02-26",
+      "numbers": [
+        9,
+        20,
+        23,
+        30,
+        34,
+        39
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/025",
+      "drawDate": "2008-02-28",
+      "numbers": [
+        6,
+        8,
+        13,
+        17,
+        35,
+        49
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/026",
+      "drawDate": "2008-03-02",
+      "numbers": [
+        5,
+        7,
+        22,
+        30,
+        32,
+        35
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/027",
+      "drawDate": "2008-03-04",
+      "numbers": [
+        2,
+        5,
+        13,
+        20,
+        21,
+        49
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/028",
+      "drawDate": "2008-03-06",
+      "numbers": [
+        7,
+        12,
+        24,
+        25,
+        39,
+        44
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/029",
+      "drawDate": "2008-03-08",
+      "numbers": [
+        16,
+        25,
+        31,
+        36,
+        38,
+        49
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/030",
+      "drawDate": "2008-03-11",
+      "numbers": [
+        5,
+        13,
+        15,
+        23,
+        28,
+        40
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/031",
+      "drawDate": "2008-03-13",
+      "numbers": [
+        12,
+        28,
+        31,
+        33,
+        36,
+        44
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/032",
+      "drawDate": "2008-03-15",
+      "numbers": [
+        8,
+        10,
+        21,
+        22,
+        30,
+        47
+      ],
+      "specialNumber": 28,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/033",
+      "drawDate": "2008-03-18",
+      "numbers": [
+        13,
+        23,
+        28,
+        30,
+        37,
+        44
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/034",
+      "drawDate": "2008-03-20",
+      "numbers": [
+        4,
+        12,
+        22,
+        26,
+        33,
+        45
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/035",
+      "drawDate": "2008-03-22",
+      "numbers": [
+        13,
+        18,
+        32,
+        38,
+        48,
+        49
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/036",
+      "drawDate": "2008-03-25",
+      "numbers": [
+        7,
+        14,
+        15,
+        22,
+        25,
+        35
+      ],
+      "specialNumber": 32,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/037",
+      "drawDate": "2008-03-27",
+      "numbers": [
+        3,
+        4,
+        16,
+        32,
+        45,
+        48
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/038",
+      "drawDate": "2008-03-29",
+      "numbers": [
+        6,
+        9,
+        30,
+        32,
+        39,
+        48
+      ],
+      "specialNumber": 4,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/039",
+      "drawDate": "2008-04-01",
+      "numbers": [
+        15,
+        16,
+        27,
+        40,
+        44,
+        49
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/040",
+      "drawDate": "2008-04-03",
+      "numbers": [
+        1,
+        6,
+        17,
+        28,
+        36,
+        41
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/041",
+      "drawDate": "2008-04-08",
+      "numbers": [
+        11,
+        13,
+        21,
+        36,
+        39,
+        40
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/042",
+      "drawDate": "2008-04-13",
+      "numbers": [
+        1,
+        9,
+        22,
+        23,
+        34,
+        38
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/043",
+      "drawDate": "2008-04-15",
+      "numbers": [
+        8,
+        25,
+        31,
+        38,
+        43,
+        48
+      ],
+      "specialNumber": 23,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/044",
+      "drawDate": "2008-04-17",
+      "numbers": [
+        7,
+        10,
+        11,
+        27,
+        31,
+        48
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/045",
+      "drawDate": "2008-04-19",
+      "numbers": [
+        7,
+        10,
+        16,
+        19,
+        42,
+        46
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/046",
+      "drawDate": "2008-04-22",
+      "numbers": [
+        8,
+        14,
+        31,
+        36,
+        40,
+        46
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/047",
+      "drawDate": "2008-04-24",
+      "numbers": [
+        8,
+        12,
+        13,
+        25,
+        31,
+        35
+      ],
+      "specialNumber": 21,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/048",
+      "drawDate": "2008-04-26",
+      "numbers": [
+        13,
+        15,
+        17,
+        19,
+        24,
+        32
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/049",
+      "drawDate": "2008-04-29",
+      "numbers": [
+        20,
+        22,
+        24,
+        25,
+        40,
+        41
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/050",
+      "drawDate": "2008-05-03",
+      "numbers": [
+        1,
+        3,
+        4,
+        5,
+        37,
+        39
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/051",
+      "drawDate": "2008-05-06",
+      "numbers": [
+        7,
+        8,
+        13,
+        26,
+        28,
+        49
+      ],
+      "specialNumber": 17,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/052",
+      "drawDate": "2008-05-08",
+      "numbers": [
+        16,
+        24,
+        31,
+        35,
+        37,
+        49
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/053",
+      "drawDate": "2008-05-10",
+      "numbers": [
+        5,
+        6,
+        27,
+        41,
+        47,
+        49
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/054",
+      "drawDate": "2008-05-13",
+      "numbers": [
+        8,
+        19,
+        26,
+        34,
+        37,
+        40
+      ],
+      "specialNumber": 29,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/055",
+      "drawDate": "2008-05-15",
+      "numbers": [
+        7,
+        21,
+        22,
+        38,
+        45,
+        47
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/056",
+      "drawDate": "2008-05-17",
+      "numbers": [
+        3,
+        18,
+        24,
+        45,
+        46,
+        48
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/057",
+      "drawDate": "2008-05-20",
+      "numbers": [
+        1,
+        4,
+        6,
+        23,
+        25,
+        47
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/058",
+      "drawDate": "2008-05-22",
+      "numbers": [
+        1,
+        19,
+        23,
+        29,
+        34,
+        41
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/059",
+      "drawDate": "2008-05-24",
+      "numbers": [
+        1,
+        5,
+        12,
+        14,
+        19,
+        31
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/060",
+      "drawDate": "2008-05-27",
+      "numbers": [
+        22,
+        23,
+        24,
+        28,
+        29,
+        43
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/061",
+      "drawDate": "2008-05-29",
+      "numbers": [
+        1,
+        6,
+        27,
+        39,
+        44,
+        49
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/062",
+      "drawDate": "2008-05-31",
+      "numbers": [
+        11,
+        26,
+        31,
+        34,
+        36,
+        42
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/063",
+      "drawDate": "2008-06-03",
+      "numbers": [
+        5,
+        32,
+        33,
+        40,
+        41,
+        49
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/064",
+      "drawDate": "2008-06-07",
+      "numbers": [
+        6,
+        11,
+        14,
+        23,
+        39,
+        45
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/065",
+      "drawDate": "2008-06-10",
+      "numbers": [
+        2,
+        7,
+        11,
+        20,
+        29,
+        45
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/066",
+      "drawDate": "2008-06-12",
+      "numbers": [
+        4,
+        6,
+        9,
+        15,
+        22,
+        37
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/067",
+      "drawDate": "2008-06-14",
+      "numbers": [
+        3,
+        15,
+        19,
+        40,
+        41,
+        44
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/068",
+      "drawDate": "2008-06-17",
+      "numbers": [
+        3,
+        5,
+        6,
+        13,
+        31,
+        32
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/069",
+      "drawDate": "2008-06-19",
+      "numbers": [
+        2,
+        11,
+        18,
+        26,
+        39,
+        45
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/070",
+      "drawDate": "2008-06-21",
+      "numbers": [
+        1,
+        5,
+        13,
+        29,
+        34,
+        44
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/071",
+      "drawDate": "2008-06-24",
+      "numbers": [
+        8,
+        9,
+        22,
+        27,
+        29,
+        42
+      ],
+      "specialNumber": 38,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/072",
+      "drawDate": "2008-06-27",
+      "numbers": [
+        8,
+        33,
+        39,
+        40,
+        46,
+        48
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/073",
+      "drawDate": "2008-06-29",
+      "numbers": [
+        1,
+        2,
+        7,
+        19,
+        28,
+        34
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/074",
+      "drawDate": "2008-07-02",
+      "numbers": [
+        3,
+        21,
+        26,
+        29,
+        31,
+        48
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/075",
+      "drawDate": "2008-07-05",
+      "numbers": [
+        2,
+        6,
+        7,
+        15,
+        20,
+        38
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/076",
+      "drawDate": "2008-07-08",
+      "numbers": [
+        15,
+        18,
+        19,
+        21,
+        24,
+        26
+      ],
+      "specialNumber": 36,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/077",
+      "drawDate": "2008-07-10",
+      "numbers": [
+        5,
+        12,
+        17,
+        18,
+        41,
+        44
+      ],
+      "specialNumber": 32,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/078",
+      "drawDate": "2008-07-12",
+      "numbers": [
+        5,
+        21,
+        25,
+        27,
+        38,
+        40
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/079",
+      "drawDate": "2008-07-15",
+      "numbers": [
+        9,
+        17,
+        19,
+        24,
+        38,
+        47
+      ],
+      "specialNumber": 3,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/080",
+      "drawDate": "2008-07-17",
+      "numbers": [
+        15,
+        18,
+        25,
+        27,
+        38,
+        47
+      ],
+      "specialNumber": 2,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/081",
+      "drawDate": "2008-07-19",
+      "numbers": [
+        1,
+        18,
+        24,
+        29,
+        35,
+        46
+      ],
+      "specialNumber": 2,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/082",
+      "drawDate": "2008-07-22",
+      "numbers": [
+        10,
+        29,
+        33,
+        40,
+        43,
+        45
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/083",
+      "drawDate": "2008-07-24",
+      "numbers": [
+        5,
+        15,
+        29,
+        31,
+        38,
+        45
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/084",
+      "drawDate": "2008-07-26",
+      "numbers": [
+        9,
+        10,
+        12,
+        13,
+        41,
+        48
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/085",
+      "drawDate": "2008-07-29",
+      "numbers": [
+        7,
+        15,
+        25,
+        34,
+        35,
+        38
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/086",
+      "drawDate": "2008-07-31",
+      "numbers": [
+        1,
+        8,
+        25,
+        33,
+        34,
+        41
+      ],
+      "specialNumber": 28,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/087",
+      "drawDate": "2008-08-02",
+      "numbers": [
+        4,
+        6,
+        8,
+        11,
+        33,
+        35
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/088",
+      "drawDate": "2008-08-05",
+      "numbers": [
+        6,
+        11,
+        16,
+        38,
+        42,
+        49
+      ],
+      "specialNumber": 40,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/089",
+      "drawDate": "2008-08-07",
+      "numbers": [
+        3,
+        17,
+        23,
+        24,
+        30,
+        47
+      ],
+      "specialNumber": 26,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/090",
+      "drawDate": "2008-08-09",
+      "numbers": [
+        8,
+        15,
+        19,
+        21,
+        32,
+        42
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/091",
+      "drawDate": "2008-08-12",
+      "numbers": [
+        10,
+        11,
+        15,
+        26,
+        28,
+        31
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/092",
+      "drawDate": "2008-08-14",
+      "numbers": [
+        16,
+        20,
+        23,
+        27,
+        41,
+        46
+      ],
+      "specialNumber": 6,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/093",
+      "drawDate": "2008-08-16",
+      "numbers": [
+        14,
+        25,
+        32,
+        38,
+        43,
+        46
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/094",
+      "drawDate": "2008-08-19",
+      "numbers": [
+        7,
+        19,
+        24,
+        26,
+        32,
+        39
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/095",
+      "drawDate": "2008-08-21",
+      "numbers": [
+        1,
+        3,
+        20,
+        21,
+        35,
+        37
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/096",
+      "drawDate": "2008-08-23",
+      "numbers": [
+        3,
+        9,
+        10,
+        20,
+        25,
+        34
+      ],
+      "specialNumber": 41,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/097",
+      "drawDate": "2008-08-26",
+      "numbers": [
+        2,
+        13,
+        19,
+        25,
+        30,
+        43
+      ],
+      "specialNumber": 44,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/098",
+      "drawDate": "2008-08-28",
+      "numbers": [
+        1,
+        21,
+        27,
+        31,
+        34,
+        38
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/099",
+      "drawDate": "2008-08-30",
+      "numbers": [
+        2,
+        8,
+        10,
+        37,
+        44,
+        49
+      ],
+      "specialNumber": 22,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/100",
+      "drawDate": "2008-09-02",
+      "numbers": [
+        9,
+        13,
+        16,
+        22,
+        24,
+        31
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/101",
+      "drawDate": "2008-09-04",
+      "numbers": [
+        7,
+        17,
+        22,
+        26,
+        31,
+        42
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/102",
+      "drawDate": "2008-09-06",
+      "numbers": [
+        4,
+        10,
+        18,
+        22,
+        23,
+        38
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/103",
+      "drawDate": "2008-09-09",
+      "numbers": [
+        3,
+        7,
+        15,
+        23,
+        29,
+        48
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/104",
+      "drawDate": "2008-09-11",
+      "numbers": [
+        2,
+        8,
+        12,
+        20,
+        25,
+        49
+      ],
+      "specialNumber": 34,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/105",
+      "drawDate": "2008-09-13",
+      "numbers": [
+        3,
+        8,
+        9,
+        16,
+        34,
+        46
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/106",
+      "drawDate": "2008-09-16",
+      "numbers": [
+        4,
+        9,
+        14,
+        25,
+        36,
+        40
+      ],
+      "specialNumber": 45,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/107",
+      "drawDate": "2008-09-18",
+      "numbers": [
+        2,
+        17,
+        34,
+        38,
+        46,
+        49
+      ],
+      "specialNumber": 33,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/108",
+      "drawDate": "2008-09-20",
+      "numbers": [
+        4,
+        5,
+        10,
+        27,
+        28,
+        49
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/109",
+      "drawDate": "2008-09-25",
+      "numbers": [
+        1,
+        4,
+        15,
+        16,
+        29,
+        46
+      ],
+      "specialNumber": 30,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/110",
+      "drawDate": "2008-09-27",
+      "numbers": [
+        7,
+        17,
+        33,
+        36,
+        39,
+        44
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/111",
+      "drawDate": "2008-09-30",
+      "numbers": [
+        11,
+        26,
+        27,
+        39,
+        40,
+        47
+      ],
+      "specialNumber": 34,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/112",
+      "drawDate": "2008-10-02",
+      "numbers": [
+        13,
+        17,
+        20,
+        29,
+        32,
+        42
+      ],
+      "specialNumber": 15,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/113",
+      "drawDate": "2008-10-04",
+      "numbers": [
+        4,
+        14,
+        16,
+        19,
+        22,
+        35
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/114",
+      "drawDate": "2008-10-07",
+      "numbers": [
+        4,
+        10,
+        26,
+        34,
+        46,
+        49
+      ],
+      "specialNumber": 5,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/115",
+      "drawDate": "2008-10-09",
+      "numbers": [
+        1,
+        2,
+        12,
+        19,
+        27,
+        38
+      ],
+      "specialNumber": 41,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/116",
+      "drawDate": "2008-10-11",
+      "numbers": [
+        8,
+        11,
+        35,
+        37,
+        38,
+        46
+      ],
+      "specialNumber": 27,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/117",
+      "drawDate": "2008-10-14",
+      "numbers": [
+        11,
+        14,
+        19,
+        21,
+        41,
+        44
+      ],
+      "specialNumber": 31,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/118",
+      "drawDate": "2008-10-16",
+      "numbers": [
+        6,
+        21,
+        31,
+        40,
+        42,
+        44
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/119",
+      "drawDate": "2008-10-18",
+      "numbers": [
+        3,
+        6,
+        7,
+        9,
+        32,
+        35
+      ],
+      "specialNumber": 24,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/120",
+      "drawDate": "2008-10-21",
+      "numbers": [
+        1,
+        8,
+        9,
+        32,
+        35,
+        37
+      ],
+      "specialNumber": 14,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/121",
+      "drawDate": "2008-10-23",
+      "numbers": [
+        5,
+        9,
+        19,
+        21,
+        27,
+        46
+      ],
+      "specialNumber": 37,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/122",
+      "drawDate": "2008-10-25",
+      "numbers": [
+        3,
+        13,
+        18,
+        20,
+        22,
+        30
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/123",
+      "drawDate": "2008-10-28",
+      "numbers": [
+        3,
+        10,
+        11,
+        13,
+        26,
+        48
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/124",
+      "drawDate": "2008-10-30",
+      "numbers": [
+        5,
+        13,
+        23,
+        33,
+        37,
+        40
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/125",
+      "drawDate": "2008-11-01",
+      "numbers": [
+        11,
+        17,
+        19,
+        23,
+        32,
+        44
+      ],
+      "specialNumber": 25,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/126",
+      "drawDate": "2008-11-03",
+      "numbers": [
+        1,
+        8,
+        20,
+        25,
+        38,
+        43
+      ],
+      "specialNumber": 39,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/127",
+      "drawDate": "2008-11-06",
+      "numbers": [
+        5,
+        6,
+        28,
+        35,
+        42,
+        43
+      ],
+      "specialNumber": 4,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/128",
+      "drawDate": "2008-11-09",
+      "numbers": [
+        1,
+        4,
+        6,
+        15,
+        24,
+        48
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/129",
+      "drawDate": "2008-11-11",
+      "numbers": [
+        17,
+        19,
+        20,
+        27,
+        32,
+        35
+      ],
+      "specialNumber": 11,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/130",
+      "drawDate": "2008-11-13",
+      "numbers": [
+        9,
+        10,
+        20,
+        33,
+        34,
+        43
+      ],
+      "specialNumber": 42,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/131",
+      "drawDate": "2008-11-15",
+      "numbers": [
+        2,
+        5,
+        8,
+        24,
+        32,
+        37
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/132",
+      "drawDate": "2008-11-18",
+      "numbers": [
+        5,
+        11,
+        18,
+        28,
+        29,
+        32
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/133",
+      "drawDate": "2008-11-20",
+      "numbers": [
+        4,
+        13,
+        31,
+        36,
+        40,
+        41
+      ],
+      "specialNumber": 49,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/134",
+      "drawDate": "2008-11-22",
+      "numbers": [
+        1,
+        3,
+        4,
+        17,
+        24,
+        28
+      ],
+      "specialNumber": 7,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/135",
+      "drawDate": "2008-11-25",
+      "numbers": [
+        3,
+        9,
+        18,
+        38,
+        46,
+        48
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/136",
+      "drawDate": "2008-11-27",
+      "numbers": [
+        4,
+        6,
+        14,
+        21,
+        36,
+        46
+      ],
+      "specialNumber": 41,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/137",
+      "drawDate": "2008-11-29",
+      "numbers": [
+        5,
+        6,
+        27,
+        33,
+        36,
+        37
+      ],
+      "specialNumber": 48,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/138",
+      "drawDate": "2008-12-02",
+      "numbers": [
+        3,
+        13,
+        29,
+        30,
+        31,
+        43
+      ],
+      "specialNumber": 8,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/139",
+      "drawDate": "2008-12-04",
+      "numbers": [
+        8,
+        10,
+        28,
+        35,
+        37,
+        47
+      ],
+      "specialNumber": 12,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/140",
+      "drawDate": "2008-12-07",
+      "numbers": [
+        4,
+        9,
+        17,
+        26,
+        28,
+        30
+      ],
+      "specialNumber": 1,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/141",
+      "drawDate": "2008-12-09",
+      "numbers": [
+        7,
+        14,
+        21,
+        43,
+        44,
+        47
+      ],
+      "specialNumber": 35,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/142",
+      "drawDate": "2008-12-11",
+      "numbers": [
+        1,
+        10,
+        11,
+        41,
+        47,
+        48
+      ],
+      "specialNumber": 20,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/143",
+      "drawDate": "2008-12-13",
+      "numbers": [
+        1,
+        7,
+        27,
+        36,
+        40,
+        48
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/144",
+      "drawDate": "2008-12-16",
+      "numbers": [
+        21,
+        29,
+        32,
+        36,
+        38,
+        44
+      ],
+      "specialNumber": 43,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/145",
+      "drawDate": "2008-12-18",
+      "numbers": [
+        2,
+        22,
+        27,
+        31,
+        40,
+        46
+      ],
+      "specialNumber": 13,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/146",
+      "drawDate": "2008-12-21",
+      "numbers": [
+        6,
+        13,
+        20,
+        26,
+        34,
+        40
+      ],
+      "specialNumber": 10,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/147",
+      "drawDate": "2008-12-23",
+      "numbers": [
+        22,
+        24,
+        26,
+        29,
+        33,
+        48
+      ],
+      "specialNumber": 46,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/148",
+      "drawDate": "2008-12-27",
+      "numbers": [
+        2,
+        17,
+        19,
+        21,
+        24,
+        34
+      ],
+      "specialNumber": 18,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    },
+    {
+      "drawId": "08/149",
+      "drawDate": "2008-12-30",
+      "numbers": [
+        4,
+        8,
+        18,
+        29,
+        40,
+        47
+      ],
+      "specialNumber": 9,
+      "status": "fallback",
+      "verificationStatus": "fallback"
+    }
+  ],
+  "verificationStatus": "official_with_fallback_history",
+  "sourceSummary": {
+    "official": {
+      "ok": true,
+      "drawCount": 63,
+      "error": null
+    },
+    "unofficialBackup": {
+      "ok": true,
+      "drawCount": 4288,
+      "error": null
+    },
+    "seed": {
+      "ok": true,
+      "drawCount": 63
+    },
+    "merged": {
+      "totalDrawCount": 4351
+    }
+  }
+}

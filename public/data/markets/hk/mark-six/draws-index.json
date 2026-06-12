@@ -1,12 +1,243 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-11T16:54:30.705Z",
+  "generatedAt": "2026-06-12T18:07:15.434Z",
   "marketId": "HK",
   "gameId": "mark_six",
-  "totalDrawCount": 63,
+  "totalDrawCount": 4351,
   "latestDrawId": "202663N",
   "latestDrawDate": "2026-06-11",
   "years": [
+    {
+      "year": "1993",
+      "drawCount": 101,
+      "firstDrawDate": "1993-01-05",
+      "latestDrawDate": "1993-12-30",
+      "path": "markets/hk/mark-six/draws-1993.json"
+    },
+    {
+      "year": "1994",
+      "drawCount": 101,
+      "firstDrawDate": "1994-01-04",
+      "latestDrawDate": "1994-12-29",
+      "path": "markets/hk/mark-six/draws-1994.json"
+    },
+    {
+      "year": "1995",
+      "drawCount": 101,
+      "firstDrawDate": "1995-01-03",
+      "latestDrawDate": "1995-12-29",
+      "path": "markets/hk/mark-six/draws-1995.json"
+    },
+    {
+      "year": "1996",
+      "drawCount": 106,
+      "firstDrawDate": "1996-01-02",
+      "latestDrawDate": "1996-12-31",
+      "path": "markets/hk/mark-six/draws-1996.json"
+    },
+    {
+      "year": "1997",
+      "drawCount": 104,
+      "firstDrawDate": "1997-01-02",
+      "latestDrawDate": "1997-12-30",
+      "path": "markets/hk/mark-six/draws-1997.json"
+    },
+    {
+      "year": "1998",
+      "drawCount": 114,
+      "firstDrawDate": "1998-01-02",
+      "latestDrawDate": "1998-12-31",
+      "path": "markets/hk/mark-six/draws-1998.json"
+    },
+    {
+      "year": "1999",
+      "drawCount": 110,
+      "firstDrawDate": "1999-01-05",
+      "latestDrawDate": "1999-12-30",
+      "path": "markets/hk/mark-six/draws-1999.json"
+    },
+    {
+      "year": "2000",
+      "drawCount": 112,
+      "firstDrawDate": "2000-01-04",
+      "latestDrawDate": "2000-12-28",
+      "path": "markets/hk/mark-six/draws-2000.json"
+    },
+    {
+      "year": "2001",
+      "drawCount": 110,
+      "firstDrawDate": "2001-01-02",
+      "latestDrawDate": "2001-12-27",
+      "path": "markets/hk/mark-six/draws-2001.json"
+    },
+    {
+      "year": "2002",
+      "drawCount": 113,
+      "firstDrawDate": "2002-01-03",
+      "latestDrawDate": "2002-12-31",
+      "path": "markets/hk/mark-six/draws-2002.json"
+    },
+    {
+      "year": "2003",
+      "drawCount": 117,
+      "firstDrawDate": "2003-01-02",
+      "latestDrawDate": "2003-12-30",
+      "path": "markets/hk/mark-six/draws-2003.json"
+    },
+    {
+      "year": "2004",
+      "drawCount": 140,
+      "firstDrawDate": "2004-01-03",
+      "latestDrawDate": "2004-12-30",
+      "path": "markets/hk/mark-six/draws-2004.json"
+    },
+    {
+      "year": "2005",
+      "drawCount": 155,
+      "firstDrawDate": "2005-01-02",
+      "latestDrawDate": "2005-12-31",
+      "path": "markets/hk/mark-six/draws-2005.json"
+    },
+    {
+      "year": "2006",
+      "drawCount": 154,
+      "firstDrawDate": "2006-01-03",
+      "latestDrawDate": "2006-12-30",
+      "path": "markets/hk/mark-six/draws-2006.json"
+    },
+    {
+      "year": "2007",
+      "drawCount": 152,
+      "firstDrawDate": "2007-01-02",
+      "latestDrawDate": "2007-12-31",
+      "path": "markets/hk/mark-six/draws-2007.json"
+    },
+    {
+      "year": "2008",
+      "drawCount": 149,
+      "firstDrawDate": "2008-01-03",
+      "latestDrawDate": "2008-12-30",
+      "path": "markets/hk/mark-six/draws-2008.json"
+    },
+    {
+      "year": "2009",
+      "drawCount": 154,
+      "firstDrawDate": "2009-01-03",
+      "latestDrawDate": "2009-12-31",
+      "path": "markets/hk/mark-six/draws-2009.json"
+    },
+    {
+      "year": "2010",
+      "drawCount": 152,
+      "firstDrawDate": "2010-01-02",
+      "latestDrawDate": "2010-12-30",
+      "path": "markets/hk/mark-six/draws-2010.json"
+    },
+    {
+      "year": "2011",
+      "drawCount": 154,
+      "firstDrawDate": "2011-01-02",
+      "latestDrawDate": "2011-12-31",
+      "path": "markets/hk/mark-six/draws-2011.json"
+    },
+    {
+      "year": "2012",
+      "drawCount": 152,
+      "firstDrawDate": "2012-01-03",
+      "latestDrawDate": "2012-12-31",
+      "path": "markets/hk/mark-six/draws-2012.json"
+    },
+    {
+      "year": "2013",
+      "drawCount": 152,
+      "firstDrawDate": "2013-01-03",
+      "latestDrawDate": "2013-12-31",
+      "path": "markets/hk/mark-six/draws-2013.json"
+    },
+    {
+      "year": "2014",
+      "drawCount": 152,
+      "firstDrawDate": "2014-01-02",
+      "latestDrawDate": "2014-12-31",
+      "path": "markets/hk/mark-six/draws-2014.json"
+    },
+    {
+      "year": "2015",
+      "drawCount": 152,
+      "firstDrawDate": "2015-01-03",
+      "latestDrawDate": "2015-12-31",
+      "path": "markets/hk/mark-six/draws-2015.json"
+    },
+    {
+      "year": "2016",
+      "drawCount": 151,
+      "firstDrawDate": "2016-01-02",
+      "latestDrawDate": "2016-12-31",
+      "path": "markets/hk/mark-six/draws-2016.json"
+    },
+    {
+      "year": "2017",
+      "drawCount": 153,
+      "firstDrawDate": "2017-01-03",
+      "latestDrawDate": "2017-12-30",
+      "path": "markets/hk/mark-six/draws-2017.json"
+    },
+    {
+      "year": "2018",
+      "drawCount": 149,
+      "firstDrawDate": "2018-01-02",
+      "latestDrawDate": "2018-12-30",
+      "path": "markets/hk/mark-six/draws-2018.json"
+    },
+    {
+      "year": "2019",
+      "drawCount": 144,
+      "firstDrawDate": "2019-01-03",
+      "latestDrawDate": "2019-12-31",
+      "path": "markets/hk/mark-six/draws-2019.json"
+    },
+    {
+      "year": "2020",
+      "drawCount": 30,
+      "firstDrawDate": "2020-01-02",
+      "latestDrawDate": "2020-12-29",
+      "path": "markets/hk/mark-six/draws-2020.json"
+    },
+    {
+      "year": "2021",
+      "drawCount": 123,
+      "firstDrawDate": "2021-01-02",
+      "latestDrawDate": "2021-12-30",
+      "path": "markets/hk/mark-six/draws-2021.json"
+    },
+    {
+      "year": "2022",
+      "drawCount": 111,
+      "firstDrawDate": "2022-01-04",
+      "latestDrawDate": "2022-12-29",
+      "path": "markets/hk/mark-six/draws-2022.json"
+    },
+    {
+      "year": "2023",
+      "drawCount": 146,
+      "firstDrawDate": "2023-01-03",
+      "latestDrawDate": "2023-12-30",
+      "path": "markets/hk/mark-six/draws-2023.json"
+    },
+    {
+      "year": "2024",
+      "drawCount": 140,
+      "firstDrawDate": "2024-01-03",
+      "latestDrawDate": "2024-12-28",
+      "path": "markets/hk/mark-six/draws-2024.json"
+    },
+    {
+      "year": "2025",
+      "drawCount": 134,
+      "firstDrawDate": "2025-01-02",
+      "latestDrawDate": "2025-12-28",
+      "path": "markets/hk/mark-six/draws-2025.json"
+    },
     {
       "year": "2026",
       "drawCount": 63,
@@ -15,7 +246,7 @@
       "path": "markets/hk/mark-six/draws-2026.json"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_fallback_history",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -23,16 +254,16 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
+      "ok": true,
+      "drawCount": 4288,
       "error": null
     },
     "seed": {
       "ok": true,
-      "drawCount": 62
+      "drawCount": 63
     },
     "merged": {
-      "totalDrawCount": 63
+      "totalDrawCount": 4351
     }
   }
 }
