@@ -25,14 +25,14 @@ jobs:
     outputs:
       has_due: ${{ steps.due.outputs.has_due }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
       - id: due
         name: Check due lottery windows
         run: node scripts/lottery-due-windows.mjs --github-output
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         if: github.event_name != 'schedule' || steps.due.outputs.has_due == 'true'
         with:
           python-version: "3.12"
@@ -64,7 +64,7 @@ jobs:
             git commit -m "Update lottery data"
             git push
           fi
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'schedule' || steps.due.outputs.has_due == 'true'
         with:
           path: public
@@ -78,4 +78,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
