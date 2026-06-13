@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-12T18:14:56.841Z",
+  "generatedAt": "2026-06-13T06:32:24.407Z",
   "markets": [
     {
       "marketId": "HK",
@@ -57,7 +57,7 @@
         },
         {
           "gameId": "mega_millions",
-          "latestDrawId": "2026-06-09",
+          "latestDrawId": "2026-06-12",
           "latestPath": "markets/us/mega-millions/latest.json",
           "drawsIndexPath": "markets/us/mega-millions/draws-index.json",
           "allDrawsPath": "markets/us/mega-millions/draws-all.json",
