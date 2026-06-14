@@ -1,44 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-12T18:14:56.841Z",
+  "generatedAt": "2026-06-14T06:05:06.187Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "latestDraw": {
-    "drawId": "2026-06-10",
-    "drawDate": "2026-06-10",
+    "drawId": "2026-06-13",
+    "drawDate": "2026-06-13",
     "numbers": [
       6,
-      9,
-      23,
-      45,
-      51
+      13,
+      31,
+      35,
+      48
     ],
-    "specialNumber": 6,
+    "specialNumber": 7,
     "specialNumbers": [
-      6
+      7
     ],
     "status": "unofficial_backup",
     "verificationStatus": "unofficial_backup_unverified",
     "sourceName": "lotto.net"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-04-27",
-      "drawDate": "2026-04-27",
-      "numbers": [
-        20,
-        25,
-        26,
-        31,
-        36
-      ],
-      "specialNumber": 1,
-      "specialNumbers": [
-        1
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-04-29",
       "drawDate": "2026-04-29",
@@ -362,6 +345,24 @@
       "status": "unofficial_backup",
       "verificationStatus": "unofficial_backup_unverified",
       "sourceName": "lotto.net"
+    },
+    {
+      "drawId": "2026-06-13",
+      "drawDate": "2026-06-13",
+      "numbers": [
+        6,
+        13,
+        31,
+        35,
+        48
+      ],
+      "specialNumber": 7,
+      "specialNumbers": [
+        7
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -381,7 +382,7 @@
       "drawCount": 1099
     },
     "merged": {
-      "totalDrawCount": 1099
+      "totalDrawCount": 1100
     }
   }
 }
