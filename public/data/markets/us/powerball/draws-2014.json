@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-14T09:56:02.216Z",
+  "generatedAt": "2026-06-14T12:15:03.604Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2014",
@@ -1783,9 +1783,9 @@
       "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
