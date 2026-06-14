@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-14T06:05:06.187Z",
+  "generatedAt": "2026-06-14T09:56:02.216Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2021",
@@ -1783,13 +1783,13 @@
       "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
-      "drawCount": 1099
+      "drawCount": 1100
     },
     "merged": {
       "totalDrawCount": 1100
