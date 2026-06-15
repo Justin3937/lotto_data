@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-12T18:14:56.841Z",
+  "generatedAt": "2026-06-15T14:35:04.490Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
-  "totalDrawCount": 2110,
+  "totalDrawCount": 2111,
   "draws": [
     {
       "drawId": "1",
@@ -37985,6 +37985,25 @@
       "status": "unofficial_backup",
       "verificationStatus": "unofficial_backup_unverified",
       "sourceName": "takarakuji.syumimania.com"
+    },
+    {
+      "drawId": "2111",
+      "drawDate": "2026-06-15",
+      "numbers": [
+        1,
+        5,
+        8,
+        12,
+        37,
+        43
+      ],
+      "specialNumber": 36,
+      "specialNumbers": [
+        36
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "takarakuji.syumimania.com"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -38004,7 +38023,7 @@
       "drawCount": 2110
     },
     "merged": {
-      "totalDrawCount": 2110
+      "totalDrawCount": 2111
     }
   }
 }
