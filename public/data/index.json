@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-16T05:31:17.736Z",
+  "generatedAt": "2026-06-16T11:33:55.708Z",
   "markets": [
     {
       "marketId": "HK",
@@ -20,7 +20,7 @@
       "games": [
         {
           "gameId": "mini_loto",
-          "latestDrawId": "1390",
+          "latestDrawId": "1391",
           "latestPath": "markets/jp/mini-loto/latest.json",
           "drawsIndexPath": "markets/jp/mini-loto/draws-index.json",
           "allDrawsPath": "markets/jp/mini-loto/draws-all.json",
