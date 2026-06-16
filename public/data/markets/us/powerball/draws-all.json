@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-14T12:15:03.604Z",
+  "generatedAt": "2026-06-16T05:31:17.736Z",
   "marketId": "US",
   "gameId": "powerball",
-  "totalDrawCount": 1953,
+  "totalDrawCount": 1954,
   "draws": [
     {
       "drawId": "2010-02-03",
@@ -33208,6 +33208,24 @@
       "status": "unofficial_backup",
       "verificationStatus": "unofficial_backup_unverified",
       "sourceName": "lotto.net"
+    },
+    {
+      "drawId": "2026-06-15",
+      "drawDate": "2026-06-15",
+      "numbers": [
+        25,
+        55,
+        57,
+        60,
+        62
+      ],
+      "specialNumber": 23,
+      "specialNumbers": [
+        23
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -33227,7 +33245,7 @@
       "drawCount": 1953
     },
     "merged": {
-      "totalDrawCount": 1953
+      "totalDrawCount": 1954
     }
   }
 }

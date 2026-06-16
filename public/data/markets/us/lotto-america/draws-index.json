@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-14T12:15:03.604Z",
+  "generatedAt": "2026-06-16T05:31:17.736Z",
   "marketId": "US",
   "gameId": "lotto_america",
-  "totalDrawCount": 1100,
-  "latestDrawId": "2026-06-13",
-  "latestDrawDate": "2026-06-13",
+  "totalDrawCount": 1101,
+  "latestDrawId": "2026-06-15",
+  "latestDrawDate": "2026-06-15",
   "years": [
     {
       "year": "2017",
@@ -72,9 +72,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 70,
+      "drawCount": 71,
       "firstDrawDate": "2026-01-03",
-      "latestDrawDate": "2026-06-13",
+      "latestDrawDate": "2026-06-15",
       "path": "markets/us/lotto-america/draws-2026.json"
     }
   ],
@@ -95,7 +95,7 @@
       "drawCount": 1100
     },
     "merged": {
-      "totalDrawCount": 1100
+      "totalDrawCount": 1101
     }
   }
 }
