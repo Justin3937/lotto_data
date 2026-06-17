@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-13T12:03:39.951Z",
+  "generatedAt": "2026-06-17T05:15:46.033Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2004",
@@ -1809,7 +1809,7 @@
       "drawCount": 2510
     },
     "merged": {
-      "totalDrawCount": 2510
+      "totalDrawCount": 2511
     }
   }
 }

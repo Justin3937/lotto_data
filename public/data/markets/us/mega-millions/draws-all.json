@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-13T12:03:39.951Z",
+  "generatedAt": "2026-06-17T05:15:46.033Z",
   "marketId": "US",
   "gameId": "mega_millions",
-  "totalDrawCount": 2510,
+  "totalDrawCount": 2511,
   "draws": [
     {
       "drawId": "2002-05-17",
@@ -42676,6 +42676,24 @@
       "status": "unofficial_backup",
       "verificationStatus": "unofficial_backup_unverified",
       "sourceName": "lotto.net"
+    },
+    {
+      "drawId": "2026-06-16",
+      "drawDate": "2026-06-16",
+      "numbers": [
+        12,
+        20,
+        53,
+        67,
+        70
+      ],
+      "specialNumber": 12,
+      "specialNumbers": [
+        12
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -42695,7 +42713,7 @@
       "drawCount": 2510
     },
     "merged": {
-      "totalDrawCount": 2510
+      "totalDrawCount": 2511
     }
   }
 }
