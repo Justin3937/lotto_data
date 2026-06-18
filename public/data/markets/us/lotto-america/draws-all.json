@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-16T11:33:55.708Z",
+  "generatedAt": "2026-06-18T07:14:34.958Z",
   "marketId": "US",
   "gameId": "lotto_america",
-  "totalDrawCount": 1101,
+  "totalDrawCount": 1102,
   "draws": [
     {
       "drawId": "2017-11-15",
@@ -18686,7 +18686,8 @@
         6
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     },
     {
       "drawId": "2026-06-13",
@@ -18703,7 +18704,8 @@
         7
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     },
     {
       "drawId": "2026-06-15",
@@ -18720,7 +18722,26 @@
         2
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
+    },
+    {
+      "drawId": "2026-06-17",
+      "drawDate": "2026-06-17",
+      "numbers": [
+        11,
+        16,
+        18,
+        33,
+        51
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -18731,16 +18752,16 @@
       "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 1101
     },
     "merged": {
-      "totalDrawCount": 1101
+      "totalDrawCount": 1102
     }
   }
 }
