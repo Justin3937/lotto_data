@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-12T18:14:56.841Z",
+  "generatedAt": "2026-06-19T12:17:38.612Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
-  "totalDrawCount": 681,
-  "latestDrawId": "681",
-  "latestDrawDate": "2026-06-12",
+  "totalDrawCount": 682,
+  "latestDrawId": "682",
+  "latestDrawDate": "2026-06-19",
   "years": [
     {
       "year": "2013",
@@ -100,9 +100,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 23,
+      "drawCount": 24,
       "firstDrawDate": "2026-01-09",
-      "latestDrawDate": "2026-06-12",
+      "latestDrawDate": "2026-06-19",
       "path": "markets/jp/loto7/draws-2026.json"
     }
   ],
@@ -123,7 +123,7 @@
       "drawCount": 681
     },
     "merged": {
-      "totalDrawCount": 681
+      "totalDrawCount": 682
     }
   }
 }
