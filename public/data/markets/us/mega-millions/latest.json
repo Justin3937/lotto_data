@@ -1,43 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-17T10:04:54.568Z",
+  "generatedAt": "2026-06-20T05:43:39.749Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "latestDraw": {
-    "drawId": "2026-06-16",
-    "drawDate": "2026-06-16",
+    "drawId": "2026-06-19",
+    "drawDate": "2026-06-19",
     "numbers": [
-      12,
-      20,
-      53,
-      67,
-      70
+      13,
+      16,
+      21,
+      26,
+      50
     ],
     "specialNumber": 12,
     "specialNumbers": [
       12
     ],
     "status": "unofficial_backup",
-    "verificationStatus": "unofficial_backup_unverified"
+    "verificationStatus": "unofficial_backup_unverified",
+    "sourceName": "lotto.net"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-04-10",
-      "drawDate": "2026-04-10",
-      "numbers": [
-        3,
-        18,
-        36,
-        42,
-        49
-      ],
-      "specialNumber": 6,
-      "specialNumbers": [
-        6
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-04-14",
       "drawDate": "2026-04-14",
@@ -325,7 +309,8 @@
         3
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     },
     {
       "drawId": "2026-06-12",
@@ -342,7 +327,8 @@
         3
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     },
     {
       "drawId": "2026-06-16",
@@ -359,7 +345,26 @@
         12
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
+    },
+    {
+      "drawId": "2026-06-19",
+      "drawDate": "2026-06-19",
+      "numbers": [
+        13,
+        16,
+        21,
+        26,
+        50
+      ],
+      "specialNumber": 12,
+      "specialNumbers": [
+        12
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -370,16 +375,16 @@
       "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 2511
     },
     "merged": {
-      "totalDrawCount": 2511
+      "totalDrawCount": 2512
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-17T10:04:54.568Z",
+  "generatedAt": "2026-06-20T05:43:39.749Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2013",
@@ -1783,16 +1783,16 @@
       "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 2511
     },
     "merged": {
-      "totalDrawCount": 2511
+      "totalDrawCount": 2512
     }
   }
 }
