@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-20T12:08:09.823Z",
+  "generatedAt": "2026-06-21T03:37:57.946Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2018",
@@ -1775,12 +1775,12 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
+      "ok": true,
+      "drawCount": 2512,
+      "error": null
     },
     "unofficialBackup": {
       "ok": true,

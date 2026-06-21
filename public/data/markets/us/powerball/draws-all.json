@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-18T11:17:39.071Z",
+  "generatedAt": "2026-06-21T03:37:57.946Z",
   "marketId": "US",
   "gameId": "powerball",
-  "totalDrawCount": 1955,
+  "totalDrawCount": 1956,
   "draws": [
     {
       "drawId": "2010-02-03",
@@ -33169,8 +33169,8 @@
       "specialNumbers": [
         20
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "2026-06-10",
@@ -33186,8 +33186,8 @@
       "specialNumbers": [
         14
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "2026-06-13",
@@ -33203,8 +33203,8 @@
       "specialNumbers": [
         2
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "2026-06-15",
@@ -33220,8 +33220,8 @@
       "specialNumbers": [
         23
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "2026-06-17",
@@ -33237,28 +33237,46 @@
       "specialNumbers": [
         12
       ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-06-20",
+      "drawDate": "2026-06-20",
+      "numbers": [
+        16,
+        20,
+        44,
+        48,
+        50
+      ],
+      "specialNumber": 15,
+      "specialNumbers": [
+        15
+      ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
+      "ok": true,
+      "drawCount": 1955,
+      "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 1955
     },
     "merged": {
-      "totalDrawCount": 1955
+      "totalDrawCount": 1956
     }
   }
 }

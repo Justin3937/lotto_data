@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-18T18:12:17.198Z",
+  "generatedAt": "2026-06-21T03:37:57.946Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "year": "2026",
@@ -831,9 +831,8 @@
       "specialNumbers": [
         29
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "takarakuji.syumimania.com"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "2111",
@@ -850,9 +849,8 @@
       "specialNumbers": [
         36
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "takarakuji.syumimania.com"
+      "status": "official",
+      "verificationStatus": "official"
     },
     {
       "drawId": "2112",
@@ -869,17 +867,16 @@
       "specialNumbers": [
         18
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "takarakuji.syumimania.com"
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "Official fetch disabled by LOTTO_DISABLE_OFFICIAL_FETCH"
+      "ok": true,
+      "drawCount": 2112,
+      "error": null
     },
     "unofficialBackup": {
       "ok": true,
