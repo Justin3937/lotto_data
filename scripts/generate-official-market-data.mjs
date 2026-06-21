@@ -11,7 +11,7 @@ const POWERBALL_ENDPOINT =
   'https://data.ny.gov/resource/d6yy-54nr.json?$limit=50000&$order=draw_date';
 const MEGA_MILLIONS_ENDPOINT =
   'https://data.ny.gov/resource/5xaw-6ayf.json?$limit=50000&$order=draw_date';
-const LOTTO_AMERICA_ARCHIVE_URL = 'https://www.lottoamerica.com/archive';
+const POWERBALL_PREVIOUS_RESULTS_URL = 'https://www.powerball.com/previous-results';
 const MIZUHO_BASE = 'https://www.mizuhobank.co.jp';
 const SYUMIMANIA_BASE = 'https://takarakuji.syumimania.com';
 const LOTTO_NET_BASE = 'https://www.lotto.net';
@@ -374,9 +374,31 @@ async function fetchOfficialLottoAmerica() {
   const currentYear = new Date(checkedAt).getUTCFullYear();
   const draws = [];
   for (let year = 2017; year <= currentYear; year += 1) {
-    const html = await fetchText(`${LOTTO_AMERICA_ARCHIVE_URL}/${year}`);
-    draws.push(...parseLottoAmericaArchiveHtml(html));
+    draws.push(...(await fetchPowerballLottoAmericaYear(year)));
   }
+  return draws;
+}
+
+async function fetchPowerballLottoAmericaYear(year) {
+  const draws = [];
+  let page = 1;
+  let maxPage = 1;
+  do {
+    const url = new URL(POWERBALL_PREVIOUS_RESULTS_URL);
+    url.searchParams.set('gc', 'lotto-america');
+    url.searchParams.set('sd', `${year}-01-01`);
+    url.searchParams.set('ed', `${year}-12-31`);
+    url.searchParams.set('pg', String(page));
+    const html = await fetchText(url.toString(), {
+      headers: {
+        'user-agent': BROWSER_USER_AGENT,
+        'x-requested-with': 'XMLHttpRequest',
+      },
+    });
+    draws.push(...parsePowerballLottoAmericaHtml(html));
+    maxPage = Math.max(maxPage, parsePowerballResultsMaxPage(html));
+    page += 1;
+  } while (page <= maxPage);
   return draws;
 }
 
@@ -707,29 +729,37 @@ function parseMizuhoLotoHtml(html, { numberCount, specialCount = 1 }) {
   return draws;
 }
 
-function parseLottoAmericaArchiveHtml(html) {
+function parsePowerballLottoAmericaHtml(html) {
   const draws = [];
   const cardPattern =
-    /<div class="[^"]*\b_date\b[^"]*">[\s\S]*?<strong>([A-Za-z]+)\s+(\d{1,2})<\/strong>,\s*(\d{4})[\s\S]*?<ul class="[^"]*\bballs\b[^"]*">([\s\S]*?)<\/ul>/g;
+    /<a class="card"[^>]*[?&](?:amp;)?date=(\d{4}-\d{2}-\d{2})[^>]*>([\s\S]*?)<\/a>/g;
   let match;
   while ((match = cardPattern.exec(html)) != null) {
-    const [, monthName, day, year, listHtml] = match;
-    const month = MONTH_NUMBERS[monthName];
-    if (!month) continue;
-    const values = [...listHtml.matchAll(/<li(?:\s+class="[^"]+")?[^>]*>\s*(\d{1,2})\s*<\/li>/g)]
+    const [, drawDate, cardHtml] = match;
+    const values = [
+      ...cardHtml.matchAll(
+        /<div class="[^"]*\bitem-lotto-america\b[^"]*">[\s\S]*?<div>\s*(\d{1,2})\s*<\/div>\s*<\/div>/g,
+      ),
+    ]
       .map((item) => Number.parseInt(item[1], 10))
       .filter((item) => Number.isFinite(item));
-    if (values.length !== 7) continue;
+    if (values.length !== 6) continue;
     draws.push(
       officialDraw({
-        drawId: `${year}-${month}-${day.padStart(2, '0')}`,
-        drawDate: `${year}-${month}-${day.padStart(2, '0')}`,
+        drawId: drawDate,
+        drawDate,
         numbers: values.slice(0, 5),
         specialNumber: values[5],
       }),
     );
   }
   return draws;
+}
+
+function parsePowerballResultsMaxPage(html) {
+  const button = html.match(/<button[^>]*\bid=["']loadMore["'][^>]*>/i)?.[0];
+  const value = button?.match(/\bdata-max=["'](\d+)["']/i)?.[1];
+  return value ? Number.parseInt(value, 10) : 1;
 }
 
 async function fetchLottoNetBackup({ url, specialClass, numberCount }) {

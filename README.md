@@ -7,8 +7,9 @@ Public GitHub Pages fallback for app-facing lottery data.
 - Markets: Hong Kong, Japan, and United States
 - HK Mark Six combines current official HKJC data with public fallback history.
 - JP/US normally prefer official sources and can use unofficial backup sources.
-- While `LOTTO_DISABLE_OFFICIAL_FETCH=1`, JP/US backup draws remain marked
-  `unofficial_backup_unverified`.
+- JP/US backup draws remain marked `unofficial_backup_unverified` and must not
+  be promoted to official data. Set `LOTTO_DISABLE_OFFICIAL_FETCH=1` only for
+  an explicit fallback test.
 
 ## Local Generate
 
