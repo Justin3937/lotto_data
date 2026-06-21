@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T03:37:57.946Z",
+  "generatedAt": "2026-06-21T06:17:56.937Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2020",
@@ -1806,7 +1806,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1955
+      "drawCount": 1956
     },
     "merged": {
       "totalDrawCount": 1956
