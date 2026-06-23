@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T05:14:11.252Z",
+  "generatedAt": "2026-06-23T08:38:54.037Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2024",
@@ -2690,7 +2690,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1103
+      "drawCount": 1104
     },
     "merged": {
       "totalDrawCount": 1104
