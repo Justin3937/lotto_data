@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-24T04:34:15.640Z",
+  "generatedAt": "2026-06-24T08:33:35.075Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "totalDrawCount": 2513,
@@ -183,11 +183,11 @@
       "path": "markets/us/mega-millions/draws-2026.json"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2512,
+      "drawCount": 2513,
       "error": null
     },
     "unofficialBackup": {
@@ -197,7 +197,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2512
+      "drawCount": 2513
     },
     "merged": {
       "totalDrawCount": 2513
