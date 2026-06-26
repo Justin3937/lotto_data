@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-25T22:44:54.648Z",
+  "generatedAt": "2026-06-26T13:20:00.202Z",
   "markets": [
     {
       "marketId": "HK",
@@ -36,11 +36,11 @@
         },
         {
           "gameId": "loto7_jp",
-          "latestDrawId": "682",
+          "latestDrawId": "683",
           "latestPath": "markets/jp/loto7/latest.json",
           "drawsIndexPath": "markets/jp/loto7/draws-index.json",
           "allDrawsPath": "markets/jp/loto7/draws-all.json",
-          "verificationStatus": "official"
+          "verificationStatus": "official_with_unofficial_backup"
         }
       ]
     },
