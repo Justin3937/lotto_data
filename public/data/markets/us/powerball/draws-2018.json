@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-25T11:50:26.115Z",
+  "generatedAt": "2026-06-28T04:51:51.482Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2018",
@@ -1775,7 +1775,7 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -1783,16 +1783,16 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 1958
     },
     "merged": {
-      "totalDrawCount": 1958
+      "totalDrawCount": 1959
     }
   }
 }
