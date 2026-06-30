@@ -1,63 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-27T23:16:12.383Z",
+  "generatedAt": "2026-06-30T14:42:58.225Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "latestDraw": {
-    "drawId": "202668N",
-    "drawDate": "2026-06-25",
+    "drawId": "202670N",
+    "drawDate": "2026-06-30",
     "numbers": [
       12,
-      16,
-      19,
-      20,
-      28,
-      30
+      14,
+      17,
+      18,
+      22,
+      40
     ],
-    "specialNumber": 29,
+    "specialNumber": 13,
     "specialNumbers": [
-      29
+      13
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "202649N",
-      "drawDate": "2026-05-10",
-      "numbers": [
-        9,
-        17,
-        26,
-        41,
-        42,
-        47
-      ],
-      "specialNumber": 8,
-      "specialNumbers": [
-        8
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
-    {
-      "drawId": "202650N",
-      "drawDate": "2026-05-12",
-      "numbers": [
-        4,
-        16,
-        19,
-        22,
-        25,
-        47
-      ],
-      "specialNumber": 40,
-      "specialNumbers": [
-        40
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "202651N",
       "drawDate": "2026-05-14",
@@ -381,13 +345,49 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "202669N",
+      "drawDate": "2026-06-28",
+      "numbers": [
+        5,
+        7,
+        26,
+        32,
+        37,
+        40
+      ],
+      "specialNumber": 35,
+      "specialNumbers": [
+        35
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "202670N",
+      "drawDate": "2026-06-30",
+      "numbers": [
+        12,
+        14,
+        17,
+        18,
+        22,
+        40
+      ],
+      "specialNumber": 13,
+      "specialNumbers": [
+        13
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official_with_fallback_history",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 68,
+      "drawCount": 70,
       "error": null
     },
     "unofficialBackup": {
@@ -400,7 +400,7 @@
       "drawCount": 4356
     },
     "merged": {
-      "totalDrawCount": 4356
+      "totalDrawCount": 4358
     }
   }
 }
