@@ -11,7 +11,7 @@ export const DATA_POLL_SCHEDULES = [
     gameId: 'mark_six',
     timezone: 'Asia/Hong_Kong',
     drawTimeLocal: '21:30',
-    drawWeekdays: [2, 4, 6],
+    drawWeekdays: [0, 2, 4, 6],
   },
   {
     marketId: 'JP',
@@ -223,3 +223,4 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     console.log(JSON.stringify({ checkedAt: now.toISOString(), gameIds, markets, due: rows }, null, 2));
   }
 }
+

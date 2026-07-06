@@ -6,8 +6,17 @@ import {
   duePollWindow,
 } from './lottery-due-windows.mjs';
 
+const markSix = DATA_POLL_SCHEDULES.find((schedule) => schedule.gameId === 'mark_six');
 const loto7 = DATA_POLL_SCHEDULES.find((schedule) => schedule.gameId === 'loto7_jp');
 const powerball = DATA_POLL_SCHEDULES.find((schedule) => schedule.gameId === 'powerball');
+
+
+test('includes Sunday Mark Six draw windows', () => {
+  const poll = duePollWindow(new Date('2026-07-05T14:30:00Z'), markSix);
+
+  assert.equal(poll?.targetDrawDate, '2026-07-05');
+  assert.equal(poll?.offsetMinutes, 60);
+});
 
 test('keeps Loto 7 due after GitHub misses all regular windows', () => {
   const poll = duePollWindow(new Date('2026-06-12T14:09:00Z'), loto7);
@@ -31,3 +40,4 @@ test('stops catch-up after the bounded grace period', () => {
 
   assert.equal(duePollWindow(afterGrace, loto7), null);
 });
+
