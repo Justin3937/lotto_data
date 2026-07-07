@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-06T11:48:43.119Z",
+  "generatedAt": "2026-07-07T15:13:37.081Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "year": "1993",
@@ -1526,7 +1526,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 72,
+      "drawCount": 73,
       "error": null
     },
     "unofficialBackup": {
@@ -1539,7 +1539,7 @@
       "drawCount": 4360
     },
     "merged": {
-      "totalDrawCount": 4360
+      "totalDrawCount": 4361
     }
   }
 }
