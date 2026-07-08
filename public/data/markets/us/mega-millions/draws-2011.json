@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-08T06:38:06.170Z",
+  "generatedAt": "2026-07-08T09:35:12.199Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2011",
@@ -1775,21 +1775,21 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2516,
+      "drawCount": 2517,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
-      "drawCount": 2516
+      "drawCount": 2517
     },
     "merged": {
       "totalDrawCount": 2517
