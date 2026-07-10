@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-06T11:48:43.119Z",
+  "generatedAt": "2026-07-10T11:18:08.615Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
-  "totalDrawCount": 684,
+  "totalDrawCount": 685,
   "draws": [
     {
       "drawId": "1",
@@ -13684,9 +13684,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "685",
+      "drawDate": "2026-07-10",
+      "numbers": [
+        1,
+        5,
+        16,
+        20,
+        21,
+        22,
+        31
+      ],
+      "specialNumber": 23,
+      "specialNumbers": [
+        23,
+        36
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "takarakuji.syumimania.com"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -13703,7 +13724,7 @@
       "drawCount": 684
     },
     "merged": {
-      "totalDrawCount": 684
+      "totalDrawCount": 685
     }
   }
 }
