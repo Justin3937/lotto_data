@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-11T15:14:28.535Z",
+  "generatedAt": "2026-07-11T16:10:51.560Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "year": "2006",
@@ -2331,7 +2331,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 4362
+      "drawCount": 4363
     },
     "merged": {
       "totalDrawCount": 4363
