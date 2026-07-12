@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T10:42:57.000Z",
+  "generatedAt": "2026-07-12T12:07:39.863Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2016",
@@ -1800,9 +1800,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
