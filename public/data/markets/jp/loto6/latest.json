@@ -1,45 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-09T18:07:50.923Z",
+  "generatedAt": "2026-07-13T11:28:04.016Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "latestDraw": {
-    "drawId": "2118",
-    "drawDate": "2026-07-09",
+    "drawId": "2119",
+    "drawDate": "2026-07-13",
     "numbers": [
-      1,
-      5,
-      8,
-      35,
-      36,
-      37
+      15,
+      18,
+      20,
+      22,
+      30,
+      38
     ],
-    "specialNumber": 24,
+    "specialNumber": 42,
     "specialNumbers": [
-      24
+      42
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2099",
-      "drawDate": "2026-05-04",
-      "numbers": [
-        19,
-        21,
-        34,
-        36,
-        39,
-        42
-      ],
-      "specialNumber": 43,
-      "specialNumbers": [
-        43
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2100",
       "drawDate": "2026-05-07",
@@ -381,13 +363,31 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2119",
+      "drawDate": "2026-07-13",
+      "numbers": [
+        15,
+        18,
+        20,
+        22,
+        30,
+        38
+      ],
+      "specialNumber": 42,
+      "specialNumbers": [
+        42
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2118,
+      "drawCount": 2119,
       "error": null
     },
     "unofficialBackup": {
@@ -400,7 +400,7 @@
       "drawCount": 2118
     },
     "merged": {
-      "totalDrawCount": 2118
+      "totalDrawCount": 2119
     }
   }
 }
