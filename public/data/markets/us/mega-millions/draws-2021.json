@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-11T12:03:56.212Z",
+  "generatedAt": "2026-07-15T06:27:01.482Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2021",
@@ -1800,9 +1800,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
