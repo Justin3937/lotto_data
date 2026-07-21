@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-21T03:42:34.387Z",
+  "generatedAt": "2026-07-21T06:40:26.095Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "latestDraw": {
@@ -376,7 +376,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1115
+      "drawCount": 1116
     },
     "merged": {
       "totalDrawCount": 1116
