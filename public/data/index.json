@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T12:08:58.369Z",
+  "generatedAt": "2026-07-25T15:18:13.599Z",
   "markets": [
     {
       "marketId": "HK",
       "games": [
         {
           "gameId": "mark_six",
-          "latestDrawId": "202679N",
+          "latestDrawId": "202680N",
           "latestPath": "markets/hk/mark-six/latest.json",
           "drawsIndexPath": "markets/hk/mark-six/draws-index.json",
           "allDrawsPath": "markets/hk/mark-six/draws-all.json",
