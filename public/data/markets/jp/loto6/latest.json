@@ -1,45 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T18:36:56.156Z",
+  "generatedAt": "2026-07-27T11:39:20.047Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "latestDraw": {
-    "drawId": "2122",
-    "drawDate": "2026-07-23",
+    "drawId": "2123",
+    "drawDate": "2026-07-27",
     "numbers": [
-      12,
-      15,
-      18,
-      21,
-      26,
-      32
+      1,
+      2,
+      4,
+      25,
+      37,
+      40
     ],
-    "specialNumber": 41,
+    "specialNumber": 43,
     "specialNumbers": [
-      41
+      43
     ],
-    "status": "official",
-    "verificationStatus": "official"
+    "status": "unofficial_backup",
+    "verificationStatus": "unofficial_backup_unverified",
+    "sourceName": "takarakuji.syumimania.com"
   },
   "recentDraws": [
-    {
-      "drawId": "2103",
-      "drawDate": "2026-05-18",
-      "numbers": [
-        1,
-        2,
-        4,
-        5,
-        8,
-        38
-      ],
-      "specialNumber": 39,
-      "specialNumbers": [
-        39
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2104",
       "drawDate": "2026-05-21",
@@ -381,14 +364,33 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2123",
+      "drawDate": "2026-07-27",
+      "numbers": [
+        1,
+        2,
+        4,
+        25,
+        37,
+        40
+      ],
+      "specialNumber": 43,
+      "specialNumbers": [
+        43
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "takarakuji.syumimania.com"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 2122,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
     },
     "unofficialBackup": {
       "ok": true,
@@ -400,7 +402,7 @@
       "drawCount": 2122
     },
     "merged": {
-      "totalDrawCount": 2122
+      "totalDrawCount": 2123
     }
   }
 }
