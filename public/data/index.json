@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T06:39:56.018Z",
+  "generatedAt": "2026-08-01T09:19:23.185Z",
   "markets": [
     {
       "marketId": "HK",
@@ -61,7 +61,7 @@
           "latestPath": "markets/us/mega-millions/latest.json",
           "drawsIndexPath": "markets/us/mega-millions/draws-index.json",
           "allDrawsPath": "markets/us/mega-millions/draws-all.json",
-          "verificationStatus": "official_with_unofficial_backup"
+          "verificationStatus": "official"
         },
         {
           "gameId": "lotto_america",
