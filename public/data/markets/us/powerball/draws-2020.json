@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T11:33:37.506Z",
+  "generatedAt": "2026-08-04T06:39:37.402Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2020",
@@ -1792,7 +1792,7 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -1809,7 +1809,7 @@
       "drawCount": 1974
     },
     "merged": {
-      "totalDrawCount": 1974
+      "totalDrawCount": 1975
     }
   }
 }
