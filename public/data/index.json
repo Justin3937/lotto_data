@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T03:34:04.585Z",
+  "generatedAt": "2026-08-06T06:43:48.185Z",
   "markets": [
     {
       "marketId": "HK",
@@ -49,11 +49,11 @@
       "games": [
         {
           "gameId": "powerball",
-          "latestDrawId": "2026-08-03",
+          "latestDrawId": "2026-08-05",
           "latestPath": "markets/us/powerball/latest.json",
           "drawsIndexPath": "markets/us/powerball/draws-index.json",
           "allDrawsPath": "markets/us/powerball/draws-all.json",
-          "verificationStatus": "official"
+          "verificationStatus": "official_with_unofficial_backup"
         },
         {
           "gameId": "mega_millions",
