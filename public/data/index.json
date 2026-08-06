@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T12:14:59.968Z",
+  "generatedAt": "2026-08-06T03:34:04.585Z",
   "markets": [
     {
       "marketId": "HK",
@@ -65,7 +65,7 @@
         },
         {
           "gameId": "lotto_america",
-          "latestDrawId": "2026-08-03",
+          "latestDrawId": "2026-08-05",
           "latestPath": "markets/us/lotto-america/latest.json",
           "drawsIndexPath": "markets/us/lotto-america/draws-index.json",
           "allDrawsPath": "markets/us/lotto-america/draws-all.json",

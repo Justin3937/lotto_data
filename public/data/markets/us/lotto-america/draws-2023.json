@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T09:49:39.934Z",
+  "generatedAt": "2026-08-06T03:34:04.585Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2023",
@@ -2663,7 +2663,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1122,
+      "drawCount": 1123,
       "error": null
     },
     "unofficialBackup": {
@@ -2676,7 +2676,7 @@
       "drawCount": 1122
     },
     "merged": {
-      "totalDrawCount": 1122
+      "totalDrawCount": 1123
     }
   }
 }
