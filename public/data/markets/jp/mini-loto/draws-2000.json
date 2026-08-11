@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T15:15:43.864Z",
+  "generatedAt": "2026-08-11T16:12:41.100Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2000",
@@ -894,9 +894,9 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 1399,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/miniloto/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
     },
     "unofficialBackup": {
       "ok": true,
