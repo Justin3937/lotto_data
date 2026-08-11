@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T06:03:12.535Z",
+  "generatedAt": "2026-08-11T07:34:29.286Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
@@ -18,8 +18,7 @@
       10
     ],
     "status": "unofficial_backup",
-    "verificationStatus": "unofficial_backup_unverified",
-    "sourceName": "lotto.net"
+    "verificationStatus": "unofficial_backup_unverified"
   },
   "recentDraws": [
     {
@@ -360,8 +359,7 @@
         10
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "lotto.net"
+      "verificationStatus": "unofficial_backup_unverified"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -372,9 +370,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
