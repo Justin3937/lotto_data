@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T11:55:38.019Z",
+  "generatedAt": "2026-08-13T05:02:31.775Z",
   "marketId": "US",
   "gameId": "powerball",
-  "totalDrawCount": 1978,
-  "latestDrawId": "2026-08-10",
-  "latestDrawDate": "2026-08-10",
+  "totalDrawCount": 1979,
+  "latestDrawId": "2026-08-12",
+  "latestDrawDate": "2026-08-12",
   "years": [
     {
       "year": "2010",
@@ -121,13 +121,13 @@
     },
     {
       "year": "2026",
-      "drawCount": 95,
+      "drawCount": 96,
       "firstDrawDate": "2026-01-03",
-      "latestDrawDate": "2026-08-10",
+      "latestDrawDate": "2026-08-12",
       "path": "markets/us/powerball/draws-2026.json"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -144,7 +144,7 @@
       "drawCount": 1978
     },
     "merged": {
-      "totalDrawCount": 1978
+      "totalDrawCount": 1979
     }
   }
 }
