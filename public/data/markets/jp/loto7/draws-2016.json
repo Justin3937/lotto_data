@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T15:06:49.054Z",
+  "generatedAt": "2026-08-14T16:04:51.334Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "year": "2016",
@@ -1055,9 +1055,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 9,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "This operation was aborted"
     },
     "seed": {
       "ok": true,
