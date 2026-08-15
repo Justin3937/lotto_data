@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T06:55:52.093Z",
+  "generatedAt": "2026-08-15T07:42:57.263Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2026",
@@ -1108,16 +1108,15 @@
       "specialNumbers": [
         11
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "lotto.net"
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2527,
+      "drawCount": 2528,
       "error": null
     },
     "unofficialBackup": {
