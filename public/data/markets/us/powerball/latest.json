@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T06:57:38.955Z",
+  "generatedAt": "2026-08-16T07:43:57.674Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
@@ -17,8 +17,8 @@
     "specialNumbers": [
       13
     ],
-    "status": "unofficial_backup",
-    "verificationStatus": "unofficial_backup_unverified"
+    "status": "official",
+    "verificationStatus": "official"
   },
   "recentDraws": [
     {
@@ -358,21 +358,21 @@
       "specialNumbers": [
         13
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified"
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1979,
+      "drawCount": 1980,
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
