@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T08:45:35.692Z",
+  "generatedAt": "2026-08-16T09:39:36.817Z",
   "marketId": "US",
   "gameId": "powerball",
   "totalDrawCount": 1980,
@@ -33674,9 +33674,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
