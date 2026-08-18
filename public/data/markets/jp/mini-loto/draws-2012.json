@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T13:55:30.753Z",
+  "generatedAt": "2026-08-18T14:51:13.489Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2012",
@@ -882,9 +882,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "https://takarakuji.syumimania.com/miniloto-1395/ failed: HTTP 403 <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
+      "ok": true,
+      "drawCount": 53,
+      "error": null
     },
     "seed": {
       "ok": true,

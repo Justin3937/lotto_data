@@ -1,45 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T22:35:47.650Z",
+  "generatedAt": "2026-08-18T14:51:13.489Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "latestDraw": {
-    "drawId": "202689N",
-    "drawDate": "2026-08-15",
+    "drawId": "202690N",
+    "drawDate": "2026-08-18",
     "numbers": [
-      4,
-      16,
-      25,
-      27,
-      28,
-      33
+      7,
+      8,
+      9,
+      14,
+      39,
+      41
     ],
-    "specialNumber": 14,
+    "specialNumber": 49,
     "specialNumbers": [
-      14
+      49
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "202670N",
-      "drawDate": "2026-06-30",
-      "numbers": [
-        12,
-        14,
-        17,
-        18,
-        22,
-        40
-      ],
-      "specialNumber": 13,
-      "specialNumbers": [
-        13
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "202671N",
       "drawDate": "2026-07-02",
@@ -381,13 +363,31 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "202690N",
+      "drawDate": "2026-08-18",
+      "numbers": [
+        7,
+        8,
+        9,
+        14,
+        39,
+        41
+      ],
+      "specialNumber": 49,
+      "specialNumbers": [
+        49
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official_with_fallback_history",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 89,
+      "drawCount": 90,
       "error": null
     },
     "unofficialBackup": {
@@ -400,7 +400,7 @@
       "drawCount": 4377
     },
     "merged": {
-      "totalDrawCount": 4377
+      "totalDrawCount": 4378
     }
   }
 }
