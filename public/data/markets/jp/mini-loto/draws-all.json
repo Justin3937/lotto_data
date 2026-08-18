@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T19:18:24.188Z",
+  "generatedAt": "2026-08-18T11:38:26.866Z",
   "marketId": "JP",
   "gameId": "mini_loto",
-  "totalDrawCount": 1399,
+  "totalDrawCount": 1400,
   "draws": [
     {
       "drawId": "1",
@@ -23787,26 +23787,43 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "1400",
+      "drawDate": "2026-08-18",
+      "numbers": [
+        1,
+        14,
+        15,
+        17,
+        29
+      ],
+      "specialNumber": 30,
+      "specialNumbers": [
+        30
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1399,
+      "drawCount": 1400,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 98,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://takarakuji.syumimania.com/miniloto-1395/ failed: HTTP 403 <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/htm"
     },
     "seed": {
       "ok": true,
       "drawCount": 1399
     },
     "merged": {
-      "totalDrawCount": 1399
+      "totalDrawCount": 1400
     }
   }
 }
