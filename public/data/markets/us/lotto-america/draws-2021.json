@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T07:04:02.868Z",
+  "generatedAt": "2026-08-20T07:54:48.938Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2021",
@@ -1778,9 +1778,9 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 1129,
+      "error": null
     },
     "unofficialBackup": {
       "ok": true,
