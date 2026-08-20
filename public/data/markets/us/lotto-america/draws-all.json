@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T09:48:57.014Z",
+  "generatedAt": "2026-08-20T10:46:01.099Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "totalDrawCount": 1129,
@@ -19207,9 +19207,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
