@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T05:45:07.851Z",
+  "generatedAt": "2026-08-20T07:04:02.868Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "latestDraw": {
@@ -365,9 +365,9 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 1129,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "unofficialBackup": {
       "ok": true,
