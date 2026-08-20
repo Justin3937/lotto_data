@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T10:46:01.099Z",
+  "generatedAt": "2026-08-20T11:42:35.676Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "year": "2009",
@@ -928,9 +928,9 @@
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": true,
-      "drawCount": 2130,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
     },
     "unofficialBackup": {
       "ok": true,
@@ -939,7 +939,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2129
+      "drawCount": 2130
     },
     "merged": {
       "totalDrawCount": 2130
