@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T11:39:34.808Z",
+  "generatedAt": "2026-08-21T13:09:15.482Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "totalDrawCount": 691,
@@ -13822,16 +13822,15 @@
         2,
         9
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "takarakuji.syumimania.com"
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 690,
+      "drawCount": 691,
       "error": null
     },
     "unofficialBackup": {
@@ -13841,7 +13840,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 690
+      "drawCount": 691
     },
     "merged": {
       "totalDrawCount": 691
