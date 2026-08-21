@@ -1,49 +1,30 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T19:12:07.612Z",
+  "generatedAt": "2026-08-21T11:39:34.808Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "latestDraw": {
-    "drawId": "690",
-    "drawDate": "2026-08-14",
+    "drawId": "691",
+    "drawDate": "2026-08-21",
     "numbers": [
-      3,
+      8,
       10,
-      14,
-      17,
-      18,
       20,
-      25
+      22,
+      23,
+      27,
+      37
     ],
-    "specialNumber": 19,
+    "specialNumber": 2,
     "specialNumbers": [
-      19,
-      34
+      2,
+      9
     ],
-    "status": "official",
-    "verificationStatus": "official"
+    "status": "unofficial_backup",
+    "verificationStatus": "unofficial_backup_unverified",
+    "sourceName": "takarakuji.syumimania.com"
   },
   "recentDraws": [
-    {
-      "drawId": "671",
-      "drawDate": "2026-04-03",
-      "numbers": [
-        7,
-        13,
-        16,
-        22,
-        28,
-        33,
-        36
-      ],
-      "specialNumber": 2,
-      "specialNumbers": [
-        2,
-        25
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "672",
       "drawDate": "2026-04-10",
@@ -423,9 +404,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "691",
+      "drawDate": "2026-08-21",
+      "numbers": [
+        8,
+        10,
+        20,
+        22,
+        23,
+        27,
+        37
+      ],
+      "specialNumber": 2,
+      "specialNumbers": [
+        2,
+        9
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "takarakuji.syumimania.com"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -442,7 +444,7 @@
       "drawCount": 690
     },
     "merged": {
-      "totalDrawCount": 690
+      "totalDrawCount": 691
     }
   }
 }
