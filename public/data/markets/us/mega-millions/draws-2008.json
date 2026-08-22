@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T06:57:41.373Z",
+  "generatedAt": "2026-08-22T07:44:40.666Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2008",
@@ -1792,11 +1792,11 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2529,
+      "drawCount": 2530,
       "error": null
     },
     "unofficialBackup": {
