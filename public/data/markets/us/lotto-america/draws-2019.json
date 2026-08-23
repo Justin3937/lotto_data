@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T11:42:35.676Z",
+  "generatedAt": "2026-08-23T04:00:00.121Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2019",
@@ -1779,20 +1779,20 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1129,
+      "drawCount": 1130,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
       "drawCount": 1129
     },
     "merged": {
-      "totalDrawCount": 1129
+      "totalDrawCount": 1130
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T11:42:35.676Z",
+  "generatedAt": "2026-08-23T04:00:00.121Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "year": "2026",
-  "drawCount": 99,
+  "drawCount": 100,
   "draws": [
     {
       "drawId": "2026-01-03",
@@ -1688,26 +1688,43 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-08-22",
+      "drawDate": "2026-08-22",
+      "numbers": [
+        20,
+        23,
+        36,
+        42,
+        50
+      ],
+      "specialNumber": 4,
+      "specialNumbers": [
+        4
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1129,
+      "drawCount": 1130,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
       "drawCount": 1129
     },
     "merged": {
-      "totalDrawCount": 1129
+      "totalDrawCount": 1130
     }
   }
 }
