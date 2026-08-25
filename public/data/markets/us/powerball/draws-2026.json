@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T05:46:08.179Z",
+  "generatedAt": "2026-08-25T07:06:49.751Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2026",
@@ -1721,8 +1721,7 @@
         2
       ],
       "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "lotto.net"
+      "verificationStatus": "unofficial_backup_unverified"
     }
   ],
   "verificationStatus": "official_with_unofficial_backup",
@@ -1733,9 +1732,9 @@
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
