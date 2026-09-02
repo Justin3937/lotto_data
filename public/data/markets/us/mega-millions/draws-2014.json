@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-29T11:03:46.490Z",
+  "generatedAt": "2026-09-02T04:29:32.234Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2014",
@@ -1775,7 +1775,7 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -1789,10 +1789,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2531
+      "drawCount": 2532
     },
     "merged": {
-      "totalDrawCount": 2532
+      "totalDrawCount": 2533
     }
   }
 }
