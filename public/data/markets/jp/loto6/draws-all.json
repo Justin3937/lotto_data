@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T13:44:17.626Z",
+  "generatedAt": "2026-09-03T14:33:00.752Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
-  "totalDrawCount": 2133,
+  "totalDrawCount": 2134,
   "draws": [
     {
       "drawId": "1",
@@ -38398,13 +38398,31 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2134",
+      "drawDate": "2026-09-03",
+      "numbers": [
+        5,
+        9,
+        10,
+        19,
+        26,
+        35
+      ],
+      "specialNumber": 18,
+      "specialNumbers": [
+        18
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2133,
+      "drawCount": 2134,
       "error": null
     },
     "unofficialBackup": {
@@ -38414,10 +38432,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2132
+      "drawCount": 2133
     },
     "merged": {
-      "totalDrawCount": 2133
+      "totalDrawCount": 2134
     }
   }
 }
