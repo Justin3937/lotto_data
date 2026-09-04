@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T11:20:50.972Z",
+  "generatedAt": "2026-09-04T14:20:13.479Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "year": "2016",
@@ -1051,20 +1051,20 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 691,
+      "drawCount": 692,
       "error": null
     },
     "unofficialBackup": {
       "ok": true,
-      "drawCount": 9,
+      "drawCount": 10,
       "error": null
     },
     "seed": {
       "ok": true,
-      "drawCount": 691
+      "drawCount": 692
     },
     "merged": {
-      "totalDrawCount": 692
+      "totalDrawCount": 693
     }
   }
 }
