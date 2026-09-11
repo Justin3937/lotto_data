@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-11T14:24:55.584Z",
+  "generatedAt": "2026-09-11T18:30:36.838Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "year": "2016",
@@ -1057,7 +1057,7 @@
     "unofficialBackup": {
       "ok": false,
       "drawCount": 0,
-      "error": "Unofficial backup returned zero parsed draws"
+      "error": "https://takarakuji.syumimania.com/loto7/ failed: HTTP 521 {\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-521/\",\""
     },
     "seed": {
       "ok": true,
