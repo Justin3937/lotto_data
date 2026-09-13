@@ -1,43 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-10T09:41:51.431Z",
+  "generatedAt": "2026-09-13T04:43:21.770Z",
   "marketId": "US",
   "gameId": "lotto_america",
   "latestDraw": {
-    "drawId": "2026-09-09",
-    "drawDate": "2026-09-09",
+    "drawId": "2026-09-12",
+    "drawDate": "2026-09-12",
     "numbers": [
-      3,
-      4,
-      44,
-      47,
-      49
+      2,
+      8,
+      15,
+      43,
+      52
     ],
-    "specialNumber": 4,
+    "specialNumber": 9,
     "specialNumbers": [
-      4
+      9
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-07-27",
-      "drawDate": "2026-07-27",
-      "numbers": [
-        15,
-        20,
-        27,
-        45,
-        46
-      ],
-      "specialNumber": 3,
-      "specialNumbers": [
-        3
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-07-29",
       "drawDate": "2026-07-29",
@@ -360,26 +343,43 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-09-12",
+      "drawDate": "2026-09-12",
+      "numbers": [
+        2,
+        8,
+        15,
+        43,
+        52
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1138,
+      "drawCount": 1139,
       "error": null
     },
     "unofficialBackup": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "drawCount": 10,
+      "error": null
     },
     "seed": {
       "ok": true,
       "drawCount": 1138
     },
     "merged": {
-      "totalDrawCount": 1138
+      "totalDrawCount": 1139
     }
   }
 }
