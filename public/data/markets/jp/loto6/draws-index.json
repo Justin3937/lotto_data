@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T16:57:48.295Z",
+  "generatedAt": "2026-09-21T17:01:53.313Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
-  "totalDrawCount": 2138,
-  "latestDrawId": "2138",
-  "latestDrawDate": "2026-09-17",
+  "totalDrawCount": 2139,
+  "latestDrawId": "2139",
+  "latestDrawDate": "2026-09-21",
   "years": [
     {
       "year": "2000",
@@ -191,9 +191,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 74,
+      "drawCount": 75,
       "firstDrawDate": "2026-01-05",
-      "latestDrawDate": "2026-09-17",
+      "latestDrawDate": "2026-09-21",
       "path": "markets/jp/loto6/draws-2026.json"
     }
   ],
@@ -201,20 +201,20 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2138,
+      "drawCount": 2139,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 1,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://takarakuji.syumimania.com/loto6/ failed: HTTP 403 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
     },
     "seed": {
       "ok": true,
       "drawCount": 2138
     },
     "merged": {
-      "totalDrawCount": 2138
+      "totalDrawCount": 2139
     }
   }
 }

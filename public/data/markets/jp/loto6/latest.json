@@ -1,45 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T16:57:48.295Z",
+  "generatedAt": "2026-09-21T17:01:53.313Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "latestDraw": {
-    "drawId": "2138",
-    "drawDate": "2026-09-17",
+    "drawId": "2139",
+    "drawDate": "2026-09-21",
     "numbers": [
-      9,
-      16,
-      21,
-      26,
-      38,
-      40
+      3,
+      6,
+      23,
+      34,
+      36,
+      43
     ],
-    "specialNumber": 12,
+    "specialNumber": 29,
     "specialNumbers": [
-      12
+      29
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2119",
-      "drawDate": "2026-07-13",
-      "numbers": [
-        15,
-        18,
-        20,
-        22,
-        30,
-        38
-      ],
-      "specialNumber": 42,
-      "specialNumbers": [
-        42
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2120",
       "drawDate": "2026-07-16",
@@ -381,26 +363,44 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2139",
+      "drawDate": "2026-09-21",
+      "numbers": [
+        3,
+        6,
+        23,
+        34,
+        36,
+        43
+      ],
+      "specialNumber": 29,
+      "specialNumbers": [
+        29
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2138,
+      "drawCount": 2139,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 1,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "https://takarakuji.syumimania.com/loto6/ failed: HTTP 403 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
     },
     "seed": {
       "ok": true,
       "drawCount": 2138
     },
     "merged": {
-      "totalDrawCount": 2138
+      "totalDrawCount": 2139
     }
   }
 }
