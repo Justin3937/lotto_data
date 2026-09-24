@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T15:03:49.909Z",
+  "generatedAt": "2026-09-24T19:07:53.081Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "year": "2011",
@@ -1659,7 +1659,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2139
+      "drawCount": 2140
     },
     "merged": {
       "totalDrawCount": 2140
