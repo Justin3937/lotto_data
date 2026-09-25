@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T18:26:41.708Z",
+  "generatedAt": "2026-09-25T13:44:21.902Z",
   "marketId": "JP",
   "gameId": "loto7_jp",
   "year": "2021",
@@ -1037,7 +1037,7 @@
     "unofficialBackup": {
       "ok": false,
       "drawCount": 0,
-      "error": "Unofficial backup returned zero parsed draws"
+      "error": "https://takarakuji.syumimania.com/loto7/ failed: HTTP 403 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class"
     },
     "seed": {
       "ok": true,
