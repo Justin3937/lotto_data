@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T08:26:16.588Z",
+  "generatedAt": "2026-10-01T08:52:51.568Z",
   "marketId": "US",
   "gameId": "powerball",
   "year": "2022",
-  "drawCount": 154,
+  "drawCount": 157,
   "draws": [
     {
       "drawId": "2022-01-01",
@@ -517,6 +517,23 @@
       "verificationStatus": "official"
     },
     {
+      "drawId": "2022-03-12",
+      "drawDate": "2022-03-12",
+      "numbers": [
+        19,
+        20,
+        37,
+        39,
+        61
+      ],
+      "specialNumber": 8,
+      "specialNumbers": [
+        8
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
       "drawId": "2022-03-14",
       "drawDate": "2022-03-14",
       "numbers": [
@@ -695,6 +712,23 @@
         45,
         47,
         64
+      ],
+      "specialNumber": 18,
+      "specialNumbers": [
+        18
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2022-04-09",
+      "drawDate": "2022-04-09",
+      "numbers": [
+        6,
+        16,
+        31,
+        62,
+        66
       ],
       "specialNumber": 18,
       "specialNumbers": [
@@ -2234,6 +2268,23 @@
       "verificationStatus": "official"
     },
     {
+      "drawId": "2022-11-07",
+      "drawDate": "2022-11-07",
+      "numbers": [
+        10,
+        33,
+        41,
+        47,
+        56
+      ],
+      "specialNumber": 10,
+      "specialNumbers": [
+        10
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
       "drawId": "2022-11-09",
       "drawDate": "2022-11-09",
       "numbers": [
@@ -2629,7 +2680,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1999,
+      "drawCount": 2006,
       "error": null
     },
     "unofficialBackup": {
@@ -2639,10 +2690,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1998
+      "drawCount": 1999
     },
     "merged": {
-      "totalDrawCount": 1999
+      "totalDrawCount": 2006
     }
   }
 }

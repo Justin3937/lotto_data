@@ -1,43 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T08:26:16.588Z",
+  "generatedAt": "2026-10-01T08:52:51.568Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
-    "drawId": "2026-09-28",
-    "drawDate": "2026-09-28",
+    "drawId": "2026-09-30",
+    "drawDate": "2026-09-30",
     "numbers": [
-      17,
-      21,
-      29,
-      42,
-      49
+      4,
+      6,
+      23,
+      33,
+      44
     ],
-    "specialNumber": 7,
+    "specialNumber": 13,
     "specialNumbers": [
-      7
+      13
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-08-15",
-      "drawDate": "2026-08-15",
-      "numbers": [
-        5,
-        8,
-        27,
-        29,
-        63
-      ],
-      "specialNumber": 13,
-      "specialNumbers": [
-        13
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-08-17",
       "drawDate": "2026-08-17",
@@ -360,13 +343,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-09-30",
+      "drawDate": "2026-09-30",
+      "numbers": [
+        4,
+        6,
+        23,
+        33,
+        44
+      ],
+      "specialNumber": 13,
+      "specialNumbers": [
+        13
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1999,
+      "drawCount": 2006,
       "error": null
     },
     "unofficialBackup": {
@@ -376,10 +376,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1998
+      "drawCount": 1999
     },
     "merged": {
-      "totalDrawCount": 1999
+      "totalDrawCount": 2006
     }
   }
 }
