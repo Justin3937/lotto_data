@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T06:30:02.005Z",
+  "generatedAt": "2026-10-03T12:30:47.446Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "year": "2024",
@@ -1792,11 +1792,11 @@
       "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2544,
+      "drawCount": 2545,
       "error": null
     },
     "unofficialBackup": {
@@ -1806,7 +1806,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2540
+      "drawCount": 2545
     },
     "merged": {
       "totalDrawCount": 2545
