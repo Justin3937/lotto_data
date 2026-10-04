@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T08:52:51.568Z",
+  "generatedAt": "2026-10-04T09:43:51.279Z",
   "marketId": "US",
   "gameId": "powerball",
-  "totalDrawCount": 2006,
+  "totalDrawCount": 2007,
   "draws": [
     {
       "drawId": "2010-02-03",
@@ -34106,13 +34106,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-10-03",
+      "drawDate": "2026-10-03",
+      "numbers": [
+        4,
+        42,
+        44,
+        55,
+        59
+      ],
+      "specialNumber": 14,
+      "specialNumbers": [
+        14
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2006,
+      "drawCount": 2007,
       "error": null
     },
     "unofficialBackup": {
@@ -34122,10 +34139,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1999
+      "drawCount": 2006
     },
     "merged": {
-      "totalDrawCount": 2006
+      "totalDrawCount": 2007
     }
   }
 }
