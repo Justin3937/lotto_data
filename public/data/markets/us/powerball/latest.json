@@ -1,43 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T09:43:51.279Z",
+  "generatedAt": "2026-10-06T07:32:11.381Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
-    "drawId": "2026-10-03",
-    "drawDate": "2026-10-03",
+    "drawId": "2026-10-05",
+    "drawDate": "2026-10-05",
     "numbers": [
-      4,
-      42,
-      44,
-      55,
-      59
+      16,
+      23,
+      32,
+      36,
+      54
     ],
-    "specialNumber": 14,
+    "specialNumber": 9,
     "specialNumbers": [
-      14
+      9
     ],
-    "status": "official",
-    "verificationStatus": "official"
+    "status": "unofficial_backup",
+    "verificationStatus": "unofficial_backup_unverified",
+    "sourceName": "lotto.net"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-08-19",
-      "drawDate": "2026-08-19",
-      "numbers": [
-        10,
-        21,
-        58,
-        61,
-        64
-      ],
-      "specialNumber": 17,
-      "specialNumbers": [
-        17
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-08-22",
       "drawDate": "2026-08-22",
@@ -360,9 +344,27 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-10-05",
+      "drawDate": "2026-10-05",
+      "numbers": [
+        16,
+        23,
+        32,
+        36,
+        54
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "unofficial_backup",
+      "verificationStatus": "unofficial_backup_unverified",
+      "sourceName": "lotto.net"
     }
   ],
-  "verificationStatus": "official",
+  "verificationStatus": "official_with_unofficial_backup",
   "sourceSummary": {
     "official": {
       "ok": true,
@@ -376,10 +378,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2006
+      "drawCount": 2007
     },
     "merged": {
-      "totalDrawCount": 2007
+      "totalDrawCount": 2008
     }
   }
 }
