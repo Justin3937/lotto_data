@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T05:58:56.404Z",
+  "generatedAt": "2026-10-08T13:24:29.291Z",
   "markets": [
     {
       "marketId": "HK",
@@ -28,7 +28,7 @@
         },
         {
           "gameId": "loto6_jp",
-          "latestDrawId": "2143",
+          "latestDrawId": "2144",
           "latestPath": "markets/jp/loto6/latest.json",
           "drawsIndexPath": "markets/jp/loto6/draws-index.json",
           "allDrawsPath": "markets/jp/loto6/draws-all.json",
