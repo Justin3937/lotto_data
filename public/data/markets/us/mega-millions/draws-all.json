@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T05:48:07.850Z",
+  "generatedAt": "2026-10-10T12:27:24.445Z",
   "marketId": "US",
   "gameId": "mega_millions",
   "totalDrawCount": 2547,
@@ -43301,16 +43301,15 @@
       "specialNumbers": [
         8
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "lotto.net"
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2546,
+      "drawCount": 2547,
       "error": null
     },
     "unofficialBackup": {
@@ -43320,7 +43319,7 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2546
+      "drawCount": 2547
     },
     "merged": {
       "totalDrawCount": 2547
