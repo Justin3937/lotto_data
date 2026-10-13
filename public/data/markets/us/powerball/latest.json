@@ -1,44 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T07:09:50.863Z",
+  "generatedAt": "2026-10-13T09:22:59.595Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
-    "drawId": "2026-10-10",
-    "drawDate": "2026-10-10",
+    "drawId": "2026-10-12",
+    "drawDate": "2026-10-12",
     "numbers": [
-      1,
-      4,
-      19,
-      33,
-      51
+      22,
+      28,
+      38,
+      51,
+      69
     ],
-    "specialNumber": 15,
+    "specialNumber": 9,
     "specialNumbers": [
-      15
+      9
     ],
-    "status": "unofficial_backup",
-    "verificationStatus": "unofficial_backup_unverified",
-    "sourceName": "lotto.net"
+    "status": "official",
+    "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-08-26",
-      "drawDate": "2026-08-26",
-      "numbers": [
-        12,
-        32,
-        45,
-        50,
-        58
-      ],
-      "specialNumber": 2,
-      "specialNumbers": [
-        2
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-08-29",
       "drawDate": "2026-08-29",
@@ -359,16 +341,32 @@
       "specialNumbers": [
         15
       ],
-      "status": "unofficial_backup",
-      "verificationStatus": "unofficial_backup_unverified",
-      "sourceName": "lotto.net"
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-10-12",
+      "drawDate": "2026-10-12",
+      "numbers": [
+        22,
+        28,
+        38,
+        51,
+        69
+      ],
+      "specialNumber": 9,
+      "specialNumbers": [
+        9
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
-  "verificationStatus": "official_with_unofficial_backup",
+  "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2009,
+      "drawCount": 2011,
       "error": null
     },
     "unofficialBackup": {
@@ -378,10 +376,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2008
+      "drawCount": 2010
     },
     "merged": {
-      "totalDrawCount": 2010
+      "totalDrawCount": 2011
     }
   }
 }
