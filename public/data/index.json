@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T09:22:59.595Z",
+  "generatedAt": "2026-10-13T17:35:33.390Z",
   "markets": [
     {
       "marketId": "HK",
       "games": [
         {
           "gameId": "mark_six",
-          "latestDrawId": "2026108N",
+          "latestDrawId": "2026109N",
           "latestPath": "markets/hk/mark-six/latest.json",
           "drawsIndexPath": "markets/hk/mark-six/draws-index.json",
           "allDrawsPath": "markets/hk/mark-six/draws-all.json",
@@ -20,7 +20,7 @@
       "games": [
         {
           "gameId": "mini_loto",
-          "latestDrawId": "1407",
+          "latestDrawId": "1408",
           "latestPath": "markets/jp/mini-loto/latest.json",
           "drawsIndexPath": "markets/jp/mini-loto/draws-index.json",
           "allDrawsPath": "markets/jp/mini-loto/draws-all.json",

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T15:08:25.287Z",
+  "generatedAt": "2026-10-13T17:35:33.390Z",
   "marketId": "JP",
   "gameId": "mini_loto",
-  "totalDrawCount": 1407,
+  "totalDrawCount": 1408,
   "draws": [
     {
       "drawId": "1",
@@ -23923,13 +23923,30 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "1408",
+      "drawDate": "2026-10-13",
+      "numbers": [
+        2,
+        5,
+        6,
+        24,
+        28
+      ],
+      "specialNumber": 19,
+      "specialNumbers": [
+        19
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1407,
+      "drawCount": 1408,
       "error": null
     },
     "unofficialBackup": {
@@ -23939,10 +23956,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1406
+      "drawCount": 1407
     },
     "merged": {
-      "totalDrawCount": 1407
+      "totalDrawCount": 1408
     }
   }
 }
