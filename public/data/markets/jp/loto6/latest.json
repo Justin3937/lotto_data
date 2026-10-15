@@ -1,63 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T13:24:29.291Z",
+  "generatedAt": "2026-10-15T11:23:59.759Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "latestDraw": {
-    "drawId": "2144",
-    "drawDate": "2026-10-08",
+    "drawId": "2146",
+    "drawDate": "2026-10-15",
     "numbers": [
-      5,
-      6,
-      11,
-      25,
-      31,
-      32
+      15,
+      17,
+      19,
+      34,
+      36,
+      37
     ],
-    "specialNumber": 15,
+    "specialNumber": 3,
     "specialNumbers": [
-      15
+      3
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2125",
-      "drawDate": "2026-08-03",
-      "numbers": [
-        3,
-        22,
-        25,
-        28,
-        30,
-        43
-      ],
-      "specialNumber": 39,
-      "specialNumbers": [
-        39
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
-    {
-      "drawId": "2126",
-      "drawDate": "2026-08-06",
-      "numbers": [
-        18,
-        20,
-        22,
-        35,
-        37,
-        42
-      ],
-      "specialNumber": 24,
-      "specialNumbers": [
-        24
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2127",
       "drawDate": "2026-08-10",
@@ -381,13 +345,49 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2145",
+      "drawDate": "2026-10-12",
+      "numbers": [
+        4,
+        6,
+        8,
+        11,
+        24,
+        27
+      ],
+      "specialNumber": 36,
+      "specialNumbers": [
+        36
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2146",
+      "drawDate": "2026-10-15",
+      "numbers": [
+        15,
+        17,
+        19,
+        34,
+        36,
+        37
+      ],
+      "specialNumber": 3,
+      "specialNumbers": [
+        3
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2144,
+      "drawCount": 2146,
       "error": null
     },
     "unofficialBackup": {
@@ -397,10 +397,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2143
+      "drawCount": 2144
     },
     "merged": {
-      "totalDrawCount": 2144
+      "totalDrawCount": 2146
     }
   }
 }
