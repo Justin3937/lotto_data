@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T22:41:28.973Z",
+  "generatedAt": "2026-10-15T16:57:26.254Z",
   "marketId": "HK",
   "gameId": "mark_six",
   "year": "2026",
-  "drawCount": 109,
+  "drawCount": 110,
   "draws": [
     {
       "drawId": "20261N",
@@ -1967,13 +1967,31 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026110N",
+      "drawDate": "2026-10-15",
+      "numbers": [
+        3,
+        7,
+        8,
+        10,
+        36,
+        42
+      ],
+      "specialNumber": 20,
+      "specialNumbers": [
+        20
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official_with_fallback_history",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 109,
+      "drawCount": 110,
       "error": null
     },
     "unofficialBackup": {
@@ -1986,7 +2004,7 @@
       "drawCount": 4397
     },
     "merged": {
-      "totalDrawCount": 4397
+      "totalDrawCount": 4398
     }
   }
 }
