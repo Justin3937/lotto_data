@@ -1,45 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T19:15:17.121Z",
+  "generatedAt": "2026-10-26T12:56:02.204Z",
   "marketId": "JP",
   "gameId": "loto6_jp",
   "latestDraw": {
-    "drawId": "2148",
-    "drawDate": "2026-10-22",
+    "drawId": "2149",
+    "drawDate": "2026-10-26",
     "numbers": [
-      6,
+      2,
       11,
-      14,
-      16,
-      40,
-      42
+      15,
+      19,
+      24,
+      36
     ],
-    "specialNumber": 15,
+    "specialNumber": 27,
     "specialNumbers": [
-      15
+      27
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2129",
-      "drawDate": "2026-08-17",
-      "numbers": [
-        2,
-        4,
-        6,
-        16,
-        25,
-        41
-      ],
-      "specialNumber": 40,
-      "specialNumbers": [
-        40
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2130",
       "drawDate": "2026-08-20",
@@ -381,14 +363,32 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2149",
+      "drawDate": "2026-10-26",
+      "numbers": [
+        2,
+        11,
+        15,
+        19,
+        24,
+        36
+      ],
+      "specialNumber": 27,
+      "specialNumbers": [
+        27
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
-      "ok": false,
-      "drawCount": 0,
-      "error": "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto6/index.html failed: HTTP 403 <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"ht"
+      "ok": true,
+      "drawCount": 2149,
+      "error": null
     },
     "unofficialBackup": {
       "ok": false,
@@ -400,7 +400,7 @@
       "drawCount": 2148
     },
     "merged": {
-      "totalDrawCount": 2148
+      "totalDrawCount": 2149
     }
   }
 }
