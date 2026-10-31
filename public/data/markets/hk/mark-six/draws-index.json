@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T21:47:18.078Z",
+  "generatedAt": "2026-10-31T18:31:41.481Z",
   "marketId": "HK",
   "gameId": "mark_six",
-  "totalDrawCount": 4403,
-  "latestDrawId": "2026115N",
-  "latestDrawDate": "2026-10-27",
+  "totalDrawCount": 4404,
+  "latestDrawId": "2026116N",
+  "latestDrawDate": "2026-10-31",
   "years": [
     {
       "year": "1993",
@@ -240,9 +240,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 115,
+      "drawCount": 116,
       "firstDrawDate": "2026-01-03",
-      "latestDrawDate": "2026-10-27",
+      "latestDrawDate": "2026-10-31",
       "path": "markets/hk/mark-six/draws-2026.json"
     }
   ],
@@ -250,7 +250,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 115,
+      "drawCount": 116,
       "error": null
     },
     "unofficialBackup": {
@@ -263,7 +263,7 @@
       "drawCount": 4403
     },
     "merged": {
-      "totalDrawCount": 4403
+      "totalDrawCount": 4404
     }
   }
 }
