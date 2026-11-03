@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T14:27:22.295Z",
+  "generatedAt": "2026-11-03T16:12:46.350Z",
   "marketId": "JP",
   "gameId": "mini_loto",
-  "totalDrawCount": 1410,
-  "latestDrawId": "1410",
-  "latestDrawDate": "2026-10-27",
+  "totalDrawCount": 1411,
+  "latestDrawId": "1411",
+  "latestDrawDate": "2026-11-03",
   "years": [
     {
       "year": "1999",
@@ -198,9 +198,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 43,
+      "drawCount": 44,
       "firstDrawDate": "2026-01-06",
-      "latestDrawDate": "2026-10-27",
+      "latestDrawDate": "2026-11-03",
       "path": "markets/jp/mini-loto/draws-2026.json"
     }
   ],
@@ -208,7 +208,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1410,
+      "drawCount": 1411,
       "error": null
     },
     "unofficialBackup": {
@@ -218,10 +218,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1409
+      "drawCount": 1410
     },
     "merged": {
-      "totalDrawCount": 1410
+      "totalDrawCount": 1411
     }
   }
 }
