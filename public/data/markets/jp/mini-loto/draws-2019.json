@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T16:12:46.350Z",
+  "generatedAt": "2026-11-10T17:46:33.219Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2019",
@@ -878,7 +878,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1411,
+      "drawCount": 1412,
       "error": null
     },
     "unofficialBackup": {
@@ -888,10 +888,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1410
+      "drawCount": 1411
     },
     "merged": {
-      "totalDrawCount": 1411
+      "totalDrawCount": 1412
     }
   }
 }
