@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T10:51:18.524Z",
+  "generatedAt": "2026-11-14T10:18:26.861Z",
   "marketId": "US",
   "gameId": "mega_millions",
-  "totalDrawCount": 2556,
-  "latestDrawId": "2026-11-10",
-  "latestDrawDate": "2026-11-10",
+  "totalDrawCount": 2557,
+  "latestDrawId": "2026-11-13",
+  "latestDrawDate": "2026-11-13",
   "years": [
     {
       "year": "2002",
@@ -177,9 +177,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 90,
+      "drawCount": 91,
       "firstDrawDate": "2026-01-02",
-      "latestDrawDate": "2026-11-10",
+      "latestDrawDate": "2026-11-13",
       "path": "markets/us/mega-millions/draws-2026.json"
     }
   ],
@@ -187,7 +187,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2556,
+      "drawCount": 2557,
       "error": null
     },
     "unofficialBackup": {
@@ -197,10 +197,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2555
+      "drawCount": 2556
     },
     "merged": {
-      "totalDrawCount": 2556
+      "totalDrawCount": 2557
     }
   }
 }
