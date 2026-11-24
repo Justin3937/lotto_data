@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T13:18:07.121Z",
+  "generatedAt": "2026-11-24T15:50:12.139Z",
   "marketId": "JP",
   "gameId": "mini_loto",
   "year": "2023",
@@ -878,7 +878,7 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1413,
+      "drawCount": 1414,
       "error": null
     },
     "unofficialBackup": {
@@ -888,10 +888,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 1412
+      "drawCount": 1413
     },
     "merged": {
-      "totalDrawCount": 1413
+      "totalDrawCount": 1414
     }
   }
 }
