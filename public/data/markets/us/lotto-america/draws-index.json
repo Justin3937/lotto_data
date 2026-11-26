@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T04:45:15.744Z",
+  "generatedAt": "2026-11-26T12:23:43.677Z",
   "marketId": "US",
   "gameId": "lotto_america",
-  "totalDrawCount": 1170,
-  "latestDrawId": "2026-11-23",
-  "latestDrawDate": "2026-11-23",
+  "totalDrawCount": 1171,
+  "latestDrawId": "2026-11-25",
+  "latestDrawDate": "2026-11-25",
   "years": [
     {
       "year": "2017",
@@ -72,9 +72,9 @@
     },
     {
       "year": "2026",
-      "drawCount": 140,
+      "drawCount": 141,
       "firstDrawDate": "2026-01-03",
-      "latestDrawDate": "2026-11-23",
+      "latestDrawDate": "2026-11-25",
       "path": "markets/us/lotto-america/draws-2026.json"
     }
   ],
@@ -82,20 +82,20 @@
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 1170,
+      "drawCount": 1171,
       "error": null
     },
     "unofficialBackup": {
-      "ok": true,
-      "drawCount": 10,
-      "error": null
+      "ok": false,
+      "drawCount": 0,
+      "error": "fetch failed"
     },
     "seed": {
       "ok": true,
-      "drawCount": 1169
+      "drawCount": 1170
     },
     "merged": {
-      "totalDrawCount": 1170
+      "totalDrawCount": 1171
     }
   }
 }

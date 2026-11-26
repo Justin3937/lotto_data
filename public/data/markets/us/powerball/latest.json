@@ -1,60 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T11:15:30.196Z",
+  "generatedAt": "2026-11-26T12:23:43.677Z",
   "marketId": "US",
   "gameId": "powerball",
   "latestDraw": {
-    "drawId": "2026-11-21",
-    "drawDate": "2026-11-21",
+    "drawId": "2026-11-25",
+    "drawDate": "2026-11-25",
     "numbers": [
-      5,
-      29,
-      33,
-      36,
-      45
+      23,
+      43,
+      57,
+      58,
+      68
     ],
-    "specialNumber": 22,
+    "specialNumber": 12,
     "specialNumbers": [
-      22
+      12
     ],
     "status": "official",
     "verificationStatus": "official"
   },
   "recentDraws": [
-    {
-      "drawId": "2026-10-07",
-      "drawDate": "2026-10-07",
-      "numbers": [
-        11,
-        13,
-        14,
-        21,
-        65
-      ],
-      "specialNumber": 19,
-      "specialNumbers": [
-        19
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
-    {
-      "drawId": "2026-10-10",
-      "drawDate": "2026-10-10",
-      "numbers": [
-        1,
-        4,
-        19,
-        33,
-        51
-      ],
-      "specialNumber": 15,
-      "specialNumbers": [
-        15
-      ],
-      "status": "official",
-      "verificationStatus": "official"
-    },
     {
       "drawId": "2026-10-12",
       "drawDate": "2026-10-12",
@@ -360,13 +326,47 @@
       ],
       "status": "official",
       "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-11-23",
+      "drawDate": "2026-11-23",
+      "numbers": [
+        7,
+        9,
+        27,
+        40,
+        58
+      ],
+      "specialNumber": 19,
+      "specialNumbers": [
+        19
+      ],
+      "status": "official",
+      "verificationStatus": "official"
+    },
+    {
+      "drawId": "2026-11-25",
+      "drawDate": "2026-11-25",
+      "numbers": [
+        23,
+        43,
+        57,
+        58,
+        68
+      ],
+      "specialNumber": 12,
+      "specialNumbers": [
+        12
+      ],
+      "status": "official",
+      "verificationStatus": "official"
     }
   ],
   "verificationStatus": "official",
   "sourceSummary": {
     "official": {
       "ok": true,
-      "drawCount": 2028,
+      "drawCount": 2030,
       "error": null
     },
     "unofficialBackup": {
@@ -376,10 +376,10 @@
     },
     "seed": {
       "ok": true,
-      "drawCount": 2027
+      "drawCount": 2028
     },
     "merged": {
-      "totalDrawCount": 2028
+      "totalDrawCount": 2030
     }
   }
 }
